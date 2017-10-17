@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jesus/Documents/ECE 369/GitHub LAB 8-14/ece369labs/DatapathComponents/SignExtension/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jesus/Documents/ECE 369/GitHub LAB 8-14/ece369labs/DatapathComponents/SignExtension/SignExtension_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jesus/Documents/ECE 369/GitHub LAB 8-14/ece369labs/GitHub-LAB8-14/GitHub-LAB8-14.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

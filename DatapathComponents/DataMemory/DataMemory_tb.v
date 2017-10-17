@@ -33,6 +33,39 @@ module DataMemory_tb();
 
 	initial begin
 	
+	#100;
+	Address = 32'd0;
+	WriteData = 32'd4;
+	MemWrite = 1;
+	MemRead = 0;
+	#100;
+	
+	Address = 32'd0;
+    WriteData = 32'd4;
+    MemWrite = 0;
+    MemRead = 1;
+    #100;
+	
+	Address = 32'd4;
+    WriteData = 32'd7;
+    MemWrite = 1;
+    MemRead = 0;
+    #100;
+    
+    Address = 32'd4;
+    WriteData = 0;
+    MemWrite = 0;
+    MemRead = 1;
+    #100;
+    
+    MemRead = 0;
+    #100;
+    
+    Address = 32'd0;
+    WriteData = 32'd4;
+    MemWrite = 0;
+    MemRead = 1;
+    #100;
 	
 	
 	end
