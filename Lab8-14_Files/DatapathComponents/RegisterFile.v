@@ -5,7 +5,7 @@
 // 
 //
 //
-// Student(s) Name and Last Name: Ryan Nyborg / Jesus Nevarez
+// Student(s) Name and Last Name: FILL IN YOUR INFO HERE!
 //
 //
 // Module - register_file.v
@@ -51,24 +51,24 @@
 module RegisterFile(ReadRegister1, ReadRegister2, WriteRegister, WriteData, RegWrite, Clk, ReadData1, ReadData2);
 
 	/* Please fill in the implementation here... */
-	input Clk;
-	input [4:0]ReadRegister1;
-	input [4:0]ReadRegister2;
-	input [4:0]WriteRegister;
-	input [31:0]WriteData;
-	input RegWrite;
-	
-	output reg [31:0]ReadData1;
-	output reg [31:0]ReadData2;
-	
-	reg [31:0] regfile [31:0];
-	
-	assign ReadData1 = regfile[ReadRegister1];
-	assign ReadData2 = regfile[ReadRegister2];
-	
-	always @(posedge Clk) begin
-	   if (RegWrite)
-	       regfile[WriteRegister] <= WriteData;;
-       end
+    input Clk;
+    input [4:0]ReadRegister1;
+    input [4:0]ReadRegister2;
+    input [4:0]WriteRegister;
+    input [31:0]WriteData;
+    input RegWrite;
+    
+    output [31:0]ReadData1;
+    output [31:0]ReadData2;
 
+    reg [31:0] regfile [31:0];
+    
+    assign ReadData1 = regfile[ReadRegister1];
+    assign ReadData2 = regfile[ReadRegister2];
+                       
+    always @(posedge Clk) begin
+        if (RegWrite)
+            regfile[WriteRegister] <= WriteData;
+       end // always @(posedge Clk)
+    
 endmodule

@@ -14,9 +14,6 @@ module SignExtension(in, out);
     output [31:0] out;
     
     /* Fill in the implementation here ... */
-    always @(in)
-    begin
-        out[31:0] <= {{16{in[15]}}, in[15:0]};
-    end
+    assign out[31:0] = {{16{in[15]}}, in[15:0]};
 
 endmodule
