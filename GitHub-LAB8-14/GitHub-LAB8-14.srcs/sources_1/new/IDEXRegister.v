@@ -3,7 +3,8 @@
 module IDEXRegister(Clk, IFID_PCAdder_In, ControlWB_In, ControlMEM_In, 
 ControlEX_In, RegisterRead1_In, RegisterRead2_In, SignExtend_In, Instruction20_16_In,
 Instruction15_11_In, IFID_PCAdder_Out, ControlWB_Out, ControlMEM_Out, ControlEX_Out,
-RegisterRead1_Out, RegisterRead2_Out, SignExtend_Out, Instruction20_16_Out, Instruction15_11_Out);
+RegisterRead1_Out, RegisterRead2_Out, SignExtend_Out, Instruction20_16_Out, Instruction15_11_Out); //,
+//RegDst_Out, ALUOp_Out, ALUSrc_Out);
 
     input Clk;
     input [31:0] IFID_PCAdder_In, RegisterRead1_In, RegisterRead2_In, SignExtend_In;

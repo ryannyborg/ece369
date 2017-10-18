@@ -37,16 +37,24 @@
 module ALU32Bit(ALUControl, A, B, Lo_IN, Hi_IN, ALUResult, Zero);
 
 	input [5:0] ALUControl; // 6-bit control bits for ALU operation
-	input [31:0] A, B, Lo_IN, Hi_IN; // inputs, accounted for Lo and Hi registers
+	input [31:0] A, B, Lo_IN, Hi_IN; // B could potentially be the SHIFT AMOUNT
 
     output reg [63:0] ALUResult;	// 64 bit output from ALU
 	//output reg [31:0] ALUResult;	// old 32 bit answer
-	output Zero;	    // Zero=1 if ALUResult == 0
+	output reg Zero;	    // Zero=1 if ALUResult == 0
 
     //wire [5:0] STILL NEED TO IMPLEMENT THIS WIRE!!!!!!!!!!!!!!!!!!
 
-    assign Zero = (ALUResult == 64'h0000000000000000) ? 1 : 0;//Changed to 64 bit Zero value
+    //assign Zero = (ALUResult == 64'h0000000000000000) ? 1 : 0;//Changed to 64 bit Zero value
     //assign Zero = (ALUResult == 32'h00000000)
+    
+    always@(ALUResult) begin
+            if (ALUResult == 0)
+                Zero <= 1;
+            else
+                Zero <= 0;
+    end
+    
     always @(ALUControl, A, B, Lo_IN, Hi_IN) begin
         case (ALUControl)            
             // add/addi (1)

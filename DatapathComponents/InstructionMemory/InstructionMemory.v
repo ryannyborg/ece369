@@ -52,8 +52,6 @@ module InstructionMemory(Address, Instruction);
         end
     end
     
-    /* Please fill in the implementation here */
-    
     //we will store the machine code for a code written in C later. for now initialize 
     //each entry to be its index * 4 (memory[i] = i * 4;)
     //all you need to do is give an address as input and read the contents of the 
