@@ -34,9 +34,9 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module ALU32Bit(ALUControl, A, B, Lo_IN, Hi_IN, ALUResult, Zero);
+module ALU32Bit(ALUOp, A, B, Lo_IN, Hi_IN, ALUResult, Zero);
 
-	input [5:0] ALUControl; // 6-bit control bits for ALU operation
+	input [5:0] ALUOp; // 6-bit control bits for ALU operation
 	input [31:0] A, B, Lo_IN, Hi_IN; // inputs, accounted for Lo and Hi registers
 
     output reg [63:0] ALUResult;	// 64 bit output from ALU
@@ -47,8 +47,8 @@ module ALU32Bit(ALUControl, A, B, Lo_IN, Hi_IN, ALUResult, Zero);
 
     assign Zero = (ALUResult == 64'h0000000000000000) ? 1 : 0;//Changed to 64 bit Zero value
     //assign Zero = (ALUResult == 32'h00000000)
-    always @(ALUControl, A, B, Lo_IN, Hi_IN) begin
-        case (ALUControl)            
+    always @(ALUOp, A, B, Lo_IN, Hi_IN) begin
+        case (ALUOp)            
             // add/addi (1)
             6'b000001 : begin 
                 ALUResult[31:0] <= A + B; ALUResult[63:32] <= 32'd0;
