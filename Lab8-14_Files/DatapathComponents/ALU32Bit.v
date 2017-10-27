@@ -48,6 +48,29 @@ module ALU32Bit(ALUOp, A, B, Lo_IN, Hi_IN, ALUResult, Zero);
     assign Zero = (ALUResult == 64'h0000000000000000) ? 1 : 0;//Changed to 64 bit Zero value
     //assign Zero = (ALUResult == 32'h00000000)
     always @(ALUOp, A, B, Lo_IN, Hi_IN) begin
+    
+        if (Instruction == 32'd0) begin // This is a nop
+                PCSrc <= 1;
+                RegWrite <= 0;
+                ALUSrc <= 0;
+                RegDst <= 0;
+                Msub <= 0;
+                Madd <= 0;
+                HiWrite <= 0;
+                LoWrite <= 0;
+                MemWrite <= 0;
+                MemRead <= 0;
+                Branch <= 0;
+                MemToReg <= 0;
+                HiOrLo <= 0;
+                HiToReg <= 0;
+                DontMove <= 1;
+                MoveOnNotZero <= 0;
+    end
+    
+    else begin
+    
+    
         case (ALUOp)            
             // add/addi (1)
             6'b000001 : begin 
@@ -206,6 +229,7 @@ module ALU32Bit(ALUOp, A, B, Lo_IN, Hi_IN, ALUResult, Zero);
 //            6'b000111: ALUResult <= A < B ? 32'h00000001 : 32'h00000000; // Slt
 //            6'b001100: ALUResult <= ~(A | B); //Nor
         endcase
+        end
     end
     
 endmodule

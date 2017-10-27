@@ -1,0 +1,20 @@
+`timescale 1ns / 1ps
+
+////////////////////////////////////////////////////////////////////////////////
+// ECE369 - Computer Architecture
+// 
+// Module - SignExtension_tb.v
+// Description - Test the sign extension module.
+////////////////////////////////////////////////////////////////////////////////
+
+module TopLevel_tb();
+
+    reg	[15:0] in;
+    wire [31:0]	out;
+        
+    initial begin
+
+			
+	 end
+
+endmodule

@@ -27,6 +27,18 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
     output reg [5:0] ALUOp;
     
     always @(Instruction) begin
+    
+        if (Instruction == 32'd0) begin // NOP
+            RegWrite <= 0;
+            ALUSrc <= 0;
+            RegDst <= 0;
+            MemWrite <= 0;
+            MemRead <= 0;
+            Branch <= 0;
+            MemtoReg <= 0;
+        end
+    
+        else begin
         case(Instruction[31:26])
             6'b000000: begin // R-Type Instructions // ADD, ADDU, SUB, MULT, MULTU, AND, OR, NOR, XOR, SLL, SRL, SLLV, SRLV, SLT, MOVN, MOVZ, ROTRV, ROTR, SRA, SRAV, SLTU
                 case(Instruction[5:0])
@@ -219,6 +231,7 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 ZeroExtend <= 1;
             end
         endcase
+        end
         
         end 
     

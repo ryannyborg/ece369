@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
-module EXMEMRegister(Clk, AdderResult_In, AdderResult_Out, 
-ALUResult_In, ALUResult_Out, ALUZero_In, ALUZero_Out, RegisterRead2_In, RegisterRead2_Out, RegDstMUX_In, RegDstMUX_Out,
+module EXMEMRegister(Clk, ALUResult_In, ALUResult_Out, ALUZero_In, ALUZero_Out, RegisterRead2_In, 
+RegisterRead2_Out, RegDstMUX_In, RegDstMUX_Out,
 MemWrite_In, MemWrite_Out, Branch_In, Branch_Out,
 RegWrite_In, RegWrite_Out, MemToReg_In, MemToReg_Out
 );
@@ -13,7 +13,8 @@ RegWrite_In, RegWrite_Out, MemToReg_In, MemToReg_Out
     input MemToReg_In;
     //input [] ControlWB_In; // FIXME!!!!!!!!!!!!!!!!!
     //input [] ControlMEM_In; // FIXME!!!!!!!!!!!!!!!!!
-    input [31:0] AdderResult_In, ALUResult_In, RegisterRead2_In;
+    // input [31:0] AdderResult_In; // implement later
+    input [31:0] ALUResult_In, RegisterRead2_In;
     input ALUZero_In, RegDstMUX_In;
     output reg MemWrite_Out;
     output reg Branch_Out;
@@ -21,7 +22,8 @@ RegWrite_In, RegWrite_Out, MemToReg_In, MemToReg_Out
     output reg MemToReg_Out;
     //output reg [] ControlWB_Out; // FIXME!!!!!!!!!!!!!!!!!
     //output reg [] ControlMEM_Out; // FIXME!!!!!!!!!!!!!!!!!
-    output reg [31:0] AdderResult_Out, ALUResult_Out, RegisterRead2_Out;
+    // output [31:0] Adder Result_Out; // implement later
+    output reg [31:0] ALUResult_Out, RegisterRead2_Out;
     output reg ALUZero_Out, RegDstMUX_Out;
 
     reg MemWriteStore;
@@ -41,7 +43,6 @@ RegWrite_In, RegWrite_Out, MemToReg_In, MemToReg_Out
         MemToRegStore <= MemToReg_In;
         //ControlWBStore <= ControlWB_In;
         //ControlMEMStore <= ControlMEM_In;
-        AdderResultStore <= AdderResult_In;
         ALUResultStore <= ALUResult_In;
         RegisterRead2Store <= RegisterRead2_In;
         ALUZeroStore <= ALUZero_In;
