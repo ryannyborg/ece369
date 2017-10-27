@@ -20,69 +20,218 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Control();
+module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, ALUOp, HiLoCtl, ZeroExtend);
     input[31:0] Instruction;
     
-    output reg RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch; 
-    output reg [1:0] ALUOp;
+    output reg RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, HiLoCtl, ZeroExtend; 
+    output reg [5:0] ALUOp;
     
     always @(Instruction) begin
+    
+        if (Instruction == 32'd0) begin // NOP
+            RegWrite <= 0;
+            ALUSrc <= 0;
+            RegDst <= 0;
+            MemWrite <= 0;
+            MemRead <= 0;
+            Branch <= 0;
+            MemtoReg <= 0;
+        end
+    
+        else begin
         case(Instruction[31:26])
             6'b000000: begin // R-Type Instructions // ADD, ADDU, SUB, MULT, MULTU, AND, OR, NOR, XOR, SLL, SRL, SLLV, SRLV, SLT, MOVN, MOVZ, ROTRV, ROTR, SRA, SRAV, SLTU
-                RegDst <= 1;
-                ALUOp <= 2'b10;
+                case(Instruction[5:0])
+                    6'b100000: begin
+                        ALUOp <= 6'b000001; //add
+                    end
+                    6'b100001: begin
+                        ALUOp <= 6'b000010; //addu
+                    end
+                    6'b100010: begin
+                        ALUOp <= 6'b000011; //sub
+                    end
+                    6'b011000: begin
+                        ALUOp <= 6'b000101; //mult
+                    end
+                    6'b011001: begin
+                        ALUOp <= 6'b000110; //multu
+                    end
+                    6'b100100: begin
+                        ALUOp <= 6'b011000; //and
+                    end
+                    6'b100101: begin
+                        ALUOp <= 6'b011001; //or
+                    end
+                    6'b100111: begin
+                        ALUOp <= 6'b011010; //nor
+                    end
+                    6'b100110: begin
+                        ALUOp <= 6'b011011; //xor
+                    end
+                    6'b000000: begin
+                        ALUOp <= 6'b011101; //sll and sllv
+                    end
+                    6'b000010: begin
+                        ALUOp <= 6'b011110; //srl and srlv
+                    end
+                    6'b101010: begin
+                        ALUOp <= 6'b011111; //slt
+                    end
+                    6'b001011: begin
+                        ALUOp <= 6'b100000; //movn
+                    end
+                    6'b001010: begin
+                        ALUOp <= 6'b100001; //movz
+                    end
+                    6'b000010: begin
+                        ALUOp <= 6'b100010; //rotr and rotrv
+                    end
+                    6'b000011: begin
+                        ALUOp <= 6'b100011; //sra and srav
+                    end
+                    6'b101011: begin
+                        ALUOp <= 6'b100101; //sltu
+                    end
+                endcase
+                RegDst <= 1;    
                 ALUSrc <= 0;
                 Branch <= 0;
                 MemRead <= 0;
                 MemWrite <= 0;
                 RegWrite <= 1;
                 MemtoReg <= 0;
+                HiLoCtl <= 0;
+                ZeroExtend <= 0;
             end
-            6'b001001: begin // ADDIU
-            end
-            6'b001000: begin // ADDI
-            end
-            6'b011100: begin // MULT, MADD, MSUB
-            end
-            6'b001100: begin // ANDI
-            end
-            6'b001101: begin // ORI
-            end
-            6'b001110: begin // XORI
-            end
-            6'b011111: begin // SEH, SEB
-            end
-            6'b001010: begin // SLTI
-            end
-            6'b001011: begin // SLTIU
-            end
-            6'b100011: begin // LW
+            6'b001001: begin // ADDIU, I-Type
                 RegDst <= 0;
-                ALUOp <= 2'b00;
-                ALUSrc <= 0;
-                Branch <= 0;
-                MemRead <= 1;
-                MemWrite <= 0;
-                RegWrite <= 1;
-                MemtoReg <= 1;
-            end
-            6'b101011: begin // SW
-                ALUOp <= 2'b00;
+                ALUOp <= 6'b000010;
                 ALUSrc <= 1;
                 Branch <= 0;
                 MemRead <= 0;
-                MemWrite <= 1;
-                RegWrite <= 0;
+                MemWrite <= 0;
+                RegWrite <= 1;
+                MemtoReg <= 0;
+                HiLoCtl <= 0;
+                ZeroExtend <= 1;
             end
-            6'b000100: begin // BEQ
-                ALUOp <= 2'b01;
-                ALUSrc <= 0;
-                Branch <= 1;
+            6'b001000: begin // ADDI, I-Type
+                RegDst <= 0;
+                ALUOp <= 6'b000001;
+                ALUSrc <= 1;
+                Branch <= 0;
                 MemRead <= 0;
                 MemWrite <= 0;
-                RegWrite <= 0;
+                RegWrite <= 1;
+                MemtoReg <= 0;
+                HiLoCtl <= 0;
+                ZeroExtend <= 0;
+            end
+            6'b011100: begin // MUL, MADD, MSUB
+                case(Instruction[5:0])
+                    6'b000010: begin
+                        ALUOp <= 6'b000100; //mul
+                    end
+                    6'b000000: begin
+                        ALUOp <= 6'b000111; //madd
+                    end
+                    6'b000100: begin
+                        ALUOp <= 6'b001000; //msub
+                    end
+                endcase
+                RegDst <= 1;
+                ALUSrc <= 0;
+                Branch <= 0;
+                MemRead <= 0;
+                MemWrite <= 0;
+                RegWrite <= 1;
+                MemtoReg <= 0;
+                HiLoCtl <= 1;
+                ZeroExtend <= 0;
+            end
+            
+            6'b001100: begin // ANDI, I-Type
+                ALUOp <= 6'b011000;
+                RegDst <= 0;
+                ALUSrc <= 1;
+                Branch <= 0;
+                MemRead <= 0;
+                MemWrite <= 0;
+                RegWrite <= 1;
+                MemtoReg <= 0;
+                HiLoCtl <= 0;
+                ZeroExtend <= 1;
+            end
+            6'b001101: begin // ORI, I-Type
+                ALUOp <= 6'b011001;
+                RegDst <= 0;
+                ALUSrc <= 1;
+                Branch <= 0;
+                MemRead <= 0;
+                MemWrite <= 0;
+                RegWrite <= 1;
+                MemtoReg <= 0;
+                HiLoCtl <= 0;
+                ZeroExtend <= 1;
+            end
+            6'b001110: begin // XORI, I-Type
+                ALUOp <= 6'b011011; //xori
+                RegDst <= 0;
+                ALUSrc <= 1;
+                Branch <= 0;
+                MemRead <= 0;
+                MemWrite <= 0;
+                RegWrite <= 1;
+                MemtoReg <= 0;
+                HiLoCtl <= 0;
+                ZeroExtend <= 1;
+            end
+            6'b011111: begin // SEH, SEB
+                case(Instruction[10:6])
+                    5'b10000: begin
+                        ALUOp <= 6'b100100; //seb
+                    end
+                    5'b11000: begin
+                        ALUOp <= 6'b011100; //seh
+                    end
+                endcase
+                RegDst <= 1;
+                ALUSrc <= 1;
+                Branch <= 0;
+                MemRead <= 0;
+                MemWrite <= 0;
+                RegWrite <= 1;
+                MemtoReg <= 0;
+                HiLoCtl <= 0;
+                ZeroExtend <= 0;
+            end
+            6'b001010: begin // SLTI, I-Type
+                ALUOp <= 6'b011111; //slti
+                RegDst <= 0;
+                ALUSrc <= 1;
+                Branch <= 0;
+                MemRead <= 0;
+                MemWrite <= 0;
+                RegWrite <= 1;
+                MemtoReg <= 0;
+                HiLoCtl <= 0;
+                ZeroExtend <= 0;
+            end
+            6'b001011: begin // SLTIU, I-Type
+                ALUOp <= 6'b011111; //sltiu
+                RegDst <= 0;
+                ALUSrc <= 1;
+                Branch <= 0;
+                MemRead <= 0;
+                MemWrite <= 0;
+                RegWrite <= 1;
+                MemtoReg <= 0;
+                HiLoCtl <= 0;
+                ZeroExtend <= 1;
             end
         endcase
+        end
         
         end 
     
