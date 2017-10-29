@@ -4,6 +4,7 @@ module IDEXRegister(Clk, IFID_PCAdder_In, RegisterRead1_In, RegisterRead2_In, Si
 Instruction15_11_In, IFID_PCAdder_Out,
 RegisterRead1_Out, RegisterRead2_Out, SignExtend_Out, Instruction20_16_Out, Instruction15_11_Out,
 RegDst_In, RegDst_Out, ALUSrc_In, ALUSrc_Out, ALUOp_In, ALUOp_Out, HiLoCtr_In, HiLoCtr_Out,
+MemRead_In, MemRead_Out, //////////////////////////////////////
 MemWrite_In, MemWrite_Out, Branch_In, Branch_Out,
 RegWrite_In, RegWrite_Out, MemToReg_In, MemToReg_Out
 ); //,
@@ -14,6 +15,7 @@ RegWrite_In, RegWrite_Out, MemToReg_In, MemToReg_Out
     input ALUSrc_In;
     input ALUOp_In;
     input HiLoCtr_In;
+    input MemRead_In; ////////////////////////
     input MemWrite_In;
     input Branch_In;
     input RegWrite_In;
@@ -27,6 +29,7 @@ RegWrite_In, RegWrite_Out, MemToReg_In, MemToReg_Out
     output reg ALUSrc_Out;
     output reg ALUOp_Out;
     output reg HiLoCtr_Out;
+    output reg MemRead_Out; //////////////////////////////
     output reg MemWrite_Out;
     output reg Branch_Out;
     output reg RegWrite_Out;
@@ -41,6 +44,7 @@ RegWrite_In, RegWrite_Out, MemToReg_In, MemToReg_Out
     reg ALUSrcStore;
     reg ALUOpStore;
     reg HiLoCtrStore;
+    reg MemReadStore; ///////////////
     reg MemWriteStore;
     reg BranchStore;
     reg RegWriteStore; 
@@ -56,6 +60,7 @@ RegWrite_In, RegWrite_Out, MemToReg_In, MemToReg_Out
         ALUSrcStore <= ALUSrc_In;
         ALUOpStore <= ALUOp_In;
         HiLoCtrStore <= HiLoCtr_In;
+        MemReadStore <= MemRead_In;
         MemWriteStore <= MemWrite_In;
         BranchStore <= Branch_In;
         RegWriteStore <= RegWrite_In;
@@ -76,6 +81,7 @@ RegWrite_In, RegWrite_Out, MemToReg_In, MemToReg_Out
         ALUSrc_Out <= ALUSrcStore;
         ALUOp_Out <= ALUOpStore;
         HiLoCtr_Out <= HiLoCtrStore;
+        MemRead_Out <= MemReadStore;
         MemWrite_Out <= MemWriteStore;
         Branch_Out <= BranchStore;
         RegWrite_Out <= RegWriteStore;

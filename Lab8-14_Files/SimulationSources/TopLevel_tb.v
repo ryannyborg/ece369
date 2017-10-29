@@ -9,12 +9,21 @@
 
 module TopLevel_tb();
 
-    reg	[15:0] in;
-    wire [31:0]	out;
-        
-    initial begin
+    reg Clk, Rst;   // control bits for ALU operation
+    
+    wire [31:0] WriteData, Hi_Out, Lo_Out, PCValue; // high value after multiplication
 
-			
-	 end
+    TopLevel test1(
+        .Clk(Clk), .Rst(Rst), .WriteData(WriteData), .PCValue(PCValue), .Hi_Out(Hi_Out), .Lo_Out(Lo_Out)
+    );
+
+
+   initial begin
+        Clk <= 1'b0;
+        Rst <= 0;
+        forever #100 Clk <= ~Clk;
+    end
+    
+    
 
 endmodule

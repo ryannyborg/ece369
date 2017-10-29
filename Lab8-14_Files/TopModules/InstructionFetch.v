@@ -39,28 +39,31 @@
 // which generates a continuous clock pulse into the module.
 ////////////////////////////////////////////////////////////////////////////////
 
-module InstructionFetchUnit(Instruction, Reset, Clk);
+module InstructionFetchUnit(Instruction, Reset, Clk, PCAddResult);
 
     input Reset, Clk;
-    output [31:0]Instruction;
+    output [31:0] Instruction;
+    output [31:0] PCAddResult;////////////////
     
-    wire [31:0]PCAddResult, PCResult;
+    wire [31:0]PCAddWire, PCResult;
     
     ProgramCounter u0(
-            .Reset(Reset),
-            .Clk(Clk),
-            .Address(PCAddResult),
-            .PCResult(PCResult)
+            .Reset(Reset), // input
+            .Clk(Clk), // input
+            .Address(PCAddWire), // input
+            .PCResult(PCResult) // output
         );
         
     PCAdder u1(
-            .PCResult(PCResult),
-            .PCAddResult(PCAddResult)
+            .PCResult(PCResult), // input
+            .PCAddResult(PCAddWire) // output
         );
      
     InstructionMemory u2(
-            .Address(PCResult),
-            .Instruction(Instruction)
+            .Address(PCResult), // input
+            .Instruction(Instruction) // output
         );
+        
+    assign PCAddResult = PCAddWire;
         
 endmodule

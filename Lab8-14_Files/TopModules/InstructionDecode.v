@@ -2,18 +2,21 @@
  
 module InstructionDecode(
         // inputs
-        Clk, Rst, Instruction, WriteData, WriteRegister,
+        Clk, Rst, Instruction, WriteData, WriteRegister_IN,
         // outputs
         ReadData1, ReadData2, Immediate_Extended, Instruction_20_16, Instruction_15_11,
         // control signals
-        RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, HiLoCtl, ZeroExtend, ALUOp
+        RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, HiLoCtl, ZeroExtend, ALUOp,
+        //REGWRITE SIGNAL FROM WB STAGE
+        RegWrite_WB
 );
 
    // Inputs   
    input Clk, Rst;
+   input RegWrite_WB; ////////////REGWRITE SIGNAL FROM WB STAGE
    input [31:0] Instruction;
    input [31:0] WriteData;
-   input [4:0] WriteRegister;
+   input [4:0] WriteRegister_IN;
    
    // Outputs
    output [31:0] ReadData1, ReadData2, Immediate_Extended;
@@ -31,9 +34,9 @@ module InstructionDecode(
    RegisterFile regFile(
        .ReadRegister1(Instruction[25:21]), 
        .ReadRegister2(Instruction[20:16]), 
-       .WriteRegister(WriteRegsiter), 
+       .WriteRegister(WriteRegister_IN), 
        .WriteData(WriteData), 
-       .RegWrite(RegWrite),
+       .RegWrite(RegWrite_WB),
        .Clk(Clk), 
        .ReadData1(ReadData1), 
        .ReadData2(ReadData2)

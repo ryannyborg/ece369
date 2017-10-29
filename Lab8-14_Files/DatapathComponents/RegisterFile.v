@@ -50,7 +50,6 @@
 
 module RegisterFile(ReadRegister1, ReadRegister2, WriteRegister, WriteData, RegWrite, Clk, ReadData1, ReadData2);
 
-	/* Please fill in the implementation here... */
     input Clk;
     input [4:0]ReadRegister1;
     input [4:0]ReadRegister2;

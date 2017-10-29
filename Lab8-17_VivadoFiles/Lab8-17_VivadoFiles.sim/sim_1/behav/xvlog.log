@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Execution
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HiLoRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux5Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/Execution_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Execution_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

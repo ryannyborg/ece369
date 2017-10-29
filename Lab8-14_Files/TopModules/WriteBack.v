@@ -4,7 +4,7 @@ module WriteBack(
         // inputs
         Clk, Rst, ReadData, ALUResult, MemtoReg, WriteReg,
         // outputs
-        WriteReg_Out, WriteData, RegWrite
+        WriteReg_Out, WriteData //RegWrite TOOK THIS OUT
        );
    
    input Clk, Rst;
@@ -14,7 +14,7 @@ module WriteBack(
    
    output [4:0] WriteReg_Out;
    output [31:0] WriteData;
-   output RegWrite;
+   //output RegWrite;
    
    assign WriteReg_Out = WriteReg;
    

@@ -12,7 +12,7 @@ module Execution(
         // control signals IN
         RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, HiLoCtl, ZeroExtend,
         // outputs
-        ALUResult, ReadData2_Out, RegDestAddress, Zero,
+        ReadData2_Out, ALULoResult, RegDestAddress, Zero,
         // control signals OUT
         MemRead_Out, MemWrite_Out, MemtoReg_Out, RegWrite_Out
         );
@@ -23,12 +23,19 @@ module Execution(
    input [5:0] ALUOp;
    input RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, HiLoCtl, ZeroExtend;
    
-   output [31:0] ALUResult, ReadData2_Out;
+   output [31:0] ReadData2_Out, ALULoResult;
    output [4:0] RegDestAddress;
    output MemRead_Out, MemWrite_Out, MemtoReg_Out, RegWrite_Out, Zero;
    
-   wire Hi_Wire, Lo_Wire;
+   assign MemRead_Out = MemRead;
+   assign MemWrite_Out = MemWrite;
+   assign MemtoReg_Out = MemtoReg;
+   assign ReadData2_Out = ReadData2;
+   assign RegWrite_Out = RegWrite;
+   
+   wire [31:0] Hi_Wire, Lo_Wire;
    wire [31:0] ALUInputFromMux;
+   wire [63:0] ALUResult; 
    
    Mux32Bit2To1 ALUSrcMux(
         .out(ALUInputFromMux), 
@@ -37,7 +44,7 @@ module Execution(
         .sel(ALUSrc)
         );
         
-    Mux32Bit2To1 RegDstMux(
+    Mux5Bit2To1 RegDstMux(
         .out(RegDestAddress), 
         .inA(Instruction_20_16), 
         .inB(Instruction_15_11), 
@@ -50,8 +57,9 @@ module Execution(
         .B(ALUInputFromMux), 
         .Lo_IN(Lo_Wire), 
         .Hi_IN(Hi_Wire), 
-        .ALUResult(ALUResult), 
-        .Zero(Zero)
+        .ALUResult(ALUResult),
+        .Zero(Zero),
+        .LoResult(ALULoResult)
         );
         
     HiLoRegister hi_low_reg(
@@ -61,9 +69,5 @@ module Execution(
         .LoOut(Lo_Wire), 
         .HiLoCtl(HiLoCtl)
         );
-   
-        
-   
-   
    
 endmodule

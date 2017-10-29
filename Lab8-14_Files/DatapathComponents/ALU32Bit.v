@@ -34,42 +34,23 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module ALU32Bit(ALUOp, A, B, Lo_IN, Hi_IN, ALUResult, Zero);
+module ALU32Bit(ALUOp, A, B, Lo_IN, Hi_IN, Zero, LoResult, HiResult, ALUResult);
 
 	input [5:0] ALUOp; // 6-bit control bits for ALU operation
 	input [31:0] A, B, Lo_IN, Hi_IN; // inputs, accounted for Lo and Hi registers
 
-    output reg [63:0] ALUResult;	// 64 bit output from ALU
+    output reg [31:0] LoResult, HiResult;
 	//output reg [31:0] ALUResult;	// old 32 bit answer
 	output Zero;	    // Zero=1 if ALUResult == 0
+    output reg [63:0] ALUResult;	// 64 bit output from ALU
+    // testing purposes
+    
 
     //wire [5:0] STILL NEED TO IMPLEMENT THIS WIRE!!!!!!!!!!!!!!!!!!
 
     assign Zero = (ALUResult == 64'h0000000000000000) ? 1 : 0;//Changed to 64 bit Zero value
     //assign Zero = (ALUResult == 32'h00000000)
     always @(ALUOp, A, B, Lo_IN, Hi_IN) begin
-    
-        if (Instruction == 32'd0) begin // This is a nop
-                PCSrc <= 1;
-                RegWrite <= 0;
-                ALUSrc <= 0;
-                RegDst <= 0;
-                Msub <= 0;
-                Madd <= 0;
-                HiWrite <= 0;
-                LoWrite <= 0;
-                MemWrite <= 0;
-                MemRead <= 0;
-                Branch <= 0;
-                MemToReg <= 0;
-                HiOrLo <= 0;
-                HiToReg <= 0;
-                DontMove <= 1;
-                MoveOnNotZero <= 0;
-    end
-    
-    else begin
-    
     
         case (ALUOp)            
             // add/addi (1)
@@ -229,8 +210,13 @@ module ALU32Bit(ALUOp, A, B, Lo_IN, Hi_IN, ALUResult, Zero);
 //            6'b000111: ALUResult <= A < B ? 32'h00000001 : 32'h00000000; // Slt
 //            6'b001100: ALUResult <= ~(A | B); //Nor
         endcase
-        end
+        
     end
+    
+    always @ (ALUResult) begin
+            HiResult <= ALUResult[63:32];
+            LoResult <= ALUResult[31:0];
+            end
     
 endmodule
 
