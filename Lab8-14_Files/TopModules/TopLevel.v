@@ -37,12 +37,12 @@ module TopLevel(Clk, Rst, WriteData, PCValue, Hi_Out, Lo_Out);
     wire [4:0] Instruction_15_11_EX, Instruction_20_16_EX;
     
     // Execution Outputs 
-    wire [31:0] ALUResult_EX, ReadData2_Out_EX, Zero_EX;
+    wire [31:0] ALULoResult_EX, ReadData2_Out_EX, Zero_EX;
     wire [4:0] RegDestAddress_EX;
     wire MemRead_Out_EX, MemWrite_Out_EX, MemtoReg_Out_EX, RegWrite_Out_EX;
     
     // EX_MEM Outputs
-    wire [31:0] ALUResult_MEM, Zero_MEM, ReadData2_MEM;
+    wire [31:0] ALULoResult_MEM, Zero_MEM, ReadData2_MEM;
     wire [4:0] RegDestAddress_MEM;
     wire MemRead_MEM, MemWrite_MEM, Branch_MEM, MemtoReg_MEM; ///////////////////////////////
     wire RegWrite_MEM; ///////////////////////////////////////////////
@@ -129,14 +129,14 @@ module TopLevel(Clk, Rst, WriteData, PCValue, Hi_Out, Lo_Out);
         .RegDst(RegDst_EX), .ALUSrc(ALUSrc_EX), .Branch(Branch_EX), 
         .HiLoCtl(HiLoCtl_EX), .ZeroExtend(ZeroExtend_EX),
         // outputs
-        .ALUResult(ALUResult_EX), .ReadData2_Out(ReadData2_EX), .RegDestAddress(RegDestAddress_EX), .Zero(Zero_EX),
+        .ALULoResult(ALULoResult_EX), .ReadData2_Out(ReadData2_EX), .RegDestAddress(RegDestAddress_EX), .Zero(Zero_EX),
         // control signals OUT
         .MemRead_Out(MemRead_Out_EX), .MemWrite_Out(MemWrite_Out_EX), 
         .MemtoReg_Out(MemtoReg_Out_EX), .RegWrite_Out(RegWrite_Out_EX)
         );
     
     EXMEMRegister EXMEM(
-        .Clk(Clk), .ALUResult_In(ALUResult_EX), .ALUResult_Out(ALUResult_MEM), .ALUZero_In(Zero_EX), 
+        .Clk(Clk), .ALUResult_In(ALULoResult_EX), .ALUResult_Out(ALULoResult_MEM), .ALUZero_In(Zero_EX), 
         .ALUZero_Out(Zero_MEM), .RegisterRead2_In(ReadData2_EX), .RegisterRead2_Out(ReadData2_MEM), 
         .RegDstMUX_In(RegDestAddress_EX), .RegDstMUX_Out(RegDestAddress_MEM),
         .MemRead_In(MemRead_Out_EX), .MemRead_Out(MemRead_MEM), //////////////////////////////////////////////////////////////////////////////////////////////
@@ -147,7 +147,7 @@ module TopLevel(Clk, Rst, WriteData, PCValue, Hi_Out, Lo_Out);
     Memory memory(
         .Clk(Clk), .Rst(Rst),
         // inputs
-        .ALUResult(ALUResult_MEM), .WriteData(ReadData2_MEM), .RegDestAddress(RegDestAddress_MEM),
+        .ALUResult(ALULoResult_MEM), .WriteData(ReadData2_MEM), .RegDestAddress(RegDestAddress_MEM),
         // outputs
         .ReadData(ReadData_MEM), .ALUResult_Out(ALUResult_Out_MEM),        
         // controller inputs

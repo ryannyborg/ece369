@@ -25,7 +25,7 @@ module Memory(
    output MemtoReg_Out;
    output [4:0] RegDestAddress_Out;
    
-   assign RegWrite_Out = RegWrite_In; ///////////////////
+   assign RegWrite_Out = RegWrite_In; 
    assign MemtoReg_Out = MemtoReg;
    assign RegDestAddress_Out = RegDestAddress;
    assign ALUResult_Out = ALUResult;

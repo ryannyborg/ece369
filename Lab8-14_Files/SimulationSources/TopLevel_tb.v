@@ -19,9 +19,12 @@ module TopLevel_tb();
 
 
    initial begin
-        Clk <= 1'b0;
+        Clk <= 1'b1;
+        Rst <= 1;
+        #10;
         Rst <= 0;
-        forever #100 Clk <= ~Clk;
+        Clk <= 1'b0;
+        forever #10 Clk <= ~Clk;
     end
     
     

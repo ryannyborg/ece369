@@ -100,7 +100,7 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 MemRead <= 0;
                 MemWrite <= 0;
                 RegWrite <= 1;
-                MemtoReg <= 0;
+                MemtoReg <= 1;
                 HiLoCtl <= 0;
                 ZeroExtend <= 0;
             end
@@ -112,7 +112,7 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 MemRead <= 0;
                 MemWrite <= 0;
                 RegWrite <= 1;
-                MemtoReg <= 0;
+                MemtoReg <= 1;
                 HiLoCtl <= 0;
                 ZeroExtend <= 1;
             end
@@ -124,7 +124,7 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 MemRead <= 0;
                 MemWrite <= 0;
                 RegWrite <= 1;
-                MemtoReg <= 0;
+                MemtoReg <= 1;
                 HiLoCtl <= 0;
                 ZeroExtend <= 0;
             end
@@ -146,7 +146,7 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 MemRead <= 0;
                 MemWrite <= 0;
                 RegWrite <= 1;
-                MemtoReg <= 0;
+                MemtoReg <= 1;
                 HiLoCtl <= 1;
                 ZeroExtend <= 0;
             end
@@ -159,7 +159,7 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 MemRead <= 0;
                 MemWrite <= 0;
                 RegWrite <= 1;
-                MemtoReg <= 0;
+                MemtoReg <= 1;
                 HiLoCtl <= 0;
                 ZeroExtend <= 1;
             end
@@ -171,7 +171,7 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 MemRead <= 0;
                 MemWrite <= 0;
                 RegWrite <= 1;
-                MemtoReg <= 0;
+                MemtoReg <= 1;
                 HiLoCtl <= 0;
                 ZeroExtend <= 1;
             end
@@ -183,7 +183,7 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 MemRead <= 0;
                 MemWrite <= 0;
                 RegWrite <= 1;
-                MemtoReg <= 0;
+                MemtoReg <= 1;
                 HiLoCtl <= 0;
                 ZeroExtend <= 1;
             end
@@ -202,7 +202,7 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 MemRead <= 0;
                 MemWrite <= 0;
                 RegWrite <= 1;
-                MemtoReg <= 0;
+                MemtoReg <= 1;
                 HiLoCtl <= 0;
                 ZeroExtend <= 0;
             end
@@ -214,7 +214,7 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 MemRead <= 0;
                 MemWrite <= 0;
                 RegWrite <= 1;
-                MemtoReg <= 0;
+                MemtoReg <= 1;
                 HiLoCtl <= 0;
                 ZeroExtend <= 0;
             end
@@ -226,7 +226,7 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 MemRead <= 0;
                 MemWrite <= 0;
                 RegWrite <= 1;
-                MemtoReg <= 0;
+                MemtoReg <= 1;
                 HiLoCtl <= 0;
                 ZeroExtend <= 1;
             end

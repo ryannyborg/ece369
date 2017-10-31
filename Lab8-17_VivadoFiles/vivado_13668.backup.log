@@ -1,0 +1,835 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Oct 29 08:51:46 2017
+# Process ID: 13668
+# Current directory: E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14912 E:\Fall 2017\ECE 369\LABS8-17\Lab8-17_VivadoFiles\Lab8-17_VivadoFiles.xpr
+# Log file: E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/vivado.log
+# Journal file: E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:23 . Memory (MB): peak = 740.961 ; gain = 106.305
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-1
+Top: TopLevel
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 749.371 ; gain = 8.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopLevel' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:6]
+INFO: [Synth 8-638] synthesizing module 'InstructionFetchUnit' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionFetch.v:42]
+INFO: [Synth 8-638] synthesizing module 'ProgramCounter' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v:28]
+INFO: [Synth 8-256] done synthesizing module 'ProgramCounter' (1#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v:28]
+INFO: [Synth 8-638] synthesizing module 'PCAdder' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/PCAdder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PCAdder' (2#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/PCAdder.v:23]
+INFO: [Synth 8-638] synthesizing module 'InstructionMemory' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v:40]
+INFO: [Synth 8-256] done synthesizing module 'InstructionMemory' (3#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v:40]
+INFO: [Synth 8-256] done synthesizing module 'InstructionFetchUnit' (4#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionFetch.v:42]
+INFO: [Synth 8-638] synthesizing module 'IFIDRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/IFIDRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'IFIDRegister' (5#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/IFIDRegister.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'IFID_PCAdder_Out' does not match port width (32) of module 'IFIDRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:79]
+INFO: [Synth 8-638] synthesizing module 'InstructionDecode' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionDecode.v:3]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (6#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
+INFO: [Synth 8-638] synthesizing module 'Control' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:23]
+WARNING: [Synth 8-151] case item 6'b000010 is unreachable [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:44]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:44]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:132]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:191]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:42]
+INFO: [Synth 8-256] done synthesizing module 'Control' (7#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:23]
+INFO: [Synth 8-638] synthesizing module 'SignExtension' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:8]
+INFO: [Synth 8-256] done synthesizing module 'SignExtension' (8#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:8]
+INFO: [Synth 8-256] done synthesizing module 'InstructionDecode' (9#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionDecode.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'ALUOp' does not match port width (6) of module 'InstructionDecode' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:89]
+INFO: [Synth 8-638] synthesizing module 'IDEXRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'IDEXRegister' (10#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'IFID_PCAdder_In' does not match port width (32) of module 'IDEXRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:94]
+WARNING: [Synth 8-689] width (1) of port connection 'IFID_PCAdder_Out' does not match port width (32) of module 'IDEXRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:99]
+INFO: [Synth 8-638] synthesizing module 'Execution' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v:3]
+INFO: [Synth 8-638] synthesizing module 'Mux32Bit2To1' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10]
+WARNING: [Synth 8-567] referenced signal 'inA' should be on the sensitivity list [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:20]
+WARNING: [Synth 8-567] referenced signal 'inB' should be on the sensitivity list [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:20]
+INFO: [Synth 8-256] done synthesizing module 'Mux32Bit2To1' (11#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10]
+WARNING: [Synth 8-689] width (5) of port connection 'out' does not match port width (32) of module 'Mux32Bit2To1' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v:48]
+WARNING: [Synth 8-689] width (5) of port connection 'inA' does not match port width (32) of module 'Mux32Bit2To1' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v:49]
+WARNING: [Synth 8-689] width (5) of port connection 'inB' does not match port width (32) of module 'Mux32Bit2To1' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v:50]
+INFO: [Synth 8-638] synthesizing module 'ALU32Bit' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:37]
+INFO: [Synth 8-256] done synthesizing module 'ALU32Bit' (12#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:37]
+WARNING: [Synth 8-689] width (1) of port connection 'Lo_IN' does not match port width (32) of module 'ALU32Bit' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v:58]
+WARNING: [Synth 8-689] width (1) of port connection 'Hi_IN' does not match port width (32) of module 'ALU32Bit' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v:59]
+INFO: [Synth 8-638] synthesizing module 'HiLoRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'HiLoRegister' (13#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'HiOut' does not match port width (32) of module 'HiLoRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v:67]
+WARNING: [Synth 8-689] width (1) of port connection 'LoOut' does not match port width (32) of module 'HiLoRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v:68]
+INFO: [Synth 8-256] done synthesizing module 'Execution' (14#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'ALUOp' does not match port width (6) of module 'Execution' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:125]
+WARNING: [Synth 8-689] width (32) of port connection 'ALUResult' does not match port width (64) of module 'Execution' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:132]
+WARNING: [Synth 8-689] width (32) of port connection 'Zero' does not match port width (1) of module 'Execution' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:132]
+INFO: [Synth 8-638] synthesizing module 'EXMEMRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'EXMEMRegister' (15#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'ALUZero_In' does not match port width (1) of module 'EXMEMRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:139]
+WARNING: [Synth 8-689] width (32) of port connection 'ALUZero_Out' does not match port width (1) of module 'EXMEMRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:140]
+WARNING: [Synth 8-689] width (5) of port connection 'RegDstMUX_In' does not match port width (1) of module 'EXMEMRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:141]
+WARNING: [Synth 8-689] width (5) of port connection 'RegDstMUX_Out' does not match port width (1) of module 'EXMEMRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:141]
+INFO: [Synth 8-638] synthesizing module 'Memory' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Memory.v:3]
+INFO: [Synth 8-638] synthesizing module 'DataMemory' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/DataMemory.v:38]
+WARNING: [Synth 8-567] referenced signal 'Address' should be on the sensitivity list [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/DataMemory.v:56]
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (16#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/DataMemory.v:38]
+INFO: [Synth 8-256] done synthesizing module 'Memory' (17#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Memory.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'RegDestAddress_Out' does not match port width (5) of module 'Memory' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:158]
+INFO: [Synth 8-638] synthesizing module 'MEMWBRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'MEMWBRegister' (18#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3]
+WARNING: [Synth 8-689] width (5) of port connection 'RegDstMUX_Out' does not match port width (1) of module 'MEMWBRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:165]
+INFO: [Synth 8-638] synthesizing module 'WriteBack' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/WriteBack.v:3]
+INFO: [Synth 8-256] done synthesizing module 'WriteBack' (19#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/WriteBack.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'WriteReg' does not match port width (5) of module 'WriteBack' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:173]
+WARNING: [Synth 8-689] width (1) of port connection 'WriteReg_Out' does not match port width (5) of module 'WriteBack' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:175]
+WARNING: [Synth 8-3848] Net PCValue in module/entity TopLevel does not have driver. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:10]
+WARNING: [Synth 8-3848] Net Hi_Out in module/entity TopLevel does not have driver. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:10]
+WARNING: [Synth 8-3848] Net Lo_Out in module/entity TopLevel does not have driver. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:10]
+WARNING: [Synth 8-3848] Net ZeroExtend_EX in module/entity TopLevel does not have driver. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:33]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel' (20#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:6]
+WARNING: [Synth 8-3331] design WriteBack has unconnected port Clk
+WARNING: [Synth 8-3331] design WriteBack has unconnected port Rst
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[31]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[30]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[29]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[28]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[27]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[26]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[25]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[24]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[23]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[22]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[21]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[20]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[19]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[18]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[17]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[16]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[15]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[14]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[13]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[12]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[1]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[0]
+WARNING: [Synth 8-3331] design Memory has unconnected port Rst
+WARNING: [Synth 8-3331] design EXMEMRegister has unconnected port RegDstMUX_In
+WARNING: [Synth 8-3331] design Execution has unconnected port Clk
+WARNING: [Synth 8-3331] design Execution has unconnected port Rst
+WARNING: [Synth 8-3331] design Execution has unconnected port Branch
+WARNING: [Synth 8-3331] design Execution has unconnected port ZeroExtend
+WARNING: [Synth 8-3331] design InstructionDecode has unconnected port Rst
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[31]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[30]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[29]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[28]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[27]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[26]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[25]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[24]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[23]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[22]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[21]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[20]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[19]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[18]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[17]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[16]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[15]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[14]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[13]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[12]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[11]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[10]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[9]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[8]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[7]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[6]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[5]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[4]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[3]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[2]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[1]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[0]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[31]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[30]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[29]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[28]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[27]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[26]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[25]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[24]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[23]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[22]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[21]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[20]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[19]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[18]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[17]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[16]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[15]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[14]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[13]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[12]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[11]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[10]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[9]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[8]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[7]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[6]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[5]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[4]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[3]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[2]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[1]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[0]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[31]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[30]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[29]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[28]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[27]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:21 . Memory (MB): peak = 773.789 ; gain = 32.828
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 773.789 ; gain = 32.828
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:28 ; elapsed = 00:01:08 . Memory (MB): peak = 1071.238 ; gain = 330.277
+49 Infos, 131 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:29 ; elapsed = 00:01:09 . Memory (MB): peak = 1071.238 ; gain = 330.277
+close_design
+set_property top ALU32Bit [current_fileset]
+update_compile_order -fileset sources_1
+set_property top ALU32Bit_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU32Bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU32Bit_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 292ce9040b1e4d15946498d17870732e --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU32Bit_tb_behav xil_defaultlib.ALU32Bit_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port HiResult on this module [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:26]
+ERROR: [VRFC 10-426] cannot find port ALUControl on this module [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:21]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1071.238 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU32Bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU32Bit_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 292ce9040b1e4d15946498d17870732e --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU32Bit_tb_behav xil_defaultlib.ALU32Bit_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-529] concurrent assignment to a non-net ALUResult is not permitted [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:21]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1071.238 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU32Bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU32Bit_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit_tb
+ERROR: [VRFC 10-1280] procedural assignment to a non-register ALUOp is not permitted, left-hand side should be reg/integer/time/genvar [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:30]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register ALUOp is not permitted, left-hand side should be reg/integer/time/genvar [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:30]
+ERROR: [VRFC 10-1040] module ALU32Bit_tb ignored due to previous errors [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:10]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU32Bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU32Bit_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 292ce9040b1e4d15946498d17870732e --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU32Bit_tb_behav xil_defaultlib.ALU32Bit_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU32Bit
+Compiling module xil_defaultlib.ALU32Bit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALU32Bit_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/Fall -notrace
+couldn't read file "E:/Fall": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 29 09:06:00 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1071.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU32Bit_tb_behav -key {Behavioral:sim_1:Functional:ALU32Bit_tb} -tclbatch {ALU32Bit_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source ALU32Bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1071.238 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU32Bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1071.238 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU32Bit_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
+"xvlog -m64 --relax -prj ALU32Bit_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 292ce9040b1e4d15946498d17870732e --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU32Bit_tb_behav xil_defaultlib.ALU32Bit_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU32Bit
+Compiling module xil_defaultlib.ALU32Bit_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALU32Bit_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/Fall -notrace
+couldn't read file "E:/Fall": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Sun Oct 29 09:07:55 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1071.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU32Bit_tb_behav -key {Behavioral:sim_1:Functional:ALU32Bit_tb} -tclbatch {ALU32Bit_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source ALU32Bit_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU32Bit_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1071.238 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v:]
+INFO: [Common 17-14] Message 'filemgmt 56-199' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+ERROR: [Common 17-180] Spawn failed: No error
+INFO: [Common 17-14] Message 'Common 17-180' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
+INFO: [Common 17-14] Message 'filemgmt 56-285' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.

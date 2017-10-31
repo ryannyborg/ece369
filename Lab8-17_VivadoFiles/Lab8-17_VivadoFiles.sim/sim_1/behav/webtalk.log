@@ -2,13 +2,13 @@
 # Webtalk v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Sun Oct 29 14:09:57 2017
-# Process ID: 5528
+# Start of session at: Tue Oct 31 11:35:48 2017
+# Process ID: 9424
 # Current directory: E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav
-# Command line: wbtcv.exe -mode batch -source E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav/xsim.dir/Execution_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav/xsim.dir/TopLevel_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav/webtalk.log
 # Journal file: E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav\webtalk.jou
 #-----------------------------------------------------------
 source E:/Fall -notrace
 couldn't read file "E:/Fall": permission denied
-INFO: [Common 17-206] Exiting Webtalk at Sun Oct 29 14:09:58 2017...
+INFO: [Common 17-206] Exiting Webtalk at Tue Oct 31 11:35:48 2017...
