@@ -12,7 +12,7 @@ module Execution_tb();
    reg [4:0] Instruction_20_16, Instruction_15_11;
    reg [31:0] ReadData1, ReadData2, Immediate_Extended;
    reg [5:0] ALUOp;
-   reg RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, HiLoCtl, ZeroExtend;
+   reg RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, WrEn, ZeroExtend;
    
    wire [31:0] ReadData2_Out, LoResult;
    wire [4:0] RegDestAddress;
@@ -22,7 +22,7 @@ module Execution_tb();
     .Clk(Clk), .Rst(Rst), .Instruction_20_16(Instruction_20_16), .Instruction_15_11(Instruction_15_11),
 	.ReadData1(ReadData1), .ReadData2(ReadData2), .Immediate_Extended(Immediate_Extended), .ALUOp(ALUOp),
 	.RegWrite(RegWrite), .MemWrite(MemWrite), .MemRead(MemRead), .MemtoReg(MemtoReg), .RegDst(RegDst), .ALUSrc(ALUSrc), 
-	.Branch(Branch), .HiLoCtl(HiLoCtl), .ZeroExtend(ZeroExtend), .ReadData2_Out(ReadData2_Out),
+	.Branch(Branch), .WrEn(WrEn), .ZeroExtend(ZeroExtend), .ReadData2_Out(ReadData2_Out),
 	.RegDestAddress(RegDestAddress), .MemRead_Out(MemRead_Out), .MemWrite_Out(MemWrite_Out), .MemtoReg_Out(MemtoReg_Out),
 	.RegWrite_Out(RegWrite_Out), .Zero(Zero), .ALULoResult(LoResult)
     );
@@ -43,7 +43,7 @@ module Execution_tb();
         RegDst <= 0;
         ALUSrc <= 1;
         Branch <= 0;
-        HiLoCtl <= 0;
+        WrEn <= 0;
         #100;       
         
         forever #100 Clk <= ~Clk;

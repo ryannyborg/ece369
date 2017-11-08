@@ -7,6 +7,13 @@ module IFIDRegister(Clk, Instruction_In, PCAdder_In, IFID_PCAdder_Out, IFID_Inst
     output reg [31:0] IFID_PCAdder_Out, IFID_Instruction_Out;
     reg[31:0] PCAddVal, InstructionVal;
     
+    initial begin
+        IFID_PCAdder_Out <= 0;
+        IFID_Instruction_Out <= 0;
+        PCAddVal <= 0;
+        InstructionVal <= 0;
+    end
+    
         always @(posedge Clk) begin // Reads value at positive edge of clock
             InstructionVal <= Instruction_In;
             PCAddVal <= PCAdder_In;

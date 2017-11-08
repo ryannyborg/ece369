@@ -30,6 +30,8 @@ module Memory(
    assign RegDestAddress_Out = RegDestAddress;
    assign ALUResult_Out = ALUResult;
    
+   
+   //module DataMemory(Address, WriteData, Clk, MemWrite, MemRead, ReadData);
    DataMemory dataMemory(
         .Address(ALUResult), 
         .WriteData(WriteData), 
@@ -38,5 +40,11 @@ module Memory(
         .MemRead(MemRead), 
         .ReadData(ReadData)
        );
+       
+//   AndGate1Bit AndGateBranch(
+//               .A(Branch),
+//               .B(Zero),
+//               .O(BranchOut)
+//           );    
    
 endmodule

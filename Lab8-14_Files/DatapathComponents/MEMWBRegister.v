@@ -21,17 +21,17 @@ RegWrite_In, RegWrite_Out, MemToReg_In, MemToReg_Out);
     input MemToReg_In;
     //input [] ControlWB_In; // FIXME!!!!!!!!!!!!!!!!!
     input [31:0] ReadData_In, ALUResult_In;
-    input RegDstMUX_In;
+    input [4:0] RegDstMUX_In; // changed
     output reg RegWrite_Out; //
     output reg MemToReg_Out;
     //output reg [] ControlWB_Out; // FIXME!!!!!!!!!!!!!!!!!
     output reg [31:0] ReadData_Out, ALUResult_Out;
-    output reg RegDstMUX_Out; // Writes value to register
+    output reg [4:0] RegDstMUX_Out; // Writes value to register // changed
     
     reg RegWriteStore; 
     reg MemToRegStore;
     reg [31:0] ReadDataStore, ALUResultStore;
-    reg RegDstMUXStore;
+    reg [4:0] RegDstMUXStore;
     
     always @(posedge Clk) begin
         RegWriteStore <= RegWrite_In;

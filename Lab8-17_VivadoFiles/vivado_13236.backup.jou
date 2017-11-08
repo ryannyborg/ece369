@@ -1,0 +1,136 @@
+#-----------------------------------------------------------
+# Vivado v2015.4.2 (64-bit)
+# SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+# IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+# Start of session at: Mon Oct 30 15:41:06 2017
+# Process ID: 13236
+# Current directory: E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6860 E:\Fall 2017\ECE 369\LABS8-17\Lab8-17_VivadoFiles\Lab8-17_VivadoFiles.xpr
+# Log file: E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/vivado.log
+# Journal file: E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.xpr}
+update_compile_order -fileset sources_1
+save_project_as old_vivado_version {E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version} -force
+synth_design -rtl -name rtl_1
+close_design
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/WriteBack_tb.v} {E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/Memory_tb.v} {E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/InstructionDecode_tb.v} {E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/InstructionFetch_tb.v}}
+update_compile_order -fileset sim_1
+synth_design -rtl -name rtl_1
+close_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top InstructionFetchUnit [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top InstructionFetch_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source InstructionFetch_tb.tcl
+synth_design -rtl -name rtl_1
+close_sim
+launch_simulation
+source InstructionFetch_tb.tcl
+close_sim
+launch_simulation
+source InstructionFetch_tb.tcl
+close_sim
+launch_simulation
+source InstructionFetch_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TopLevel [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TopLevel_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source TopLevel_tb.tcl
+close_sim
+launch_simulation
+source TopLevel_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top InstructionDecode [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top InstructionDecode_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source InstructionDecode_tb.tcl
+current_sim simulation_4
+close_sim
+close_sim
+close_sim
+launch_simulation
+source InstructionDecode_tb.tcl
+refresh_design
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source InstructionDecode_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source InstructionDecode_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TopLevel [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TopLevel_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source TopLevel_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top InstructionDecode [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top InstructionDecode_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+current_sim simulation_10
+close_sim
+launch_simulation
+source InstructionDecode_tb.tcl
+save_wave_config {E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/InstructionDecode_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/InstructionDecode_tb_behav.wcfg}}
+set_property xsim.view {{E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/InstructionDecode_tb_behav.wcfg}} [get_filesets sim_1]
+close_sim
+close_sim

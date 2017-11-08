@@ -3,20 +3,10 @@ Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 292ce9040b1e4d15946498d17870732e --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevel_tb_behav xil_defaultlib.TopLevel_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port IFID_PCAdder_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:79]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 6 for port ALUOp [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:89]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port IFID_PCAdder_In [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:94]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port IFID_PCAdder_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:99]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 6 for port ALUOp [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:125]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Zero [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:132]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ALUZero_In [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:139]
-WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ALUZero_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:140]
-WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 1 for port RegDstMUX_In [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:141]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port RegDestAddress_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:158]
-WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 1 for port RegDstMUX_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:165]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port WriteReg [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:173]
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port WriteReg_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:175]
-WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Zero [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/TopLevel.v:151]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ALUZero_In [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/TopLevel.v:162]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ALUZero_Out [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/TopLevel.v:163]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

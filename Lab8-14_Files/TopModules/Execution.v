@@ -10,32 +10,56 @@ module Execution(
         Immediate_Extended,
         ALUOp,
         // control signals IN
-        RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, HiLoCtl, ZeroExtend,
+        RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, WrEn, RdEn, ZeroExtend, /////////RdEn
         // outputs
         ReadData2_Out, ALULoResult, RegDestAddress, Zero,
         // control signals OUT
-        MemRead_Out, MemWrite_Out, MemtoReg_Out, RegWrite_Out
+        MemRead_Out, MemWrite_Out, MemtoReg_Out, RegWrite_Out,
+        // Hi and Lo Values
+        Hi_Out_EX, Lo_Out_EX,
+        // New Control signals for Hi and Lo
+        //WrEnWire_In, RdEnWire_In /////////////////////////NEW
+        PCAdder_IN, BranchAdderOut///////////
         );
    
    input Clk, Rst;
+   //input WrEnWire_In, RdEnWire_In; ////////////////////////NEW
    input [4:0] Instruction_20_16, Instruction_15_11;
    input [31:0] ReadData1, ReadData2, Immediate_Extended;
    input [5:0] ALUOp;
-   input RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, HiLoCtl, ZeroExtend;
+   input RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, WrEn, RdEn, ZeroExtend;//////////RdEn
+   input [31:0] PCAdder_IN;
    
+   output [31:0] Hi_Out_EX, Lo_Out_EX;
    output [31:0] ReadData2_Out, ALULoResult;
    output [4:0] RegDestAddress;
    output MemRead_Out, MemWrite_Out, MemtoReg_Out, RegWrite_Out, Zero;
+   output [31:0] BranchAdderOut;
    
    assign MemRead_Out = MemRead;
    assign MemWrite_Out = MemWrite;
    assign MemtoReg_Out = MemtoReg;
    assign ReadData2_Out = ReadData2;
    assign RegWrite_Out = RegWrite;
+   assign Hi_Out_EX = Hi_Wire_ToOutput; 
+   assign Lo_Out_EX = ALULoResult; 
    
+   wire [31:0] Hi_Wire_ToOutput; 
    wire [31:0] Hi_Wire, Lo_Wire;
    wire [31:0] ALUInputFromMux;
    wire [63:0] ALUResult; 
+   wire [31:0] ShiftResult; ////////////////////////
+   
+   ShiftLeft2 ShiftingLeft2(
+        .in(Immediate_Extended), ///////////////////////////
+        .out(ShiftResult)
+        );
+         
+   EXAdder BranchAdder(
+        .PCAdder_In(PCAdder_IN),
+        .ShiftLeftTwo_In(ShiftResult), ////////////////
+        .EXAdder_Out(BranchAdderOut)
+   );
    
    Mux32Bit2To1 ALUSrcMux(
         .out(ALUInputFromMux), 
@@ -50,24 +74,27 @@ module Execution(
         .inB(Instruction_15_11), 
         .sel(RegDst)
         );
-   
+
    ALU32Bit aluCalculation(
         .ALUOp(ALUOp),
         .A(ReadData1), 
         .B(ALUInputFromMux), 
         .Lo_IN(Lo_Wire), 
         .Hi_IN(Hi_Wire), 
-        .ALUResult(ALUResult),
-        .Zero(Zero),
-        .LoResult(ALULoResult)
+        .Zero(Zero), 
+        .LoResult(ALULoResult),
+        .HiResult(Hi_Wire_ToOutput), 
+        .ALUResult(ALUResult)
         );
-        
+      
     HiLoRegister hi_low_reg(
         .Hi_IN(ALUResult[63:32]), 
         .Lo_IN(ALUResult[31:0]), 
+        .Clk(Clk), /////////////////NEW
+        .WrEn(WrEn), /////////////////NEW
+        .RdEn(RdEn), /////////////////NEW
         .HiOut(Hi_Wire), 
-        .LoOut(Lo_Wire), 
-        .HiLoCtl(HiLoCtl)
+        .LoOut(Lo_Wire) 
         );
    
 endmodule
