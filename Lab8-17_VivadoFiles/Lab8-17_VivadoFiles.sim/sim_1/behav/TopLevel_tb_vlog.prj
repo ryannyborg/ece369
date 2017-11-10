@@ -21,11 +21,7 @@ verilog xil_defaultlib  "../../../../Lab8-14_Files/DatapathComponents/SignExtens
 verilog xil_defaultlib  "../../../../Lab8-14_Files/TopModules/WriteBack.v"
 verilog xil_defaultlib  "../../../../Lab8-14_Files/TopModules/TopLevel.v"
 verilog xil_defaultlib  "../../../../Lab8-14_Files/DatapathComponents/EXAdder.v"
-<<<<<<< HEAD
 verilog xil_defaultlib  "../../../Lab8-17_VivadoFiles.srcs/sources_1/new/ShiftLeft2.v"
-=======
-verilog xil_defaultlib  "../../../../Lab8-14_Files/DatapathComponents/ShiftLeft2.v"
->>>>>>> a7aeb6bcc08b1790a6bc63ce562df2a9da38a7cd
 verilog xil_defaultlib  "../../../../Lab8-14_Files/SimulationSources/TopLevel_tb.v"
 verilog xil_defaultlib  "../../../../Lab8-14_Files/SimulationSources/WriteBack_tb.v"
 verilog xil_defaultlib  "../../../../Lab8-14_Files/SimulationSources/Memory_tb.v"

@@ -2,7 +2,6 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-<<<<<<< HEAD
 # Start of session at: Fri Nov 10 08:36:07 2017
 # Process ID: 12860
 # Current directory: E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles
@@ -47,69 +46,3 @@ launch_simulation
 source TopLevel_tb.tcl
 restart
 run 80 us
-=======
-# Start of session at: Mon Nov  6 19:35:10 2017
-# Process ID: 52904
-# Current directory: C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent36968 C:\Users\Jesus\Documents\ECE 369\LABS8-17\LABS8-17 UPDATED 11-1-17\Lab8-17_VivadoFiles\Lab8-17_VivadoFiles.xpr
-# Log file: C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/vivado.log
-# Journal file: C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles\vivado.jou
-#-----------------------------------------------------------
-start_gui
-open_project {C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.xpr}
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-launch_simulation
-source TopLevel_tb.tcl
-launch_simulation -mode post-implementation -type functional
-source TopLevel_tb.tcl
-synth_design -rtl -name rtl_1
-refresh_design
-refresh_design
-refresh_design
-file mkdir C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new
-file mkdir C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new
-file mkdir C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new
-file mkdir C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new
-file mkdir C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new
-file mkdir C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new
-file mkdir {C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new}
-close [ open {C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new/ShiftLeft2.v} w ]
-add_files {{C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new/ShiftLeft2.v}}
-refresh_design
-refresh_design
-refresh_design
-refresh_design
-refresh_design
-refresh_design
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-refresh_design
-restart
-run 5 us
-relaunch_sim
-current_design rtl_1
-refresh_design
-refresh_design
-refresh_design
-refresh_design
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-remove_files  {{C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/ShiftLeft2.v}}
-refresh_design
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-close_sim
-close_sim
->>>>>>> a7aeb6bcc08b1790a6bc63ce562df2a9da38a7cd

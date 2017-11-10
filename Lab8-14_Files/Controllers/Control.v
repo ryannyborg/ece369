@@ -174,10 +174,6 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 Branch <= 0;
                 MemRead <= 0;
                 MemWrite <= 0;
-<<<<<<< HEAD
-=======
-                RegWrite <= 1;
->>>>>>> a7aeb6bcc08b1790a6bc63ce562df2a9da38a7cd
                 MemtoReg <= 1;
                 WrEn <= 0; ///////////////Write Enable
                 RdEn <= 0;////////////////////////////
@@ -185,26 +181,17 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 case(Instruction[5:0])
                     6'b000010: begin
                         ALUOp <= 6'b000100; //mul
-<<<<<<< HEAD
                         RegWrite <= 1;
-=======
->>>>>>> a7aeb6bcc08b1790a6bc63ce562df2a9da38a7cd
                         WrEn <= 1; ////////////////////
                     end
                     6'b000000: begin
                         ALUOp <= 6'b000111; //madd
-<<<<<<< HEAD
                         RegWrite <= 0;
-=======
->>>>>>> a7aeb6bcc08b1790a6bc63ce562df2a9da38a7cd
                         RdEn <= 1; ///////////////////////
                     end
                     6'b000100: begin
                         ALUOp <= 6'b001000; //msub
-<<<<<<< HEAD
                         RegWrite <= 0;
-=======
->>>>>>> a7aeb6bcc08b1790a6bc63ce562df2a9da38a7cd
                         RdEn <= 1; ///////////////////////
                     end
                 endcase
