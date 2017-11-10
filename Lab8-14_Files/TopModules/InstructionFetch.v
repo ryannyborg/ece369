@@ -39,11 +39,12 @@
 // which generates a continuous clock pulse into the module.
 ////////////////////////////////////////////////////////////////////////////////
 
-module InstructionFetchUnit(Instruction, Reset, Clk, PCAddResult);
+module InstructionFetchUnit(Instruction, Reset, Clk, PCAddResult, PCValue); ///////ADDED PCVALUE AT END
 
     input Reset, Clk;
     output [31:0] Instruction;
-    output [31:0] PCAddResult;////////////////
+    output [31:0] PCAddResult;
+    output [31:0] PCValue;  ////////////////////////////////NEW
     
     wire [31:0]PCAddWire, PCResult;
     
@@ -65,5 +66,6 @@ module InstructionFetchUnit(Instruction, Reset, Clk, PCAddResult);
         );
         
     assign PCAddResult = PCAddWire;
+    assign PCValue = PCResult; //////////////////////////////////NEW
         
 endmodule

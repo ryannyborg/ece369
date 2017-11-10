@@ -26,6 +26,10 @@ module PCAdder(PCResult, PCAddResult);
 
     output reg [31:0] PCAddResult;
 
+    initial begin
+        PCAddResult <= 0;
+    end
+
     always @ (PCResult) begin
         PCAddResult <= PCResult + 4'b0100;
     end

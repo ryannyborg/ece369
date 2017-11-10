@@ -1,0 +1,27 @@
+0.6
+2017.2
+Jun 15 2017
+18:52:51
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v,1509556646,verilog,,,,ALU32Bit_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/ALUControl_tb.v,1509556646,verilog,,,,ALUControl_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/Control_tb.v,1509556648,verilog,,,,Control_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/DataMemory_tb.v,1509556648,verilog,,,,DataMemory_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/EXAdder_tb.v,1509556648,verilog,,,,EXAdder_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/EXMEMRegister_tb.v,1509556648,verilog,,,,EXMEMRegister_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/Execution_tb.v,1509742627,verilog,,,,Execution_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/IDEXRegister_tb.v,1509556648,verilog,,,,IDEXRegister_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/IFIDRegister_tb.v,1509556648,verilog,,,,IFIDRegister_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/InstructionDecode_tb.v,1509742625,verilog,,,,InstructionDecode_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/InstructionFetch_tb.v,1509556648,verilog,,,,InstructionFetch_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/InstructionMemory_tb.v,1509556650,verilog,,,,InstructionMemory_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/MEMWBRegister_tb.v,1509556650,verilog,,,,MEMWBRegister_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/Memory_tb.v,1509556650,verilog,,,,Memory_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/Mux32Bit2To1_tb.v,1509556650,verilog,,,,Mux32Bit2To1_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/PCAdder_tb.v,1509556650,verilog,,,,PCAdder_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/ProgramCounter_tb.v,1509556650,verilog,,,,ProgramCounter_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/RegisterFile_tb.v,1509556650,verilog,,,,RegisterFile_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/ShiftLeft2_tb.v,1509556650,verilog,,,,ShiftLeft2_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/SignExtension_tb.v,1509556650,verilog,,,,SignExtension_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/TopLevel_tb.v,1509997083,verilog,,,,TopLevel_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/SimulationSources/WriteBack_tb.v,1509556652,verilog,,,,WriteBack_tb,,,,,,,,
+C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/synth/func/TopLevel_tb_func_synth.v,1510012050,verilog,,,,ALU32Bit;Control;EXMEMRegister;Execution;HiLoRegister;IDEXRegister;IFIDRegister;InstructionDecode;InstructionFetchUnit;MEMWBRegister;Mux32Bit2To1;ProgramCounter;RegisterFile;TopLevel;glbl,,,,,,,,

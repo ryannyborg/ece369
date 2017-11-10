@@ -20,11 +20,25 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, ALUOp, HiLoCtl, ZeroExtend);
+module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, ALUOp, WrEn, RdEn, ZeroExtend); ////////// Added RdEn
     input[31:0] Instruction;
     
-    output reg RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, HiLoCtl, ZeroExtend; 
+    output reg RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, WrEn, RdEn, ZeroExtend; //////////////
     output reg [5:0] ALUOp;
+    
+    initial begin
+        ALUOp <= 6'b000000;
+        RegWrite <= 0;
+        MemWrite <= 0; 
+        MemRead <= 1'b0; 
+        MemtoReg <= 0;
+        RegDst <= 0;
+        ALUSrc <= 0; 
+        Branch <= 0;
+        WrEn <= 0; 
+        RdEn <= 0; ////////////////////////////
+        ZeroExtend <= 1'b0;       
+    end
     
     always @(Instruction) begin
     
@@ -36,11 +50,27 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
             MemRead <= 0;
             Branch <= 0;
             MemtoReg <= 0;
+            WrEn <= 0;///////////
+            RdEn <= 0; /////////////////////////////////////////
+            ALUOp <= 6'b000000;/////////
+            ZeroExtend <= 0; 
         end
     
         else begin
         case(Instruction[31:26])
-            6'b000000: begin // R-Type Instructions // ADD, ADDU, SUB, MULT, MULTU, AND, OR, NOR, XOR, SLL, SRL, SLLV, SRLV, SLT, MOVN, MOVZ, ROTRV, ROTR, SRA, SRAV, SLTU
+            6'b000000: begin // R-Type Instructions // ADD, ADDU, SUB, MULT, MULTU, AND, OR, NOR, 
+            //XOR, SLL, SRL, SLLV, SRLV, SLT, MOVN, MOVZ, ROTRV, ROTR, SRA, SRAV, SLTU,
+            //MTHI, MTLO, MFHI, MFLO
+                RegDst <= 1;    
+                ALUSrc <= 0;
+                Branch <= 0;
+                MemRead <= 0;
+                MemWrite <= 0;
+                RegWrite <= 1;
+                MemtoReg <= 1;
+                WrEn <= 0;
+                RdEn <= 0;////////////////////////////
+                ZeroExtend <= 0;
                 case(Instruction[5:0])
                     6'b100000: begin
                         ALUOp <= 6'b000001; //add
@@ -93,16 +123,24 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                     6'b101011: begin
                         ALUOp <= 6'b100101; //sltu
                     end
+                    6'b010001: begin///////////////////////////////////////////
+                        ALUOp <= 6'b100101; //mthi
+                        WrEn <= 1;
+                    end
+                    6'b010011: begin
+                        ALUOp <= 6'b100101; //mtlo
+                        WrEn <= 1;
+                    end
+                    6'b010000: begin
+                        ALUOp <= 6'b100101; //mfhi
+                        RdEn <= 1;
+                    end
+                    6'b010010: begin
+                        ALUOp <= 6'b100101; //mflo
+                        RdEn <= 1;
+                    end     
+                    /////////////////////////////////////////////////////////////////                                                                                               
                 endcase
-                RegDst <= 1;    
-                ALUSrc <= 0;
-                Branch <= 0;
-                MemRead <= 0;
-                MemWrite <= 0;
-                RegWrite <= 1;
-                MemtoReg <= 1;
-                HiLoCtl <= 0;
-                ZeroExtend <= 0;
             end
             6'b001001: begin // ADDIU, I-Type
                 RegDst <= 0;
@@ -113,7 +151,8 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 MemWrite <= 0;
                 RegWrite <= 1;
                 MemtoReg <= 1;
-                HiLoCtl <= 0;
+                WrEn <= 0;
+                RdEn <= 0;////////////////////////////
                 ZeroExtend <= 1;
             end
             6'b001000: begin // ADDI, I-Type
@@ -125,30 +164,38 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 MemWrite <= 0;
                 RegWrite <= 1;
                 MemtoReg <= 1;
-                HiLoCtl <= 0;
+                WrEn <= 0;
+                RdEn <= 0;////////////////////////////
                 ZeroExtend <= 0;
             end
             6'b011100: begin // MUL, MADD, MSUB
-                case(Instruction[5:0])
-                    6'b000010: begin
-                        ALUOp <= 6'b000100; //mul
-                    end
-                    6'b000000: begin
-                        ALUOp <= 6'b000111; //madd
-                    end
-                    6'b000100: begin
-                        ALUOp <= 6'b001000; //msub
-                    end
-                endcase
                 RegDst <= 1;
                 ALUSrc <= 0;
                 Branch <= 0;
                 MemRead <= 0;
                 MemWrite <= 0;
-                RegWrite <= 1;
                 MemtoReg <= 1;
-                HiLoCtl <= 1;
+                WrEn <= 0; ///////////////Write Enable
+                RdEn <= 0;////////////////////////////
                 ZeroExtend <= 0;
+                case(Instruction[5:0])
+                    6'b000010: begin
+                        ALUOp <= 6'b000100; //mul
+                        RegWrite <= 1;
+                        WrEn <= 1; ////////////////////
+                    end
+                    6'b000000: begin
+                        ALUOp <= 6'b000111; //madd
+                        RegWrite <= 0;
+                        RdEn <= 1; ///////////////////////
+                    end
+                    6'b000100: begin
+                        ALUOp <= 6'b001000; //msub
+                        RegWrite <= 0;
+                        RdEn <= 1; ///////////////////////
+                    end
+                endcase
+                
             end
             
             6'b001100: begin // ANDI, I-Type
@@ -160,7 +207,8 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 MemWrite <= 0;
                 RegWrite <= 1;
                 MemtoReg <= 1;
-                HiLoCtl <= 0;
+                WrEn <= 0;
+                RdEn <= 0;////////////////////////////
                 ZeroExtend <= 1;
             end
             6'b001101: begin // ORI, I-Type
@@ -172,7 +220,8 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 MemWrite <= 0;
                 RegWrite <= 1;
                 MemtoReg <= 1;
-                HiLoCtl <= 0;
+                WrEn <= 0;
+                RdEn <= 0;////////////////////////////
                 ZeroExtend <= 1;
             end
             6'b001110: begin // XORI, I-Type
@@ -184,7 +233,8 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 MemWrite <= 0;
                 RegWrite <= 1;
                 MemtoReg <= 1;
-                HiLoCtl <= 0;
+                WrEn <= 0;
+                RdEn <= 0;////////////////////////////
                 ZeroExtend <= 1;
             end
             6'b011111: begin // SEH, SEB
@@ -203,7 +253,8 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 MemWrite <= 0;
                 RegWrite <= 1;
                 MemtoReg <= 1;
-                HiLoCtl <= 0;
+                WrEn <= 0;
+                RdEn <= 0;////////////////////////////
                 ZeroExtend <= 0;
             end
             6'b001010: begin // SLTI, I-Type
@@ -215,7 +266,8 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 MemWrite <= 0;
                 RegWrite <= 1;
                 MemtoReg <= 1;
-                HiLoCtl <= 0;
+                WrEn <= 0;
+                RdEn <= 0;////////////////////////////
                 ZeroExtend <= 0;
             end
             6'b001011: begin // SLTIU, I-Type
@@ -227,7 +279,8 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 MemWrite <= 0;
                 RegWrite <= 1;
                 MemtoReg <= 1;
-                HiLoCtl <= 0;
+                WrEn <= 0;
+                RdEn <= 0;////////////////////////////
                 ZeroExtend <= 1;
             end
         endcase

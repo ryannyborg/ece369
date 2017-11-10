@@ -22,7 +22,7 @@ module SignExtension(in, ZeroExtend, out);
                 out <= {{16{in[15]}}, in[15:0]};
             end
             1'b1: begin
-                out <= {{16{0}}, in[15:0]};
+                out <= {{16{1'b0}}, in[15:0]};
             end
         endcase
     end

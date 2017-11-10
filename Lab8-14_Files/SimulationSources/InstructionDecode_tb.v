@@ -21,7 +21,7 @@ module InstructionDecode_tb();
    wire [4:0] Instruction_20_16, Instruction_15_11;
    
    // Control Signals
-   wire RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, HiLoCtl, ZeroExtend;
+   wire RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, WrEn, ZeroExtend;
    
 
     InstructionDecode instructionDecodeTest(
@@ -32,7 +32,7 @@ module InstructionDecode_tb();
             .Instruction_15_11(Instruction_15_11),
             // control signals
             .RegWrite(RegWrite), .MemWrite(MemWrite), .MemRead(MemRead), .MemtoReg(MemtoReg), .RegDst(RegDst), 
-            .ALUSrc(ALUSrc), .Branch(Branch), .HiLoCtl(HiLoCtl), .ZeroExtend(ZeroExtend), .ALUOp(ALUOp),
+            .ALUSrc(ALUSrc), .Branch(Branch), .WrEn(WrEn), .ZeroExtend(ZeroExtend), .ALUOp(ALUOp),
             //REGWRITE SIGNAL FROM WB STAGE
             .RegWrite_WB(RegWrite_WB)
     );
