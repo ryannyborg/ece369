@@ -49,8 +49,12 @@ module TopLevel(Clk, Rst, WriteData, PCValue, Hi_Out, Lo_Out);
     
     // Execution Outputs 
     wire [31:0] Hi_Out_EX_Wire, Lo_Out_EX_Wire; //////////////////////NEW
+<<<<<<< HEAD
     wire [31:0] ALULoResult_EX, ReadData2_Out_EX;
     wire Zero_EX;
+=======
+    wire [31:0] ALULoResult_EX, ReadData2_Out_EX, Zero_EX;
+>>>>>>> a7aeb6bcc08b1790a6bc63ce562df2a9da38a7cd
     wire [4:0] RegDestAddress_EX;
     wire MemRead_Out_EX, MemWrite_Out_EX, MemtoReg_Out_EX, RegWrite_Out_EX;
     wire [31:0] BranchAdderOut;
@@ -73,8 +77,11 @@ module TopLevel(Clk, Rst, WriteData, PCValue, Hi_Out, Lo_Out);
     // Write Back Outputs
     wire [31:0] ReadData_WB, ALUResult_WB;
     wire MemtoReg_WB;
+<<<<<<< HEAD
     wire [4:0] RegWriteAddress_WBtoID; //// goes to instruction decode through write back stage
     wire RegWrite_WB; //////CHANGED
+=======
+>>>>>>> a7aeb6bcc08b1790a6bc63ce562df2a9da38a7cd
     
     ///////////////////////////////////////////////////////////////////////////////////
     // Begin Connection the Modules Together Here...
@@ -107,7 +114,11 @@ module TopLevel(Clk, Rst, WriteData, PCValue, Hi_Out, Lo_Out);
         .ALUSrc(ALUSrc_ID), .Branch(Branch_ID), .WrEn(WrEn_ID), 
         .RdEn(RdEn_ID),
         .ZeroExtend(ZeroExtend_ID), .ALUOp(ALUOp_ID),
+<<<<<<< HEAD
         .RegWrite_WB(RegWrite_WB)///////////////////////////////////////////////////////////
+=======
+        .RegWrite_WB(RegWrite_WB_Out)///////////////////////////////////////////////////////////
+>>>>>>> a7aeb6bcc08b1790a6bc63ce562df2a9da38a7cd
         );
     
     IDEXRegister IDEX(
@@ -157,7 +168,11 @@ module TopLevel(Clk, Rst, WriteData, PCValue, Hi_Out, Lo_Out);
         .MemRead_Out(MemRead_Out_EX), .MemWrite_Out(MemWrite_Out_EX), 
         .MemtoReg_Out(MemtoReg_Out_EX), .RegWrite_Out(RegWrite_Out_EX),
         .Hi_Out_EX(Hi_Out_EX_Wire), .Lo_Out_EX(Lo_Out_EX_Wire),
+<<<<<<< HEAD
         .PCAdder_IN(PCAdder_IF_ID_OUTTOPC), .BranchAdderOut(BranchAdderOut)//////////////////////////////////
+=======
+        .PCAdder_IN(PCAdder_IF_ID_OUTTOPC)//////////////////////////////////
+>>>>>>> a7aeb6bcc08b1790a6bc63ce562df2a9da38a7cd
         );
         
         assign Hi_Out = Hi_Out_EX_Wire;
@@ -200,10 +215,15 @@ module TopLevel(Clk, Rst, WriteData, PCValue, Hi_Out, Lo_Out);
             //.Clk(Clk), .Rst(Rst), 
             .ReadData(ReadData_WB), 
             .ALUResult(ALUResult_WB), .MemtoReg(MemtoReg_WB),// .WriteReg(RegDestAddress_Out_MEM),
+<<<<<<< HEAD
             .RegisterDestAddress_IN(WriteRegister_ID), .RegWriteCtl_IN(RegWrite_WB_Out),
             // outputs
             //.WriteReg_Out(WriteReg_ID), 
             .RegisterDestAddress_OUT(RegWriteAddress_WBtoID), .RegWriteCtl_OUT(RegWrite_WB),
+=======
+            // outputs
+            //.WriteReg_Out(WriteReg_ID), 
+>>>>>>> a7aeb6bcc08b1790a6bc63ce562df2a9da38a7cd
             .WriteData(WriteData)
         );
     

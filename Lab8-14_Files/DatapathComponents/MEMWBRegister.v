@@ -22,7 +22,11 @@ RegWrite_In, RegWrite_Out, MemToReg_In, MemToReg_Out);
     //input [] ControlWB_In; // FIXME!!!!!!!!!!!!!!!!!
     input [31:0] ReadData_In, ALUResult_In;
     input [4:0] RegDstMUX_In; // changed
+<<<<<<< HEAD
     output reg RegWrite_Out; // control signal
+=======
+    output reg RegWrite_Out; //
+>>>>>>> a7aeb6bcc08b1790a6bc63ce562df2a9da38a7cd
     output reg MemToReg_Out;
     //output reg [] ControlWB_Out; // FIXME!!!!!!!!!!!!!!!!!
     output reg [31:0] ReadData_Out, ALUResult_Out;
