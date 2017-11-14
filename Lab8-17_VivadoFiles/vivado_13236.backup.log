@@ -1,0 +1,1759 @@
+#-----------------------------------------------------------
+# Vivado v2015.4.2 (64-bit)
+# SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+# IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+# Start of session at: Mon Oct 30 15:41:06 2017
+# Process ID: 13236
+# Current directory: E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6860 E:\Fall 2017\ECE 369\LABS8-17\Lab8-17_VivadoFiles\Lab8-17_VivadoFiles.xpr
+# Log file: E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/vivado.log
+# Journal file: E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.xpr}
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-192] Failed to load run synth_1. Strategy Vivado Synthesis Defaults (Vivado Synthesis 2017) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-192] Failed to load run impl_1. Strategy Vivado Implementation Defaults (Vivado Implementation 2017) not recognized by Vivado. 
+
+CRITICAL WARNING: [Project 1-532] XML ERROR: Project Option CompiledLibDirXSim has no valid value
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.cache/ip'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory '$PIPUSERFILESDIR'.
+WARNING: [filemgmt 56-3] IPStaticSourceDir: Could not find the directory '$PIPUSERFILESDIR/ipstatic'.
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name DSANumComputeUnits
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTXSimLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTModelSimLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTQuestaLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTIesLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTVcsLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTRivieraLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTActivehdlLaunchSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTXSimExportSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTModelSimExportSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTQuestaExportSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTIesExportSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTVcsExportSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTRivieraExportSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name WTActivehdlExportSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name GenerateIPUpgradeLog
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name XSimRadix
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name XSimTimeUnit
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name XSimArrayDisplayLimit
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name XSimTraceLimit
+WARNING: [Project 1-231] Project 'Lab8-17_VivadoFiles.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.cache/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.4/data/ip'.
+update_compile_order -fileset sources_1
+save_project_as old_vivado_version {E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version} -force
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-1
+Top: TopLevel
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:36 ; elapsed = 00:01:55 . Memory (MB): peak = 807.340 ; gain = 635.898
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopLevel' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:6]
+INFO: [Synth 8-638] synthesizing module 'InstructionFetchUnit' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionFetch.v:42]
+INFO: [Synth 8-638] synthesizing module 'ProgramCounter' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v:28]
+INFO: [Synth 8-256] done synthesizing module 'ProgramCounter' (1#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v:28]
+INFO: [Synth 8-638] synthesizing module 'PCAdder' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/PCAdder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PCAdder' (2#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/PCAdder.v:23]
+INFO: [Synth 8-638] synthesizing module 'InstructionMemory' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v:40]
+INFO: [Synth 8-256] done synthesizing module 'InstructionMemory' (3#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v:40]
+INFO: [Synth 8-256] done synthesizing module 'InstructionFetchUnit' (4#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionFetch.v:42]
+INFO: [Synth 8-638] synthesizing module 'IFIDRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/IFIDRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'IFIDRegister' (5#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/IFIDRegister.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'IFID_PCAdder_Out' does not match port width (32) of module 'IFIDRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:79]
+INFO: [Synth 8-638] synthesizing module 'InstructionDecode' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionDecode.v:3]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (6#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
+INFO: [Synth 8-638] synthesizing module 'Control' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:23]
+WARNING: [Synth 8-151] case item 6'b000010 is unreachable [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:44]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:44]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:132]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:191]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:42]
+INFO: [Synth 8-256] done synthesizing module 'Control' (7#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:23]
+INFO: [Synth 8-638] synthesizing module 'SignExtension' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:8]
+INFO: [Synth 8-256] done synthesizing module 'SignExtension' (8#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:8]
+INFO: [Synth 8-256] done synthesizing module 'InstructionDecode' (9#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionDecode.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'ALUOp' does not match port width (6) of module 'InstructionDecode' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:89]
+INFO: [Synth 8-638] synthesizing module 'IDEXRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'IDEXRegister' (10#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'IFID_PCAdder_In' does not match port width (32) of module 'IDEXRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:94]
+WARNING: [Synth 8-689] width (1) of port connection 'IFID_PCAdder_Out' does not match port width (32) of module 'IDEXRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:99]
+INFO: [Synth 8-638] synthesizing module 'Execution' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v:3]
+INFO: [Synth 8-638] synthesizing module 'Mux32Bit2To1' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10]
+WARNING: [Synth 8-567] referenced signal 'inA' should be on the sensitivity list [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:20]
+WARNING: [Synth 8-567] referenced signal 'inB' should be on the sensitivity list [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:20]
+INFO: [Synth 8-256] done synthesizing module 'Mux32Bit2To1' (11#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10]
+INFO: [Synth 8-638] synthesizing module 'Mux5Bit2To1' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:10]
+WARNING: [Synth 8-567] referenced signal 'inA' should be on the sensitivity list [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:20]
+WARNING: [Synth 8-567] referenced signal 'inB' should be on the sensitivity list [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:20]
+INFO: [Synth 8-256] done synthesizing module 'Mux5Bit2To1' (12#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:10]
+INFO: [Synth 8-638] synthesizing module 'ALU32Bit' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:37]
+INFO: [Synth 8-256] done synthesizing module 'ALU32Bit' (13#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:37]
+WARNING: [Synth 8-350] instance 'aluCalculation' of module 'ALU32Bit' requires 9 connections, but only 8 given [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v:54]
+INFO: [Synth 8-638] synthesizing module 'HiLoRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'HiLoRegister' (14#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v:3]
+WARNING: [Synth 8-350] instance 'hi_low_reg' of module 'HiLoRegister' requires 6 connections, but only 5 given [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v:65]
+INFO: [Synth 8-256] done synthesizing module 'Execution' (15#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'ALUOp' does not match port width (6) of module 'Execution' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:125]
+WARNING: [Synth 8-689] width (32) of port connection 'Zero' does not match port width (1) of module 'Execution' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:132]
+INFO: [Synth 8-638] synthesizing module 'EXMEMRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'EXMEMRegister' (16#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'ALUZero_In' does not match port width (1) of module 'EXMEMRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:139]
+WARNING: [Synth 8-689] width (32) of port connection 'ALUZero_Out' does not match port width (1) of module 'EXMEMRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:140]
+WARNING: [Synth 8-689] width (5) of port connection 'RegDstMUX_In' does not match port width (1) of module 'EXMEMRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:141]
+WARNING: [Synth 8-689] width (5) of port connection 'RegDstMUX_Out' does not match port width (1) of module 'EXMEMRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:141]
+INFO: [Synth 8-638] synthesizing module 'Memory' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Memory.v:3]
+INFO: [Synth 8-638] synthesizing module 'DataMemory' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/DataMemory.v:38]
+WARNING: [Synth 8-567] referenced signal 'Address' should be on the sensitivity list [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/DataMemory.v:56]
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (17#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/DataMemory.v:38]
+INFO: [Synth 8-256] done synthesizing module 'Memory' (18#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Memory.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'RegDestAddress_Out' does not match port width (5) of module 'Memory' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:158]
+INFO: [Synth 8-638] synthesizing module 'MEMWBRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'MEMWBRegister' (19#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3]
+WARNING: [Synth 8-689] width (5) of port connection 'RegDstMUX_Out' does not match port width (1) of module 'MEMWBRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:165]
+INFO: [Synth 8-638] synthesizing module 'WriteBack' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/WriteBack.v:3]
+INFO: [Synth 8-256] done synthesizing module 'WriteBack' (20#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/WriteBack.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'WriteReg' does not match port width (5) of module 'WriteBack' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:173]
+WARNING: [Synth 8-689] width (1) of port connection 'WriteReg_Out' does not match port width (5) of module 'WriteBack' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:175]
+WARNING: [Synth 8-3848] Net PCValue in module/entity TopLevel does not have driver. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:10]
+WARNING: [Synth 8-3848] Net Hi_Out in module/entity TopLevel does not have driver. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:10]
+WARNING: [Synth 8-3848] Net Lo_Out in module/entity TopLevel does not have driver. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:10]
+WARNING: [Synth 8-3848] Net ZeroExtend_EX in module/entity TopLevel does not have driver. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:33]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel' (21#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:6]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[31]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[30]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[29]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[28]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[27]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[26]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[25]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[24]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[23]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[22]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[21]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[20]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[19]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[18]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[17]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[16]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[15]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[14]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[13]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[12]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[11]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[10]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[9]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[8]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[7]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[6]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[5]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[4]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[3]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[2]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[1]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[0]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[31]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[30]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[29]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[28]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[27]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[26]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[25]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[24]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[23]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[22]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[21]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[20]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[19]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[18]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[17]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[16]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[15]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[14]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[13]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[12]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[11]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[10]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[9]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[8]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[7]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[6]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[5]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[4]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[3]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[2]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[1]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[0]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[31]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[30]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[29]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[28]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[27]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[26]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[25]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[24]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[23]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[22]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[21]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[20]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[19]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[18]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[17]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[16]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[15]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[14]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[13]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[12]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[11]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[10]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[9]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[8]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[7]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[6]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[5]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[4]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[3]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[2]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[1]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:37 ; elapsed = 00:01:56 . Memory (MB): peak = 829.176 ; gain = 657.734
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin execution:ZeroExtend to constant 0 [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:118]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:37 ; elapsed = 00:01:56 . Memory (MB): peak = 829.176 ; gain = 657.734
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 32 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:45 ; elapsed = 00:02:03 . Memory (MB): peak = 1148.906 ; gain = 977.465
+51 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 1148.906 ; gain = 348.563
+close_design
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/WriteBack_tb.v} {E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/Memory_tb.v} {E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/InstructionDecode_tb.v} {E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/InstructionFetch_tb.v}}
+update_compile_order -fileset sim_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-1
+Top: TopLevel
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:12 ; elapsed = 00:05:30 . Memory (MB): peak = 1148.906 ; gain = 977.465
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopLevel' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:6]
+INFO: [Synth 8-638] synthesizing module 'InstructionFetchUnit' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionFetch.v:42]
+INFO: [Synth 8-638] synthesizing module 'ProgramCounter' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v:28]
+INFO: [Synth 8-256] done synthesizing module 'ProgramCounter' (1#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v:28]
+INFO: [Synth 8-638] synthesizing module 'PCAdder' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/PCAdder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PCAdder' (2#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/PCAdder.v:23]
+INFO: [Synth 8-638] synthesizing module 'InstructionMemory' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v:40]
+INFO: [Synth 8-256] done synthesizing module 'InstructionMemory' (3#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v:40]
+INFO: [Synth 8-256] done synthesizing module 'InstructionFetchUnit' (4#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionFetch.v:42]
+INFO: [Synth 8-638] synthesizing module 'IFIDRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/IFIDRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'IFIDRegister' (5#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/IFIDRegister.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'IFID_PCAdder_Out' does not match port width (32) of module 'IFIDRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:79]
+INFO: [Synth 8-638] synthesizing module 'InstructionDecode' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionDecode.v:3]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (6#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
+INFO: [Synth 8-638] synthesizing module 'Control' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:23]
+WARNING: [Synth 8-151] case item 6'b000010 is unreachable [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:44]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:44]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:132]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:191]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:42]
+INFO: [Synth 8-256] done synthesizing module 'Control' (7#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:23]
+INFO: [Synth 8-638] synthesizing module 'SignExtension' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:8]
+INFO: [Synth 8-256] done synthesizing module 'SignExtension' (8#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:8]
+INFO: [Synth 8-256] done synthesizing module 'InstructionDecode' (9#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionDecode.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'ALUOp' does not match port width (6) of module 'InstructionDecode' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:89]
+INFO: [Synth 8-638] synthesizing module 'IDEXRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'IDEXRegister' (10#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'IFID_PCAdder_In' does not match port width (32) of module 'IDEXRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:94]
+WARNING: [Synth 8-689] width (1) of port connection 'IFID_PCAdder_Out' does not match port width (32) of module 'IDEXRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:99]
+INFO: [Synth 8-638] synthesizing module 'Execution' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v:3]
+INFO: [Synth 8-638] synthesizing module 'Mux32Bit2To1' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10]
+WARNING: [Synth 8-567] referenced signal 'inA' should be on the sensitivity list [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:20]
+WARNING: [Synth 8-567] referenced signal 'inB' should be on the sensitivity list [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:20]
+INFO: [Synth 8-256] done synthesizing module 'Mux32Bit2To1' (11#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10]
+INFO: [Synth 8-638] synthesizing module 'Mux5Bit2To1' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:10]
+WARNING: [Synth 8-567] referenced signal 'inA' should be on the sensitivity list [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:20]
+WARNING: [Synth 8-567] referenced signal 'inB' should be on the sensitivity list [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:20]
+INFO: [Synth 8-256] done synthesizing module 'Mux5Bit2To1' (12#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:10]
+INFO: [Synth 8-638] synthesizing module 'ALU32Bit' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:37]
+INFO: [Synth 8-256] done synthesizing module 'ALU32Bit' (13#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:37]
+WARNING: [Synth 8-350] instance 'aluCalculation' of module 'ALU32Bit' requires 9 connections, but only 8 given [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v:54]
+INFO: [Synth 8-638] synthesizing module 'HiLoRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'HiLoRegister' (14#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v:3]
+WARNING: [Synth 8-350] instance 'hi_low_reg' of module 'HiLoRegister' requires 6 connections, but only 5 given [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v:65]
+INFO: [Synth 8-256] done synthesizing module 'Execution' (15#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'ALUOp' does not match port width (6) of module 'Execution' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:125]
+WARNING: [Synth 8-689] width (32) of port connection 'Zero' does not match port width (1) of module 'Execution' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:132]
+INFO: [Synth 8-638] synthesizing module 'EXMEMRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'EXMEMRegister' (16#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'ALUZero_In' does not match port width (1) of module 'EXMEMRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:139]
+WARNING: [Synth 8-689] width (32) of port connection 'ALUZero_Out' does not match port width (1) of module 'EXMEMRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:140]
+WARNING: [Synth 8-689] width (5) of port connection 'RegDstMUX_In' does not match port width (1) of module 'EXMEMRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:141]
+WARNING: [Synth 8-689] width (5) of port connection 'RegDstMUX_Out' does not match port width (1) of module 'EXMEMRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:141]
+INFO: [Synth 8-638] synthesizing module 'Memory' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Memory.v:3]
+INFO: [Synth 8-638] synthesizing module 'DataMemory' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/DataMemory.v:38]
+WARNING: [Synth 8-567] referenced signal 'Address' should be on the sensitivity list [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/DataMemory.v:56]
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (17#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/DataMemory.v:38]
+INFO: [Synth 8-256] done synthesizing module 'Memory' (18#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Memory.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'RegDestAddress_Out' does not match port width (5) of module 'Memory' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:158]
+INFO: [Synth 8-638] synthesizing module 'MEMWBRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'MEMWBRegister' (19#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3]
+WARNING: [Synth 8-689] width (5) of port connection 'RegDstMUX_Out' does not match port width (1) of module 'MEMWBRegister' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:165]
+INFO: [Synth 8-638] synthesizing module 'WriteBack' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/WriteBack.v:3]
+INFO: [Synth 8-256] done synthesizing module 'WriteBack' (20#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/WriteBack.v:3]
+WARNING: [Synth 8-689] width (1) of port connection 'WriteReg' does not match port width (5) of module 'WriteBack' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:173]
+WARNING: [Synth 8-689] width (1) of port connection 'WriteReg_Out' does not match port width (5) of module 'WriteBack' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:175]
+WARNING: [Synth 8-3848] Net PCValue in module/entity TopLevel does not have driver. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:10]
+WARNING: [Synth 8-3848] Net Hi_Out in module/entity TopLevel does not have driver. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:10]
+WARNING: [Synth 8-3848] Net Lo_Out in module/entity TopLevel does not have driver. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:10]
+WARNING: [Synth 8-3848] Net ZeroExtend_EX in module/entity TopLevel does not have driver. [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:33]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel' (21#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:6]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[31]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[30]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[29]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[28]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[27]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[26]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[25]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[24]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[23]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[22]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[21]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[20]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[19]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[18]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[17]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[16]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[15]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[14]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[13]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[12]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[11]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[10]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[9]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[8]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[7]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[6]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[5]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[4]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[3]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[2]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[1]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port PCValue[0]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[31]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[30]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[29]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[28]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[27]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[26]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[25]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[24]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[23]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[22]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[21]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[20]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[19]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[18]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[17]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[16]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[15]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[14]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[13]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[12]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[11]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[10]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[9]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[8]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[7]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[6]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[5]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[4]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[3]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[2]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[1]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Hi_Out[0]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[31]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[30]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[29]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[28]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[27]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[26]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[25]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[24]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[23]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[22]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[21]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[20]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[19]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[18]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[17]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[16]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[15]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[14]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[13]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[12]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[11]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[10]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[9]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[8]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[7]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[6]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[5]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[4]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[3]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[2]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[1]
+WARNING: [Synth 8-3331] design TopLevel has unconnected port Lo_Out[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:13 ; elapsed = 00:05:31 . Memory (MB): peak = 1148.906 ; gain = 977.465
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin execution:ZeroExtend to constant 0 [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:118]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:13 ; elapsed = 00:05:31 . Memory (MB): peak = 1148.906 ; gain = 977.465
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 32 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:18 ; elapsed = 00:05:34 . Memory (MB): peak = 1209.617 ; gain = 1038.176
+50 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1209.617 ; gain = 60.711
+close_design
+set_property top InstructionFetchUnit [current_fileset]
+update_compile_order -fileset sources_1
+set_property top InstructionFetch_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'InstructionFetch_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+"xvlog -m64 --relax -prj InstructionFetch_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/PCAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionFetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionFetchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/InstructionFetch_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionFetch_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto dddb06886a7b45dc97572e0bb7f4f217 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionFetch_tb_behav xil_defaultlib.InstructionFetch_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.PCAdder
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.InstructionFetchUnit
+Compiling module xil_defaultlib.InstructionFetch_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot InstructionFetch_tb_behav
+
+****** Webtalk v2015.4.2 (64-bit)
+  **** SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+  **** IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source E:/Fall -notrace
+couldn't read file "E:/Fall": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 30 15:48:26 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "InstructionFetch_tb_behav -key {Behavioral:sim_1:Functional:InstructionFetch_tb} -tclbatch {InstructionFetch_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source InstructionFetch_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'InstructionFetch_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-1
+Top: InstructionFetchUnit
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:01:44 ; elapsed = 00:09:10 . Memory (MB): peak = 1209.617 ; gain = 1038.176
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'InstructionFetchUnit' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionFetch.v:42]
+INFO: [Synth 8-638] synthesizing module 'ProgramCounter' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v:28]
+INFO: [Synth 8-256] done synthesizing module 'ProgramCounter' (1#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v:28]
+INFO: [Synth 8-638] synthesizing module 'PCAdder' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/PCAdder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PCAdder' (2#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/PCAdder.v:23]
+INFO: [Synth 8-638] synthesizing module 'InstructionMemory' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v:40]
+INFO: [Synth 8-256] done synthesizing module 'InstructionMemory' (3#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v:40]
+INFO: [Synth 8-256] done synthesizing module 'InstructionFetchUnit' (4#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionFetch.v:42]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:45 ; elapsed = 00:09:11 . Memory (MB): peak = 1209.617 ; gain = 1038.176
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:45 ; elapsed = 00:09:11 . Memory (MB): peak = 1209.617 ; gain = 1038.176
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 64 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:48 ; elapsed = 00:09:13 . Memory (MB): peak = 1230.813 ; gain = 1059.371
+12 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1230.813 ; gain = 21.195
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'InstructionFetch_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+"xvlog -m64 --relax -prj InstructionFetch_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/PCAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionFetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionFetchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/InstructionFetch_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionFetch_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto dddb06886a7b45dc97572e0bb7f4f217 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionFetch_tb_behav xil_defaultlib.InstructionFetch_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.PCAdder
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.InstructionFetchUnit
+Compiling module xil_defaultlib.InstructionFetch_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot InstructionFetch_tb_behav
+
+****** Webtalk v2015.4.2 (64-bit)
+  **** SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+  **** IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source E:/Fall -notrace
+couldn't read file "E:/Fall": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 30 15:52:51 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "InstructionFetch_tb_behav -key {Behavioral:sim_1:Functional:InstructionFetch_tb} -tclbatch {InstructionFetch_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source InstructionFetch_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'InstructionFetch_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'InstructionFetch_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+"xvlog -m64 --relax -prj InstructionFetch_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/PCAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionFetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionFetchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/InstructionFetch_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionFetch_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto dddb06886a7b45dc97572e0bb7f4f217 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionFetch_tb_behav xil_defaultlib.InstructionFetch_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.PCAdder
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.InstructionFetchUnit
+Compiling module xil_defaultlib.InstructionFetch_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot InstructionFetch_tb_behav
+
+****** Webtalk v2015.4.2 (64-bit)
+  **** SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+  **** IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source E:/Fall -notrace
+couldn't read file "E:/Fall": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 30 15:53:50 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "InstructionFetch_tb_behav -key {Behavioral:sim_1:Functional:InstructionFetch_tb} -tclbatch {InstructionFetch_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source InstructionFetch_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'InstructionFetch_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'InstructionFetch_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+"xvlog -m64 --relax -prj InstructionFetch_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/PCAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionFetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionFetchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/InstructionFetch_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionFetch_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto dddb06886a7b45dc97572e0bb7f4f217 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionFetch_tb_behav xil_defaultlib.InstructionFetch_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.PCAdder
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.InstructionFetchUnit
+Compiling module xil_defaultlib.InstructionFetch_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot InstructionFetch_tb_behav
+
+****** Webtalk v2015.4.2 (64-bit)
+  **** SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+  **** IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source E:/Fall -notrace
+couldn't read file "E:/Fall": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 30 15:54:46 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "InstructionFetch_tb_behav -key {Behavioral:sim_1:Functional:InstructionFetch_tb} -tclbatch {InstructionFetch_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source InstructionFetch_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'InstructionFetch_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+set_property top TopLevel [current_fileset]
+update_compile_order -fileset sources_1
+set_property top TopLevel_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/xelab.pb
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/InstructionFetch_tb_behav.wdb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'TopLevel_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+"xvlog -m64 --relax -prj TopLevel_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux5Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HiLoRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/PCAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/WriteBack.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBack
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWBRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionDecode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionDecode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/IFIDRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFIDRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEXRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEMRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Execution
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionFetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionFetchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel
+INFO: [VRFC 10-2458] undeclared symbol PCAdder_IF_ID, assumed default net type wire [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:79]
+INFO: [VRFC 10-2458] undeclared symbol WriteReg_ID, assumed default net type wire [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:175]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/TopLevel_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto dddb06886a7b45dc97572e0bb7f4f217 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevel_tb_behav xil_defaultlib.TopLevel_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port IFID_PCAdder_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:79]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 6 for port ALUOp [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:89]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port IFID_PCAdder_In [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:94]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port IFID_PCAdder_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:99]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 6 for port ALUOp [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:125]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Zero [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:132]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ALUZero_In [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:139]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ALUZero_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:140]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 1 for port RegDstMUX_In [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:141]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port RegDestAddress_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:158]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 1 for port RegDstMUX_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:165]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port WriteReg [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:173]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port WriteReg_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:175]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.PCAdder
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.InstructionFetchUnit
+Compiling module xil_defaultlib.IFIDRegister
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.SignExtension
+Compiling module xil_defaultlib.InstructionDecode
+Compiling module xil_defaultlib.IDEXRegister
+Compiling module xil_defaultlib.Mux32Bit2To1
+Compiling module xil_defaultlib.Mux5Bit2To1
+Compiling module xil_defaultlib.ALU32Bit
+Compiling module xil_defaultlib.HiLoRegister
+Compiling module xil_defaultlib.Execution
+Compiling module xil_defaultlib.EXMEMRegister
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.MEMWBRegister
+Compiling module xil_defaultlib.WriteBack
+Compiling module xil_defaultlib.TopLevel
+Compiling module xil_defaultlib.TopLevel_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TopLevel_tb_behav
+
+****** Webtalk v2015.4.2 (64-bit)
+  **** SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+  **** IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source E:/Fall -notrace
+couldn't read file "E:/Fall": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 30 15:57:36 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TopLevel_tb_behav -key {Behavioral:sim_1:Functional:TopLevel_tb} -tclbatch {TopLevel_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source TopLevel_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TopLevel_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/xelab.pb
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/InstructionFetch_tb_behav.wdb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'TopLevel_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+"xvlog -m64 --relax -prj TopLevel_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux5Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HiLoRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/PCAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/WriteBack.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBack
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWBRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionDecode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionDecode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/IFIDRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFIDRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEXRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEMRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Execution
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionFetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionFetchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel
+INFO: [VRFC 10-2458] undeclared symbol PCAdder_IF_ID, assumed default net type wire [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:79]
+INFO: [VRFC 10-2458] undeclared symbol WriteReg_ID, assumed default net type wire [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:175]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/TopLevel_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto dddb06886a7b45dc97572e0bb7f4f217 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevel_tb_behav xil_defaultlib.TopLevel_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port IFID_PCAdder_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:79]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 6 for port ALUOp [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:89]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port IFID_PCAdder_In [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:94]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port IFID_PCAdder_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:99]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 6 for port ALUOp [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:125]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Zero [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:132]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ALUZero_In [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:139]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ALUZero_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:140]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 1 for port RegDstMUX_In [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:141]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port RegDestAddress_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:158]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 1 for port RegDstMUX_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:165]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port WriteReg [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:173]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port WriteReg_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:175]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.PCAdder
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.InstructionFetchUnit
+Compiling module xil_defaultlib.IFIDRegister
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.SignExtension
+Compiling module xil_defaultlib.InstructionDecode
+Compiling module xil_defaultlib.IDEXRegister
+Compiling module xil_defaultlib.Mux32Bit2To1
+Compiling module xil_defaultlib.Mux5Bit2To1
+Compiling module xil_defaultlib.ALU32Bit
+Compiling module xil_defaultlib.HiLoRegister
+Compiling module xil_defaultlib.Execution
+Compiling module xil_defaultlib.EXMEMRegister
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.MEMWBRegister
+Compiling module xil_defaultlib.WriteBack
+Compiling module xil_defaultlib.TopLevel
+Compiling module xil_defaultlib.TopLevel_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TopLevel_tb_behav
+
+****** Webtalk v2015.4.2 (64-bit)
+  **** SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+  **** IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source E:/Fall -notrace
+couldn't read file "E:/Fall": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 30 15:58:00 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TopLevel_tb_behav -key {Behavioral:sim_1:Functional:TopLevel_tb} -tclbatch {TopLevel_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source TopLevel_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TopLevel_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+set_property top InstructionDecode [current_fileset]
+update_compile_order -fileset sources_1
+set_property top InstructionDecode_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/xelab.pb
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/InstructionFetch_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/TopLevel_tb_behav.wdb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'InstructionDecode_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+"xvlog -m64 --relax -prj InstructionDecode_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionDecode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionDecode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/InstructionDecode_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionDecode_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto dddb06886a7b45dc97572e0bb7f4f217 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionDecode_tb_behav xil_defaultlib.InstructionDecode_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.SignExtension
+Compiling module xil_defaultlib.InstructionDecode
+Compiling module xil_defaultlib.InstructionDecode_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot InstructionDecode_tb_behav
+
+****** Webtalk v2015.4.2 (64-bit)
+  **** SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+  **** IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source E:/Fall -notrace
+couldn't read file "E:/Fall": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 30 16:05:25 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "InstructionDecode_tb_behav -key {Behavioral:sim_1:Functional:InstructionDecode_tb} -tclbatch {InstructionDecode_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source InstructionDecode_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'InstructionDecode_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+current_sim simulation_4
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'InstructionDecode_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+"xvlog -m64 --relax -prj InstructionDecode_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionDecode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionDecode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/InstructionDecode_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionDecode_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto dddb06886a7b45dc97572e0bb7f4f217 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionDecode_tb_behav xil_defaultlib.InstructionDecode_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.SignExtension
+Compiling module xil_defaultlib.InstructionDecode
+Compiling module xil_defaultlib.InstructionDecode_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot InstructionDecode_tb_behav
+
+****** Webtalk v2015.4.2 (64-bit)
+  **** SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+  **** IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source E:/Fall -notrace
+couldn't read file "E:/Fall": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 30 16:05:46 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "InstructionDecode_tb_behav -key {Behavioral:sim_1:Functional:InstructionDecode_tb} -tclbatch {InstructionDecode_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source InstructionDecode_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'InstructionDecode_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+refresh_design
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:03:16 ; elapsed = 00:29:45 . Memory (MB): peak = 1230.813 ; gain = 1059.371
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'InstructionDecode' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionDecode.v:3]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (1#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
+INFO: [Synth 8-638] synthesizing module 'Control' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:23]
+WARNING: [Synth 8-151] case item 6'b000010 is unreachable [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:44]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:44]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:132]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:191]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:42]
+INFO: [Synth 8-256] done synthesizing module 'Control' (2#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v:23]
+INFO: [Synth 8-638] synthesizing module 'SignExtension' [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:8]
+INFO: [Synth 8-256] done synthesizing module 'SignExtension' (3#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:8]
+INFO: [Synth 8-256] done synthesizing module 'InstructionDecode' (4#1) [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionDecode.v:3]
+WARNING: [Synth 8-3331] design InstructionDecode has unconnected port Rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:03:17 ; elapsed = 00:29:46 . Memory (MB): peak = 1230.813 ; gain = 1059.371
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:17 ; elapsed = 00:29:46 . Memory (MB): peak = 1230.813 ; gain = 1059.371
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 121 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-140] Inserted 10 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1279.598 ; gain = 48.785
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'InstructionDecode_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+"xvlog -m64 --relax -prj InstructionDecode_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+ERROR: [VRFC 10-1280] procedural assignment to a non-register ReadData1 is not permitted, left-hand side should be reg/integer/time/genvar [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:71]
+ERROR: [VRFC 10-91] RegFile is not declared [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:71]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register ReadData2 is not permitted, left-hand side should be reg/integer/time/genvar [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:72]
+ERROR: [VRFC 10-91] RegFile is not declared [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:72]
+ERROR: [VRFC 10-1040] module RegisterFile ignored due to previous errors [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
+INFO: [USF-XSim-99] Step results log file:'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'InstructionDecode_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+"xvlog -m64 --relax -prj InstructionDecode_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+ERROR: [VRFC 10-1280] procedural assignment to a non-register ReadData1 is not permitted, left-hand side should be reg/integer/time/genvar [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:71]
+ERROR: [VRFC 10-91] RegFile is not declared [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:71]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register ReadData2 is not permitted, left-hand side should be reg/integer/time/genvar [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:72]
+ERROR: [VRFC 10-91] RegFile is not declared [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:72]
+ERROR: [VRFC 10-1040] module RegisterFile ignored due to previous errors [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
+INFO: [USF-XSim-99] Step results log file:'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'InstructionDecode_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+"xvlog -m64 --relax -prj InstructionDecode_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+ERROR: [VRFC 10-1280] procedural assignment to a non-register ReadData1 is not permitted, left-hand side should be reg/integer/time/genvar [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:71]
+ERROR: [VRFC 10-91] RegFile is not declared [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:71]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register ReadData2 is not permitted, left-hand side should be reg/integer/time/genvar [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:72]
+ERROR: [VRFC 10-91] RegFile is not declared [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:72]
+ERROR: [VRFC 10-1040] module RegisterFile ignored due to previous errors [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
+INFO: [USF-XSim-99] Step results log file:'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'InstructionDecode_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+"xvlog -m64 --relax -prj InstructionDecode_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+ERROR: [VRFC 10-1280] procedural assignment to a non-register ReadData1 is not permitted, left-hand side should be reg/integer/time/genvar [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:71]
+ERROR: [VRFC 10-91] regFile is not declared [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:71]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register ReadData2 is not permitted, left-hand side should be reg/integer/time/genvar [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:72]
+ERROR: [VRFC 10-91] regFile is not declared [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:72]
+ERROR: [VRFC 10-1040] module RegisterFile ignored due to previous errors [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
+INFO: [USF-XSim-99] Step results log file:'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'InstructionDecode_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+"xvlog -m64 --relax -prj InstructionDecode_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+ERROR: [VRFC 10-91] regFile is not declared [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:66]
+ERROR: [VRFC 10-91] regFile is not declared [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:67]
+ERROR: [VRFC 10-1040] module RegisterFile ignored due to previous errors [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
+INFO: [USF-XSim-99] Step results log file:'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'InstructionDecode_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+"xvlog -m64 --relax -prj InstructionDecode_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionDecode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionDecode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/InstructionDecode_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionDecode_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto dddb06886a7b45dc97572e0bb7f4f217 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionDecode_tb_behav xil_defaultlib.InstructionDecode_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.SignExtension
+Compiling module xil_defaultlib.InstructionDecode
+Compiling module xil_defaultlib.InstructionDecode_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot InstructionDecode_tb_behav
+
+****** Webtalk v2015.4.2 (64-bit)
+  **** SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+  **** IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source E:/Fall -notrace
+couldn't read file "E:/Fall": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 30 16:18:55 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "InstructionDecode_tb_behav -key {Behavioral:sim_1:Functional:InstructionDecode_tb} -tclbatch {InstructionDecode_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source InstructionDecode_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'InstructionDecode_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'InstructionDecode_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+"xvlog -m64 --relax -prj InstructionDecode_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+ERROR: [VRFC 10-91] regFile is not declared [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:69]
+ERROR: [VRFC 10-1040] module RegisterFile ignored due to previous errors [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
+INFO: [USF-XSim-99] Step results log file:'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'InstructionDecode_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+"xvlog -m64 --relax -prj InstructionDecode_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionDecode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionDecode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/InstructionDecode_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionDecode_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto dddb06886a7b45dc97572e0bb7f4f217 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionDecode_tb_behav xil_defaultlib.InstructionDecode_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.SignExtension
+Compiling module xil_defaultlib.InstructionDecode
+Compiling module xil_defaultlib.InstructionDecode_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot InstructionDecode_tb_behav
+
+****** Webtalk v2015.4.2 (64-bit)
+  **** SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+  **** IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source E:/Fall -notrace
+couldn't read file "E:/Fall": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 30 16:22:09 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "InstructionDecode_tb_behav -key {Behavioral:sim_1:Functional:InstructionDecode_tb} -tclbatch {InstructionDecode_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source InstructionDecode_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'InstructionDecode_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+set_property top TopLevel [current_fileset]
+update_compile_order -fileset sources_1
+set_property top TopLevel_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/xelab.pb
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/InstructionDecode_tb_behav.wdb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'TopLevel_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+"xvlog -m64 --relax -prj TopLevel_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/PCAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux5Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HiLoRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/WriteBack.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBack
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWBRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionFetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionFetchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/IFIDRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFIDRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEXRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEMRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/Execution.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Execution
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionDecode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionDecode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel
+INFO: [VRFC 10-2458] undeclared symbol PCAdder_IF_ID, assumed default net type wire [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:79]
+INFO: [VRFC 10-2458] undeclared symbol WriteReg_ID, assumed default net type wire [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:175]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/TopLevel_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto dddb06886a7b45dc97572e0bb7f4f217 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevel_tb_behav xil_defaultlib.TopLevel_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port IFID_PCAdder_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:79]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 6 for port ALUOp [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:89]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port IFID_PCAdder_In [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:94]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port IFID_PCAdder_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:99]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 6 for port ALUOp [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:125]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port Zero [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:132]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ALUZero_In [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:139]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port ALUZero_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:140]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 1 for port RegDstMUX_In [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:141]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port RegDestAddress_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:158]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 1 for port RegDstMUX_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:165]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port WriteReg [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:173]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 5 for port WriteReg_Out [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/TopLevel.v:175]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.PCAdder
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.InstructionFetchUnit
+Compiling module xil_defaultlib.IFIDRegister
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.SignExtension
+Compiling module xil_defaultlib.InstructionDecode
+Compiling module xil_defaultlib.IDEXRegister
+Compiling module xil_defaultlib.Mux32Bit2To1
+Compiling module xil_defaultlib.Mux5Bit2To1
+Compiling module xil_defaultlib.ALU32Bit
+Compiling module xil_defaultlib.HiLoRegister
+Compiling module xil_defaultlib.Execution
+Compiling module xil_defaultlib.EXMEMRegister
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.MEMWBRegister
+Compiling module xil_defaultlib.WriteBack
+Compiling module xil_defaultlib.TopLevel
+Compiling module xil_defaultlib.TopLevel_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TopLevel_tb_behav
+
+****** Webtalk v2015.4.2 (64-bit)
+  **** SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+  **** IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source E:/Fall -notrace
+couldn't read file "E:/Fall": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 30 16:23:09 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TopLevel_tb_behav -key {Behavioral:sim_1:Functional:TopLevel_tb} -tclbatch {TopLevel_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source TopLevel_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TopLevel_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+set_property top InstructionDecode [current_fileset]
+update_compile_order -fileset sources_1
+set_property top InstructionDecode_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+current_sim simulation_10
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/xelab.pb
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/simulate.log
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/InstructionDecode_tb_behav.wdb
+WARNING: [Vivado 12-3661] Failed to remove file:E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/TopLevel_tb_behav.wdb
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'InstructionDecode_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+"xvlog -m64 --relax -prj InstructionDecode_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/Controllers/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/TopModules/InstructionDecode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionDecode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/SimulationSources/InstructionDecode_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionDecode_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2015.4/bin/unwrapped/win64.o/xelab.exe -wto dddb06886a7b45dc97572e0bb7f4f217 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot InstructionDecode_tb_behav xil_defaultlib.InstructionDecode_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [E:/Fall 2017/ECE 369/LABS8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:25]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.SignExtension
+Compiling module xil_defaultlib.InstructionDecode
+Compiling module xil_defaultlib.InstructionDecode_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot InstructionDecode_tb_behav
+
+****** Webtalk v2015.4.2 (64-bit)
+  **** SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+  **** IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source E:/Fall -notrace
+couldn't read file "E:/Fall": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 30 16:24:11 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/old_vivado_version.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "InstructionDecode_tb_behav -key {Behavioral:sim_1:Functional:InstructionDecode_tb} -tclbatch {InstructionDecode_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source InstructionDecode_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'InstructionDecode_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+save_wave_config {E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/InstructionDecode_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse {{E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/InstructionDecode_tb_behav.wcfg}}
+set_property xsim.view {{E:/Fall 2017/ECE 369/Old Vivado Files/old_vivado_version/InstructionDecode_tb_behav.wcfg}} [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 30 16:36:08 2017...

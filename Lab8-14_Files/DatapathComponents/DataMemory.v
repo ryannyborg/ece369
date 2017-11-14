@@ -47,18 +47,27 @@ module DataMemory(Address, WriteData, Clk, MemWrite, MemRead, ReadData);
     
     reg [31:0] memory [0:1024];
 
-    /* Please fill in the implementation here */
+    initial begin
+        memory[0] = 32'd0;
+        memory[1] = 32'd1;
+        memory[2] = 32'd2;
+        memory[3] = 32'd3;
+        memory[4] = 32'd4;
+        memory[5] = -32'd1;
+    end
+
     always @(posedge Clk) begin
         if(MemWrite == 1)
-            memory[Address[11:2]] = WriteData; 
+            memory[Address[11:2]] <= WriteData; 
     end
     
-    always @(MemRead) begin
+    always @(negedge Clk) begin
+    //always @(MemRead) begin
         if(MemRead == 1)
-            ReadData = memory[Address[11:2]];
-        else
-            ReadData = 32'd0;
+            ReadData <= memory[Address[11:2]]; ////
+       // else
+       //     ReadData <= 32'b0;
     end
-    
+ /////
 
 endmodule

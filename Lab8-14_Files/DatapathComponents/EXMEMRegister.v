@@ -1,12 +1,16 @@
 `timescale 1ns / 1ps
 
-module EXMEMRegister(Clk, ALUResult_In, ALUResult_Out, ALUZero_In, ALUZero_Out, RegisterRead2_In, 
-RegisterRead2_Out, RegDstMUX_In, RegDstMUX_Out,
-MemWrite_In, MemWrite_Out, Branch_In, Branch_Out,
-RegWrite_In, RegWrite_Out, MemToReg_In, MemToReg_Out
+module EXMEMRegister(
+// inputs
+Clk, MemRead_In, MemWrite_In, Branch_In, RegWrite_In, MemToReg_In,
+ALUResult_In, RegisterRead2_In, ALUZero_In, RegDstMUX_In,
+// outputs
+MemRead_reg, MemWrite_reg, Branch_reg, RegWrite_reg, MemToReg_reg, 
+ALUResult_reg, RegisterRead2_reg, ALUZero_reg, RegDstMUX_reg
 );
 
     input Clk;
+    input MemRead_In; /////////////////////////////
     input MemWrite_In;
     input Branch_In;
     input RegWrite_In;
@@ -15,53 +19,59 @@ RegWrite_In, RegWrite_Out, MemToReg_In, MemToReg_Out
     //input [] ControlMEM_In; // FIXME!!!!!!!!!!!!!!!!!
     // input [31:0] AdderResult_In; // implement later
     input [31:0] ALUResult_In, RegisterRead2_In;
-    input ALUZero_In, RegDstMUX_In;
-    output reg MemWrite_Out;
-    output reg Branch_Out;
-    output reg RegWrite_Out;
-    output reg MemToReg_Out;
+    input ALUZero_In; 
+    input [4:0] RegDstMUX_In; // changed
+    output MemRead_reg;////////////////////////
+    output MemWrite_reg;
+    output Branch_reg;
+    output RegWrite_reg;
+    output MemToReg_reg;
     //output reg [] ControlWB_Out; // FIXME!!!!!!!!!!!!!!!!!
     //output reg [] ControlMEM_Out; // FIXME!!!!!!!!!!!!!!!!!
     // output [31:0] Adder Result_Out; // implement later
-    output reg [31:0] ALUResult_Out, RegisterRead2_Out;
-    output reg ALUZero_Out, RegDstMUX_Out;
+    output [31:0] ALUResult_reg, RegisterRead2_reg;
+    output ALUZero_reg;
+    output [4:0] RegDstMUX_reg; //changed
 
-    reg MemWriteStore;
-    reg BranchStore;
-    reg RegWriteStore; 
-    reg MemToRegStore;
-
-    //reg [] ControlWBStore; // FIXME!!!!!!!!!!!!!!!!!
-    //reg [] ControlMEMStore; // FIXME!!!!!!!!!!!!!!!!!
-    reg [31:0] AdderResultStore, ALUResultStore, RegisterRead2Store;
-    reg ALUZeroStore, RegDstMUXStore;
+    // registers
+    reg MemRead_reg;
+    reg MemWrite_reg;
+    reg Branch_reg;
+    reg RegWrite_reg;
+    reg MemToReg_reg;
+    reg [31:0] ALUResult_reg, RegisterRead2_reg;
+    reg ALUZero_reg;
+    reg [4:0] RegDstMUX_reg; 
+    
+    initial begin
+        MemRead_reg <= 0; /////////////////////////
+        MemWrite_reg <= 0;
+        Branch_reg <= 0;
+        RegWrite_reg <= 0;
+        MemToReg_reg <= 0;
+        //ControlWBStore <= 0;
+        //ControlMEMStore <= 0;
+        ALUResult_reg <= 0;
+        RegisterRead2_reg <= 0;
+        ALUZero_reg <= 0;
+        RegDstMUX_reg <= 0;
+    end
     
     always @(posedge Clk) begin
-        MemWriteStore <= MemWrite_In;
-        BranchStore <= Branch_In;
-        RegWriteStore <= RegWrite_In;
-        MemToRegStore <= MemToReg_In;
+        MemRead_reg <= MemRead_In; /////////////////////////
+        MemWrite_reg <= MemWrite_In;
+        Branch_reg <= Branch_In;
+        RegWrite_reg <= RegWrite_In;
+        MemToReg_reg <= MemToReg_In;
         //ControlWBStore <= ControlWB_In;
         //ControlMEMStore <= ControlMEM_In;
-        ALUResultStore <= ALUResult_In;
-        RegisterRead2Store <= RegisterRead2_In;
-        ALUZeroStore <= ALUZero_In;
-        RegDstMUXStore <= RegDstMUX_Out;
+        ALUResult_reg <= ALUResult_In;
+        RegisterRead2_reg <= RegisterRead2_In;
+        ALUZero_reg <= ALUZero_In;
+        RegDstMUX_reg <= RegDstMUX_In;
     end
     
-    always @(negedge Clk) begin
-            MemWrite_Out <= MemWriteStore;
-            Branch_Out <= BranchStore;
-            RegWrite_Out <= RegWriteStore;
-            MemToReg_Out <= MemToRegStore;
-            //ControlWB_Out = ControlWBStore;
-            //ControlMEM_Out <= ControlMEMStore;
-            AdderResult_Out <= AdderResultStore;
-            ALUResult_Out <= ALUResultStore;
-            RegisterRead2_Out <= RegisterRead2Store;
-            ALUZero_Out <= ALUZeroStore;
-            RegDstMUX_Out <= RegDstMUXStore;
-    end
+    // removed negedge code
     
 
 endmodule
