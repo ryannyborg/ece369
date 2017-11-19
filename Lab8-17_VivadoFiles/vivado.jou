@@ -26,3 +26,19 @@ restart
 run 12 us
 restart
 run 15 us
+close_sim
+launch_simulation
+source TopLevel_tb.tcl
+restart
+run 15 us
+restart
+run 15 us
+restart
+run 13 us
+restart
+run 13 us
+close_sim
+launch_simulation
+source TopLevel_tb.tcl
+restart
+run 13 us

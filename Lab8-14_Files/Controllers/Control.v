@@ -105,14 +105,20 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                         ALUOp <= 6'b011011; //xor
                     end
                     6'b000000: begin
-                        ALUOp <= 6'b011101; //sll and sllv
+                        ALUOp <= 6'b011101; //sll
                         ALUSrc <= 2;
                         ReadDataSelect <= 1;
                     end
+                    6'b000100: begin
+                        ALUOp <= 6'b100110; // sllv                        
+                    end
                     6'b000010: begin
-                        ALUOp <= 6'b011110; //srl and srlv
+                        ALUOp <= 6'b011110; //srl
                         ALUSrc <= 2;
                         ReadDataSelect <= 1;
+                    end
+                    6'b000110: begin
+                        ALUOp <= 6'b100111; // srlv
                     end
                     6'b101010: begin
                         ALUOp <= 6'b011111; //slt
