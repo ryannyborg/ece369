@@ -33,19 +33,23 @@ module TopLevel(Clk, Rst, WriteData, PCValue, Hi_Out, Lo_Out);
     wire [4:0] WriteRegister_ID;
     // InstructionDecode Outputs
     wire [31:0] ReadData1_ID, ReadData2_ID, Instruction_Extended_ID;
-    wire [4:0] Instruction_15_11_ID, Instruction_20_16_ID;
-    wire RegWrite_ID, MemWrite_ID, MemRead_ID, MemtoReg_ID, RegDst_ID, ALUSrc_ID, 
+    wire [4:0] Instruction_15_11_ID, Instruction_20_16_ID, Instruction_10_6_ID;
+    wire RegWrite_ID, MemWrite_ID, MemRead_ID, MemtoReg_ID, RegDst_ID, 
     Branch_ID, WrEn_ID, RdEn_ID, ZeroExtend_ID; ///////////ADDED RDEN_ID WIRE
+    wire ReadDataSelect_ID;
+    wire [1:0] ALUSrc_ID;
     wire [5:0] ALUOp_ID; // changed
     
     // ID_EX Outputs
-    wire RegWrite_EX, MemWrite_EX, MemRead_EX, MemtoReg_EX, RegDst_EX, ALUSrc_EX, 
+    wire RegWrite_EX, MemWrite_EX, MemRead_EX, MemtoReg_EX, RegDst_EX,
         Branch_EX, WrEn_EX, RdEn_EX, ZeroExtend_EX; //////////////ADDED RDEN_EX WIRE
+    wire ReadDataSelect_EX;
+    wire [1:0] ALUSrc_EX;
     wire [5:0] ALUOp_EX; // changed
     
     // Execution Inputs 
     wire [31:0] ReadData1_EX, ReadData2_EX, Instruction_Extended_EX, ReadData2_EXOut;
-    wire [4:0] Instruction_15_11_EX, Instruction_20_16_EX;
+    wire [4:0] Instruction_15_11_EX, Instruction_20_16_EX, Instruction_10_6_EX;
     
     // Execution Outputs 
     wire [31:0] Hi_Out_EX_Wire, Lo_Out_EX_Wire; //////////////////////NEW
@@ -103,8 +107,9 @@ module TopLevel(Clk, Rst, WriteData, PCValue, Hi_Out, Lo_Out);
         .Instruction(Instruction_ID), .WriteData(WriteData), .WriteRegister_IN(RegWriteAddress_WBtoID),
         .ReadData1(ReadData1_ID), .ReadData2(ReadData2_ID), .Immediate_Extended(Instruction_Extended_ID), 
         .Instruction_20_16(Instruction_20_16_ID), .Instruction_15_11(Instruction_15_11_ID),
+        .Instruction_10_6(Instruction_10_6_ID),
         .RegWrite(RegWrite_In_ID), .MemWrite(MemWrite_ID), .MemRead(MemRead_ID), .MemtoReg(MemtoReg_ID), .RegDst(RegDst_ID), 
-        .ALUSrc(ALUSrc_ID), .Branch(Branch_ID), .WrEn(WrEn_ID), 
+        .ALUSrc(ALUSrc_ID), .Branch(Branch_ID), .WrEn(WrEn_ID), .ReadDataSelect(ReadDataSelect_ID), 
         .RdEn(RdEn_ID),
         .ZeroExtend(ZeroExtend_ID), .ALUOp(ALUOp_ID),
         .RegWrite_WB(RegWrite_WB)///////////////////////////////////////////////////////////
@@ -116,12 +121,16 @@ module TopLevel(Clk, Rst, WriteData, PCValue, Hi_Out, Lo_Out);
         .SignExtend_In(Instruction_Extended_ID), 
         .Instruction20_16_In(Instruction_20_16_ID), 
         .Instruction15_11_In(Instruction_15_11_ID),
+        .Instruction10_6_In(Instruction_10_6_ID),
+        .ReadDataSelect_In(ReadDataSelect_ID),
         .PCAdder_reg(PCAdder_IF_ID_OUTTOPC), ////////////////NEEDS TO CONNECT TO ADDER WE NEED TO IMPLEMENT
         .RegisterRead1_reg(ReadData1_EX), 
         .RegisterRead2_reg(ReadData2_EX), 
         .SignExtend_reg(Instruction_Extended_EX), 
         .Instruction20_16_reg(Instruction_20_16_EX), 
         .Instruction15_11_reg(Instruction_15_11_EX),
+        .Instruction10_6_reg(Instruction_10_6_EX),
+        .ReadDataSelect_reg(ReadDataSelect_EX),
         .RegDst_In(RegDst_ID), .RegDst_reg(RegDst_EX), 
         .ALUSrc_In(ALUSrc_ID), .ALUSrc_reg(ALUSrc_EX), 
         .ALUOp_In(ALUOp_ID), .ALUOp_reg(ALUOp_EX), 
@@ -140,6 +149,8 @@ module TopLevel(Clk, Rst, WriteData, PCValue, Hi_Out, Lo_Out);
         .Clk(Clk), .Rst(Rst),
         .Instruction_20_16(Instruction_20_16_EX),
         .Instruction_15_11(Instruction_15_11_EX),
+        .Instruction_10_6(Instruction_10_6_EX),
+        .ReadDataSelect(ReadDataSelect_EX),
         .ReadData1(ReadData1_EX),
         .ReadData2(ReadData2_EX),
         .Immediate_Extended(Instruction_Extended_EX),

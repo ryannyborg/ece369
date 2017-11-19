@@ -4,18 +4,19 @@ module IDEXRegister(
 // inputs
 Clk, RegDst_In, ALUSrc_In, ALUOp_In, WrEn_In, RdEn_In, MemRead_In, MemWrite_In, Branch_In,
 RegWrite_In, MemToReg_In, PCAdder_In, RegisterRead1_In, RegisterRead2_In, SignExtend_In, 
-Instruction20_16_In, Instruction15_11_In, Zero_In,
+Instruction20_16_In, Instruction15_11_In, Instruction10_6_In, Zero_In, ReadDataSelect_In,
 
 // outputs and registers
 RegDst_reg, ALUSrc_reg, ALUOp_reg, WrEn_reg, RdEn_reg, MemRead_reg, MemWrite_reg, Branch_reg, RegWrite_reg,
 MemToReg_reg, PCAdder_reg, RegisterRead1_reg, RegisterRead2_reg, SignExtend_reg,
-Instruction20_16_reg, Instruction15_11_reg, Zero_reg
+Instruction20_16_reg, Instruction15_11_reg, Instruction10_6_reg, Zero_reg, ReadDataSelect_reg
 ); //,
 //RegDst_Out, ALUOp_Out, ALUSrc_Out);
 
     input Clk;
     input RegDst_In;
-    input ALUSrc_In;
+    input [1:0] ALUSrc_In;
+    input ReadDataSelect_In;
     input [5:0] ALUOp_In; // bit-width changed
     input WrEn_In;
     input RdEn_In; ///////////////////////////////////
@@ -25,10 +26,10 @@ Instruction20_16_reg, Instruction15_11_reg, Zero_reg
     input RegWrite_In;
     input MemToReg_In;
     input [31:0] PCAdder_In, RegisterRead1_In, RegisterRead2_In, SignExtend_In;
-    input [4:0] Instruction20_16_In, Instruction15_11_In;
+    input [4:0] Instruction20_16_In, Instruction15_11_In, Instruction10_6_In;
     input Zero_In;///////////////
     output RegDst_reg;
-    output ALUSrc_reg;
+    output [1:0] ALUSrc_reg;
     output [5:0] ALUOp_reg; // bit-width changed
     output WrEn_reg;
     output RdEn_reg; ///////////////////////////////////
@@ -38,12 +39,13 @@ Instruction20_16_reg, Instruction15_11_reg, Zero_reg
     output RegWrite_reg;
     output MemToReg_reg;
     output [31:0] PCAdder_reg, RegisterRead1_reg, RegisterRead2_reg, SignExtend_reg;
-    output [4:0] Instruction20_16_reg, Instruction15_11_reg;
+    output [4:0] Instruction20_16_reg, Instruction15_11_reg, Instruction10_6_reg;
     output Zero_reg;
+    output ReadDataSelect_reg;
     
     // registers in the pipelined datapath
     reg RegDst_reg;
-    reg ALUSrc_reg;
+    reg [1:0] ALUSrc_reg;
     reg [5:0] ALUOp_reg; // (changed bit-width)
     reg WrEn_reg;
     reg RdEn_reg; /////////////////////////////////
@@ -53,8 +55,9 @@ Instruction20_16_reg, Instruction15_11_reg, Zero_reg
     reg RegWrite_reg; 
     reg MemToReg_reg;
     reg [31:0] PCAdder_reg, RegisterRead1_reg, RegisterRead2_reg, SignExtend_reg;
-    reg [4:0] Instruction20_16_reg, Instruction15_11_reg;
+    reg [4:0] Instruction20_16_reg, Instruction15_11_reg, Instruction10_6_reg;
     reg Zero_reg;
+    reg ReadDataSelect_reg;
     
     initial begin
         RegDst_reg = 0;
@@ -73,7 +76,9 @@ Instruction20_16_reg, Instruction15_11_reg, Zero_reg
         SignExtend_reg = 0;
         Instruction20_16_reg = 0;
         Instruction15_11_reg = 0;
+        Instruction10_6_reg = 0;
         Zero_reg = 0;
+        ReadDataSelect_reg = 0;
     end
     
     always @(posedge Clk) begin
@@ -93,7 +98,9 @@ Instruction20_16_reg, Instruction15_11_reg, Zero_reg
         SignExtend_reg <= SignExtend_In;
         Instruction20_16_reg <= Instruction20_16_In;
         Instruction15_11_reg <= Instruction15_11_In;
+        Instruction10_6_reg <= Instruction10_6_In;
         Zero_reg <= Zero_In;
+        ReadDataSelect_reg <= ReadDataSelect_In;
     end
 
     // removed negedge code

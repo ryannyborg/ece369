@@ -2,50 +2,27 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Sun Nov 19 08:10:57 2017
-# Process ID: 4256
+# Start of session at: Sun Nov 19 15:23:27 2017
+# Process ID: 5928
 # Current directory: E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5228 E:\LABS8-17 UPDATED 11-8-17\Lab8-17_VivadoFiles\Lab8-17_VivadoFiles.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6160 E:\LABS8-17 UPDATED 11-8-17\Lab8-17_VivadoFiles\Lab8-17_VivadoFiles.xpr
 # Log file: E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/vivado.log
 # Journal file: E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project {E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.xpr}
+synth_design -rtl -name rtl_1
 launch_simulation
 source TopLevel_tb.tcl
 restart
-run 80 us
+run 12 us
 restart
-run 80 us
-restart
-run 80 us
-restart
-run 80 us
-restart
-run 80 us
-synth_design -rtl -name rtl_1
+run 12 us
 refresh_design
 close_sim
 launch_simulation
 source TopLevel_tb.tcl
 restart
-run 80 us
+run 12 us
 restart
-run 80 us
-restart
-run 80 us
-restart
-run 80 us
-restart
-run 80 us
-restart
-run 80 us
-close_sim
-launch_simulation
-source TopLevel_tb.tcl
-restart
-run 80 us
-restart
-run 80 us
-restart
-run 80 us
+run 15 us

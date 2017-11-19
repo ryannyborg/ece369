@@ -20,10 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, ALUOp, WrEn, RdEn, ZeroExtend); ////////// Added RdEn
+module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, ReadDataSelect, Branch, ALUOp, WrEn, RdEn, ZeroExtend); ////////// Added RdEn
     input[31:0] Instruction;
     
-    output reg RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, WrEn, RdEn, ZeroExtend; //////////////
+    output reg RegWrite, MemWrite, MemRead, MemtoReg, RegDst, Branch, WrEn, RdEn, ZeroExtend; //////////////
+    output reg ReadDataSelect;
+    output reg [1:0] ALUSrc;
     output reg [5:0] ALUOp;
     
     initial begin
@@ -37,7 +39,8 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
         Branch <= 0;
         WrEn <= 0; 
         RdEn <= 0; ////////////////////////////
-        ZeroExtend <= 1'b0;       
+        ZeroExtend <= 1'b0;  
+        ReadDataSelect <= 0;     
     end
     
     always @(Instruction) begin
@@ -54,6 +57,7 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
             RdEn <= 0; /////////////////////////////////////////
             ALUOp <= 6'b000000;/////////
             ZeroExtend <= 0; 
+            ReadDataSelect <= 0;
         end
     
         else begin
@@ -71,6 +75,7 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                 WrEn <= 0;
                 RdEn <= 0;////////////////////////////
                 ZeroExtend <= 0;
+                ReadDataSelect <= 0;
                 case(Instruction[5:0])
                     6'b100000: begin
                         ALUOp <= 6'b000001; //add
@@ -101,9 +106,13 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                     end
                     6'b000000: begin
                         ALUOp <= 6'b011101; //sll and sllv
+                        ALUSrc <= 2;
+                        ReadDataSelect <= 1;
                     end
                     6'b000010: begin
                         ALUOp <= 6'b011110; //srl and srlv
+                        ALUSrc <= 2;
+                        ReadDataSelect <= 1;
                     end
                     6'b101010: begin
                         ALUOp <= 6'b011111; //slt

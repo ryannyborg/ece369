@@ -2,10 +2,10 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Sun Nov 19 08:10:57 2017
-# Process ID: 4256
+# Start of session at: Sun Nov 19 15:23:27 2017
+# Process ID: 5928
 # Current directory: E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5228 E:\LABS8-17 UPDATED 11-8-17\Lab8-17_VivadoFiles\Lab8-17_VivadoFiles.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6160 E:\LABS8-17 UPDATED 11-8-17\Lab8-17_VivadoFiles\Lab8-17_VivadoFiles.xpr
 # Log file: E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/vivado.log
 # Journal file: E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles\vivado.jou
 #-----------------------------------------------------------
@@ -16,318 +16,14 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
-open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:26 . Memory (MB): peak = 539.781 ; gain = 20.336launch_simulation
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'TopLevel_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
-INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
-"xvlog -m64 --relax -prj TopLevel_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU32Bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Control
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/DataMemory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DataMemory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXMEMRegister
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Execution
-WARNING: [VRFC 10-756] identifier Hi_Wire_ToOutput is used before its declaration [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v:44]
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module HiLoRegister
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IDEXRegister
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IFIDRegister.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IFIDRegister
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/InstructionDecode.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionDecode
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/InstructionFetch.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionFetchUnit
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MEMWBRegister
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux32Bit2To1
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux5Bit2To1
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/PCAdder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PCAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ProgramCounter
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegisterFile
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/SignExtension.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignExtension
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/WriteBack.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module WriteBack
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/TopLevel.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TopLevel
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXAdder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new/ShiftLeft2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ShiftLeft2
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/TopLevel_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TopLevel_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/WriteBack_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module WriteBack_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/Memory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Memory_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/Execution_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Execution_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/InstructionDecode_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionDecode_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU32Bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/Mux32Bit2To1_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux32Bit2To1_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/MEMWBRegister_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MEMWBRegister_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/ShiftLeft2_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ShiftLeft2_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/IFIDRegister_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IFIDRegister_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/DataMemory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DataMemory_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/ALUControl_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALUControl_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/Control_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Control_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/RegisterFile_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegisterFile_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/IDEXRegister_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IDEXRegister_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/EXAdder_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXAdder_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/PCAdder_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PCAdder_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/InstructionMemory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/EXMEMRegister_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXMEMRegister_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/ProgramCounter_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ProgramCounter_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/SignExtension_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignExtension_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/InstructionFetch_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionFetch_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 608.438 ; gain = 0.000
-INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
-Vivado Simulator 2017.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 292ce9040b1e4d15946498d17870732e --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevel_tb_behav xil_defaultlib.TopLevel_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.ProgramCounter
-Compiling module xil_defaultlib.PCAdder
-Compiling module xil_defaultlib.InstructionMemory
-Compiling module xil_defaultlib.InstructionFetchUnit
-Compiling module xil_defaultlib.IFIDRegister
-Compiling module xil_defaultlib.RegisterFile
-Compiling module xil_defaultlib.Control
-Compiling module xil_defaultlib.SignExtension
-Compiling module xil_defaultlib.InstructionDecode
-Compiling module xil_defaultlib.IDEXRegister
-Compiling module xil_defaultlib.ShiftLeft2
-Compiling module xil_defaultlib.EXAdder
-Compiling module xil_defaultlib.Mux32Bit2To1
-Compiling module xil_defaultlib.Mux5Bit2To1
-Compiling module xil_defaultlib.ALU32Bit
-Compiling module xil_defaultlib.HiLoRegister
-Compiling module xil_defaultlib.Execution
-Compiling module xil_defaultlib.EXMEMRegister
-Compiling module xil_defaultlib.DataMemory
-Compiling module xil_defaultlib.Memory
-Compiling module xil_defaultlib.MEMWBRegister
-Compiling module xil_defaultlib.WriteBack
-Compiling module xil_defaultlib.TopLevel
-Compiling module xil_defaultlib.TopLevel_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot TopLevel_tb_behav
-
-****** Webtalk v2017.2 (64-bit)
-  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
-  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-
-source E:/LABS8-17 -notrace
-couldn't read file "E:/LABS8-17": no such file or directory
-INFO: [Common 17-206] Exiting Webtalk at Sun Nov 19 08:43:20 2017...
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 608.438 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "TopLevel_tb_behav -key {Behavioral:sim_1:Functional:TopLevel_tb} -tclbatch {TopLevel_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.2
-Time resolution is 1 ps
-source TopLevel_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 608.438 ; gain = 0.000
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'TopLevel_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:38 . Memory (MB): peak = 608.438 ; gain = 0.000
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 80 us
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 80 us
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 80 us
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 80 us
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 80 us
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 531.602 ; gain = 2.746
 synth_design -rtl -name rtl_1
 Command: synth_design -rtl -name rtl_1
 Starting synth_design
 Using part: xc7k70tfbv676-1
 Top: TopLevel
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 698.758 ; gain = 54.250
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'TopLevel' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/TopLevel.v:16]
-INFO: [Synth 8-638] synthesizing module 'InstructionFetchUnit' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/InstructionFetch.v:42]
-INFO: [Synth 8-638] synthesizing module 'ProgramCounter' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v:28]
-INFO: [Synth 8-256] done synthesizing module 'ProgramCounter' (1#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v:28]
-INFO: [Synth 8-638] synthesizing module 'PCAdder' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/PCAdder.v:23]
-INFO: [Synth 8-256] done synthesizing module 'PCAdder' (2#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/PCAdder.v:23]
-INFO: [Synth 8-638] synthesizing module 'InstructionMemory' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v:40]
-INFO: [Synth 8-256] done synthesizing module 'InstructionMemory' (3#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v:40]
-INFO: [Synth 8-256] done synthesizing module 'InstructionFetchUnit' (4#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/InstructionFetch.v:42]
-INFO: [Synth 8-638] synthesizing module 'IFIDRegister' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IFIDRegister.v:3]
-INFO: [Synth 8-256] done synthesizing module 'IFIDRegister' (5#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IFIDRegister.v:3]
-INFO: [Synth 8-638] synthesizing module 'InstructionDecode' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/InstructionDecode.v:3]
-INFO: [Synth 8-638] synthesizing module 'RegisterFile' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
-INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (6#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
-INFO: [Synth 8-638] synthesizing module 'Control' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:23]
-WARNING: [Synth 8-151] case item 6'b000010 is unreachable [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:74]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:74]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:181]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:241]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:60]
-INFO: [Synth 8-256] done synthesizing module 'Control' (7#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:23]
-INFO: [Synth 8-638] synthesizing module 'SignExtension' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:8]
-INFO: [Synth 8-256] done synthesizing module 'SignExtension' (8#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:8]
-INFO: [Synth 8-256] done synthesizing module 'InstructionDecode' (9#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/InstructionDecode.v:3]
-INFO: [Synth 8-638] synthesizing module 'IDEXRegister' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v:3]
-INFO: [Synth 8-256] done synthesizing module 'IDEXRegister' (10#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v:3]
-INFO: [Synth 8-638] synthesizing module 'Execution' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v:3]
-INFO: [Synth 8-638] synthesizing module 'ShiftLeft2' [E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new/ShiftLeft2.v:3]
-INFO: [Synth 8-256] done synthesizing module 'ShiftLeft2' (11#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new/ShiftLeft2.v:3]
-INFO: [Synth 8-638] synthesizing module 'EXAdder' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXAdder.v:3]
-INFO: [Synth 8-256] done synthesizing module 'EXAdder' (12#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXAdder.v:3]
-INFO: [Synth 8-638] synthesizing module 'Mux32Bit2To1' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10]
-INFO: [Synth 8-256] done synthesizing module 'Mux32Bit2To1' (13#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10]
-INFO: [Synth 8-638] synthesizing module 'Mux5Bit2To1' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:10]
-WARNING: [Synth 8-567] referenced signal 'inA' should be on the sensitivity list [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:20]
-WARNING: [Synth 8-567] referenced signal 'inB' should be on the sensitivity list [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:20]
-INFO: [Synth 8-256] done synthesizing module 'Mux5Bit2To1' (14#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:10]
-INFO: [Synth 8-638] synthesizing module 'ALU32Bit' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:37]
-INFO: [Synth 8-256] done synthesizing module 'ALU32Bit' (15#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:37]
-INFO: [Synth 8-638] synthesizing module 'HiLoRegister' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v:26]
-INFO: [Synth 8-256] done synthesizing module 'HiLoRegister' (16#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v:26]
-INFO: [Synth 8-256] done synthesizing module 'Execution' (17#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v:3]
-INFO: [Synth 8-638] synthesizing module 'EXMEMRegister' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3]
-INFO: [Synth 8-256] done synthesizing module 'EXMEMRegister' (18#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3]
-INFO: [Synth 8-638] synthesizing module 'Memory' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Memory.v:3]
-INFO: [Synth 8-638] synthesizing module 'DataMemory' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/DataMemory.v:38]
-INFO: [Synth 8-256] done synthesizing module 'DataMemory' (19#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/DataMemory.v:38]
-INFO: [Synth 8-256] done synthesizing module 'Memory' (20#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Memory.v:3]
-INFO: [Synth 8-638] synthesizing module 'MEMWBRegister' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3]
-INFO: [Synth 8-256] done synthesizing module 'MEMWBRegister' (21#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3]
-INFO: [Synth 8-638] synthesizing module 'WriteBack' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/WriteBack.v:3]
-INFO: [Synth 8-256] done synthesizing module 'WriteBack' (22#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/WriteBack.v:3]
-INFO: [Synth 8-256] done synthesizing module 'TopLevel' (23#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/TopLevel.v:16]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[31]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[30]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[29]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[28]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[27]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[26]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[25]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[24]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[23]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[22]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[21]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[20]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[19]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[18]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[17]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[16]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[15]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[14]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[13]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[12]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[1]
-WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[0]
-WARNING: [Synth 8-3331] design Memory has unconnected port Rst
-WARNING: [Synth 8-3331] design Execution has unconnected port Rst
-WARNING: [Synth 8-3331] design Execution has unconnected port Branch
-WARNING: [Synth 8-3331] design Execution has unconnected port ZeroExtend
-WARNING: [Synth 8-3331] design InstructionDecode has unconnected port Rst
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 737.086 ; gain = 92.578
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 737.086 ; gain = 92.578
----------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7k70tfbv676-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Completed Processing XDC Constraints
-
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-RTL Elaboration Complete:  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:51 . Memory (MB): peak = 1037.391 ; gain = 392.883
-54 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:53 . Memory (MB): peak = 1037.391 ; gain = 392.883
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-ERROR: [filemgmt 56-285] srcscanner execution failed with return code -1.
-refresh_design
----------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1085.664 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 594.059 ; gain = 41.762
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'TopLevel' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/TopLevel.v:16]
 INFO: [Synth 8-638] synthesizing module 'InstructionFetchUnit' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/InstructionFetch.v:42]
@@ -345,17 +41,19 @@ INFO: [Synth 8-638] synthesizing module 'RegisterFile' [E:/LABS8-17 UPDATED 11-8
 WARNING: [Synth 8-567] referenced signal 'regfile' should be on the sensitivity list [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:80]
 INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (6#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
 INFO: [Synth 8-638] synthesizing module 'Control' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:23]
-WARNING: [Synth 8-151] case item 6'b000010 is unreachable [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:74]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:74]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:181]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:241]
-INFO: [Synth 8-155] case statement is not full and has no default [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:60]
+WARNING: [Synth 8-151] case item 6'b000010 is unreachable [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:79]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:79]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:188]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:248]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:64]
 INFO: [Synth 8-256] done synthesizing module 'Control' (7#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:23]
 INFO: [Synth 8-638] synthesizing module 'SignExtension' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:8]
 INFO: [Synth 8-256] done synthesizing module 'SignExtension' (8#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:8]
 INFO: [Synth 8-256] done synthesizing module 'InstructionDecode' (9#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/InstructionDecode.v:3]
+WARNING: [Synth 8-350] instance 'instruction_decode' of module 'InstructionDecode' requires 24 connections, but only 23 given [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/TopLevel.v:103]
 INFO: [Synth 8-638] synthesizing module 'IDEXRegister' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v:3]
 INFO: [Synth 8-256] done synthesizing module 'IDEXRegister' (10#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v:3]
+WARNING: [Synth 8-350] instance 'IDEX' of module 'IDEXRegister' requires 39 connections, but only 37 given [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/TopLevel.v:116]
 INFO: [Synth 8-638] synthesizing module 'Execution' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v:3]
 INFO: [Synth 8-638] synthesizing module 'ShiftLeft2' [E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new/ShiftLeft2.v:3]
 INFO: [Synth 8-256] done synthesizing module 'ShiftLeft2' (11#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new/ShiftLeft2.v:3]
@@ -363,26 +61,27 @@ INFO: [Synth 8-638] synthesizing module 'EXAdder' [E:/LABS8-17 UPDATED 11-8-17/L
 INFO: [Synth 8-256] done synthesizing module 'EXAdder' (12#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXAdder.v:3]
 INFO: [Synth 8-638] synthesizing module 'Mux32Bit2To1' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10]
 INFO: [Synth 8-256] done synthesizing module 'Mux32Bit2To1' (13#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10]
+INFO: [Synth 8-638] synthesizing module 'Mux32Bit3To1' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux32Bit3To1.v:10]
+INFO: [Synth 8-256] done synthesizing module 'Mux32Bit3To1' (14#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux32Bit3To1.v:10]
 INFO: [Synth 8-638] synthesizing module 'Mux5Bit2To1' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:10]
-WARNING: [Synth 8-567] referenced signal 'inA' should be on the sensitivity list [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:20]
-WARNING: [Synth 8-567] referenced signal 'inB' should be on the sensitivity list [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:20]
-INFO: [Synth 8-256] done synthesizing module 'Mux5Bit2To1' (14#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:10]
+INFO: [Synth 8-256] done synthesizing module 'Mux5Bit2To1' (15#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:10]
 INFO: [Synth 8-638] synthesizing module 'ALU32Bit' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:37]
-INFO: [Synth 8-256] done synthesizing module 'ALU32Bit' (15#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:37]
+INFO: [Synth 8-256] done synthesizing module 'ALU32Bit' (16#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:37]
 INFO: [Synth 8-638] synthesizing module 'HiLoRegister' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v:26]
-INFO: [Synth 8-256] done synthesizing module 'HiLoRegister' (16#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v:26]
-INFO: [Synth 8-256] done synthesizing module 'Execution' (17#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v:3]
+INFO: [Synth 8-256] done synthesizing module 'HiLoRegister' (17#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v:26]
+INFO: [Synth 8-256] done synthesizing module 'Execution' (18#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v:3]
+WARNING: [Synth 8-350] instance 'execution' of module 'Execution' requires 32 connections, but only 31 given [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/TopLevel.v:144]
 INFO: [Synth 8-638] synthesizing module 'EXMEMRegister' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3]
-INFO: [Synth 8-256] done synthesizing module 'EXMEMRegister' (18#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'EXMEMRegister' (19#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3]
 INFO: [Synth 8-638] synthesizing module 'Memory' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Memory.v:3]
 INFO: [Synth 8-638] synthesizing module 'DataMemory' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/DataMemory.v:38]
-INFO: [Synth 8-256] done synthesizing module 'DataMemory' (19#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/DataMemory.v:38]
-INFO: [Synth 8-256] done synthesizing module 'Memory' (20#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Memory.v:3]
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (20#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/DataMemory.v:38]
+INFO: [Synth 8-256] done synthesizing module 'Memory' (21#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Memory.v:3]
 INFO: [Synth 8-638] synthesizing module 'MEMWBRegister' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3]
-INFO: [Synth 8-256] done synthesizing module 'MEMWBRegister' (21#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'MEMWBRegister' (22#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3]
 INFO: [Synth 8-638] synthesizing module 'WriteBack' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/WriteBack.v:3]
-INFO: [Synth 8-256] done synthesizing module 'WriteBack' (22#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/WriteBack.v:3]
-INFO: [Synth 8-256] done synthesizing module 'TopLevel' (23#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/TopLevel.v:16]
+INFO: [Synth 8-256] done synthesizing module 'WriteBack' (23#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/WriteBack.v:3]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel' (24#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/TopLevel.v:16]
 WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[31]
 WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[30]
 WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[29]
@@ -411,7 +110,7 @@ WARNING: [Synth 8-3331] design Execution has unconnected port Branch
 WARNING: [Synth 8-3331] design Execution has unconnected port ZeroExtend
 WARNING: [Synth 8-3331] design InstructionDecode has unconnected port Rst
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1094.625 ; gain = 8.961
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 631.383 ; gain = 79.086
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -420,9 +119,12 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin IDEX:ReadDataSelect_In to constant 0 [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/TopLevel.v:116]
+WARNING: [Synth 8-3295] tying undriven pin execution:ReadDataSelect to constant 0 [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/TopLevel.v:144]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1094.625 ; gain = 8.961
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 631.383 ; gain = 79.086
 ---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -430,10 +132,13 @@ Initializing timing engine
 Completed Processing XDC Constraints
 
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-refresh_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1137.242 ; gain = 51.578
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1137.242 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 927.523 ; gain = 375.227
+56 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 927.523 ; gain = 375.227
 launch_simulation
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-54] Inspecting design source files for 'TopLevel_tb' in fileset 'sim_1'...
@@ -453,7 +158,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14
 INFO: [VRFC 10-311] analyzing module EXMEMRegister
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Execution
-WARNING: [VRFC 10-756] identifier Hi_Wire_ToOutput is used before its declaration [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v:44]
+WARNING: [VRFC 10-756] identifier Hi_Wire_ToOutput is used before its declaration [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v:46]
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module HiLoRegister
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v" into library xil_defaultlib
@@ -490,6 +195,8 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14
 INFO: [VRFC 10-311] analyzing module EXAdder
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new/ShiftLeft2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ShiftLeft2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux32Bit3To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32Bit3To1
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/TopLevel_tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module TopLevel_tb
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/WriteBack_tb.v" into library xil_defaultlib
@@ -536,200 +243,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14
 INFO: [VRFC 10-311] analyzing module InstructionFetch_tb
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1137.242 ; gain = 0.000
-INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
-Vivado Simulator 2017.2
-Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 292ce9040b1e4d15946498d17870732e --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevel_tb_behav xil_defaultlib.TopLevel_tb xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.ProgramCounter
-Compiling module xil_defaultlib.PCAdder
-Compiling module xil_defaultlib.InstructionMemory
-Compiling module xil_defaultlib.InstructionFetchUnit
-Compiling module xil_defaultlib.IFIDRegister
-Compiling module xil_defaultlib.RegisterFile
-Compiling module xil_defaultlib.Control
-Compiling module xil_defaultlib.SignExtension
-Compiling module xil_defaultlib.InstructionDecode
-Compiling module xil_defaultlib.IDEXRegister
-Compiling module xil_defaultlib.ShiftLeft2
-Compiling module xil_defaultlib.EXAdder
-Compiling module xil_defaultlib.Mux32Bit2To1
-Compiling module xil_defaultlib.Mux5Bit2To1
-Compiling module xil_defaultlib.ALU32Bit
-Compiling module xil_defaultlib.HiLoRegister
-Compiling module xil_defaultlib.Execution
-Compiling module xil_defaultlib.EXMEMRegister
-Compiling module xil_defaultlib.DataMemory
-Compiling module xil_defaultlib.Memory
-Compiling module xil_defaultlib.MEMWBRegister
-Compiling module xil_defaultlib.WriteBack
-Compiling module xil_defaultlib.TopLevel
-Compiling module xil_defaultlib.TopLevel_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot TopLevel_tb_behav
-
-****** Webtalk v2017.2 (64-bit)
-  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
-  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-
-source E:/LABS8-17 -notrace
-couldn't read file "E:/LABS8-17": no such file or directory
-INFO: [Common 17-206] Exiting Webtalk at Sun Nov 19 09:25:36 2017...
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1137.242 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "TopLevel_tb_behav -key {Behavioral:sim_1:Functional:TopLevel_tb} -tclbatch {TopLevel_tb.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2017.2
-Time resolution is 1 ps
-source TopLevel_tb.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'TopLevel_tb_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 1137.242 ; gain = 0.000
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 80 us
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 80 us
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 80 us
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 80 us
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 80 us
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 80 us
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'TopLevel_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
-INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
-"xvlog -m64 --relax -prj TopLevel_tb_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU32Bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Control
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/DataMemory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DataMemory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXMEMRegister
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Execution
-WARNING: [VRFC 10-756] identifier Hi_Wire_ToOutput is used before its declaration [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v:44]
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module HiLoRegister
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IDEXRegister
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IFIDRegister.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IFIDRegister
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/InstructionDecode.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionDecode
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/InstructionFetch.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionFetchUnit
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MEMWBRegister
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Memory.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Memory
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux32Bit2To1
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux5Bit2To1
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/PCAdder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PCAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ProgramCounter
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegisterFile
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/SignExtension.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignExtension
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/WriteBack.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module WriteBack
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/TopLevel.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TopLevel
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXAdder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new/ShiftLeft2.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ShiftLeft2
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/TopLevel_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TopLevel_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/WriteBack_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module WriteBack_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/Memory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Memory_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/Execution_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Execution_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/InstructionDecode_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionDecode_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALU32Bit_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/Mux32Bit2To1_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Mux32Bit2To1_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/MEMWBRegister_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MEMWBRegister_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/ShiftLeft2_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ShiftLeft2_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/IFIDRegister_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IFIDRegister_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/DataMemory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module DataMemory_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/ALUControl_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ALUControl_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/Control_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Control_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/RegisterFile_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RegisterFile_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/IDEXRegister_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module IDEXRegister_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/EXAdder_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXAdder_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/PCAdder_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module PCAdder_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/InstructionMemory_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionMemory_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/EXMEMRegister_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module EXMEMRegister_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/ProgramCounter_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ProgramCounter_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/SignExtension_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SignExtension_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/InstructionFetch_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module InstructionFetch_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1220.027 ; gain = 0.000
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 994.035 ; gain = 0.000
 INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
@@ -755,6 +269,7 @@ Compiling module xil_defaultlib.IDEXRegister
 Compiling module xil_defaultlib.ShiftLeft2
 Compiling module xil_defaultlib.EXAdder
 Compiling module xil_defaultlib.Mux32Bit2To1
+Compiling module xil_defaultlib.Mux32Bit3To1
 Compiling module xil_defaultlib.Mux5Bit2To1
 Compiling module xil_defaultlib.ALU32Bit
 Compiling module xil_defaultlib.HiLoRegister
@@ -776,9 +291,298 @@ Built simulation snapshot TopLevel_tb_behav
 
 source E:/LABS8-17 -notrace
 couldn't read file "E:/LABS8-17": no such file or directory
-INFO: [Common 17-206] Exiting Webtalk at Sun Nov 19 11:40:10 2017...
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1220.027 ; gain = 0.000
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 19 15:46:17 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 994.035 ; gain = 0.000
 INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TopLevel_tb_behav -key {Behavioral:sim_1:Functional:TopLevel_tb} -tclbatch {TopLevel_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source TopLevel_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.508 ; gain = 30.473
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TopLevel_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 1024.508 ; gain = 30.473
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 12 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 12 us
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1048.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopLevel' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/TopLevel.v:16]
+INFO: [Synth 8-638] synthesizing module 'InstructionFetchUnit' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/InstructionFetch.v:42]
+INFO: [Synth 8-638] synthesizing module 'ProgramCounter' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v:28]
+INFO: [Synth 8-256] done synthesizing module 'ProgramCounter' (1#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v:28]
+INFO: [Synth 8-638] synthesizing module 'PCAdder' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/PCAdder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PCAdder' (2#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/PCAdder.v:23]
+INFO: [Synth 8-638] synthesizing module 'InstructionMemory' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v:40]
+INFO: [Synth 8-256] done synthesizing module 'InstructionMemory' (3#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v:40]
+INFO: [Synth 8-256] done synthesizing module 'InstructionFetchUnit' (4#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/InstructionFetch.v:42]
+INFO: [Synth 8-638] synthesizing module 'IFIDRegister' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IFIDRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'IFIDRegister' (5#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IFIDRegister.v:3]
+INFO: [Synth 8-638] synthesizing module 'InstructionDecode' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/InstructionDecode.v:3]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
+WARNING: [Synth 8-567] referenced signal 'regfile' should be on the sensitivity list [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:80]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (6#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
+INFO: [Synth 8-638] synthesizing module 'Control' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:23]
+WARNING: [Synth 8-151] case item 6'b000010 is unreachable [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:79]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:79]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:190]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:250]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:64]
+INFO: [Synth 8-256] done synthesizing module 'Control' (7#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v:23]
+INFO: [Synth 8-638] synthesizing module 'SignExtension' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:8]
+INFO: [Synth 8-256] done synthesizing module 'SignExtension' (8#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/SignExtension.v:8]
+INFO: [Synth 8-256] done synthesizing module 'InstructionDecode' (9#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/InstructionDecode.v:3]
+INFO: [Synth 8-638] synthesizing module 'IDEXRegister' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'IDEXRegister' (10#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v:3]
+INFO: [Synth 8-638] synthesizing module 'Execution' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v:3]
+INFO: [Synth 8-638] synthesizing module 'ShiftLeft2' [E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new/ShiftLeft2.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ShiftLeft2' (11#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new/ShiftLeft2.v:3]
+INFO: [Synth 8-638] synthesizing module 'EXAdder' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXAdder.v:3]
+INFO: [Synth 8-256] done synthesizing module 'EXAdder' (12#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXAdder.v:3]
+INFO: [Synth 8-638] synthesizing module 'Mux32Bit2To1' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10]
+INFO: [Synth 8-256] done synthesizing module 'Mux32Bit2To1' (13#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10]
+INFO: [Synth 8-638] synthesizing module 'Mux32Bit3To1' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux32Bit3To1.v:10]
+INFO: [Synth 8-256] done synthesizing module 'Mux32Bit3To1' (14#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux32Bit3To1.v:10]
+INFO: [Synth 8-638] synthesizing module 'Mux5Bit2To1' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:10]
+INFO: [Synth 8-256] done synthesizing module 'Mux5Bit2To1' (15#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:10]
+INFO: [Synth 8-638] synthesizing module 'ALU32Bit' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:37]
+INFO: [Synth 8-256] done synthesizing module 'ALU32Bit' (16#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v:37]
+INFO: [Synth 8-638] synthesizing module 'HiLoRegister' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v:26]
+INFO: [Synth 8-256] done synthesizing module 'HiLoRegister' (17#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v:26]
+INFO: [Synth 8-256] done synthesizing module 'Execution' (18#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v:3]
+INFO: [Synth 8-638] synthesizing module 'EXMEMRegister' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'EXMEMRegister' (19#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3]
+INFO: [Synth 8-638] synthesizing module 'Memory' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Memory.v:3]
+INFO: [Synth 8-638] synthesizing module 'DataMemory' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/DataMemory.v:38]
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (20#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/DataMemory.v:38]
+INFO: [Synth 8-256] done synthesizing module 'Memory' (21#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Memory.v:3]
+INFO: [Synth 8-638] synthesizing module 'MEMWBRegister' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'MEMWBRegister' (22#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3]
+INFO: [Synth 8-638] synthesizing module 'WriteBack' [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/WriteBack.v:3]
+INFO: [Synth 8-256] done synthesizing module 'WriteBack' (23#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/WriteBack.v:3]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel' (24#1) [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/TopLevel.v:16]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[31]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[30]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[29]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[28]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[27]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[26]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[25]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[24]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[23]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[22]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[21]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[20]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[19]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[18]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[17]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[16]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[15]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[14]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[13]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[12]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[1]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[0]
+WARNING: [Synth 8-3331] design Memory has unconnected port Rst
+WARNING: [Synth 8-3331] design Execution has unconnected port Rst
+WARNING: [Synth 8-3331] design Execution has unconnected port Branch
+WARNING: [Synth 8-3331] design Execution has unconnected port ZeroExtend
+WARNING: [Synth 8-3331] design InstructionDecode has unconnected port Rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1063.320 ; gain = 14.613
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1063.320 ; gain = 14.613
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1101.914 ; gain = 53.207
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TopLevel_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
+"xvlog -m64 --relax -prj TopLevel_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEMRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Execution
+WARNING: [VRFC 10-756] identifier Hi_Wire_ToOutput is used before its declaration [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v:46]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HiLoRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEXRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IFIDRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFIDRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/InstructionDecode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionDecode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/InstructionFetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionFetchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWBRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux5Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/PCAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/WriteBack.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBack
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/TopLevel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new/ShiftLeft2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftLeft2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux32Bit3To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32Bit3To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/TopLevel_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/WriteBack_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBack_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/Memory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/Execution_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Execution_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/InstructionDecode_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionDecode_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/Mux32Bit2To1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32Bit2To1_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/MEMWBRegister_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWBRegister_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/ShiftLeft2_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftLeft2_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/IFIDRegister_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFIDRegister_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/DataMemory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/ALUControl_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/Control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/RegisterFile_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/IDEXRegister_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEXRegister_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/EXAdder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXAdder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/PCAdder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/InstructionMemory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/EXMEMRegister_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEMRegister_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/ProgramCounter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/SignExtension_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/InstructionFetch_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionFetch_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 292ce9040b1e4d15946498d17870732e --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevel_tb_behav xil_defaultlib.TopLevel_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.PCAdder
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.InstructionFetchUnit
+Compiling module xil_defaultlib.IFIDRegister
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.SignExtension
+Compiling module xil_defaultlib.InstructionDecode
+Compiling module xil_defaultlib.IDEXRegister
+Compiling module xil_defaultlib.ShiftLeft2
+Compiling module xil_defaultlib.EXAdder
+Compiling module xil_defaultlib.Mux32Bit2To1
+Compiling module xil_defaultlib.Mux32Bit3To1
+Compiling module xil_defaultlib.Mux5Bit2To1
+Compiling module xil_defaultlib.ALU32Bit
+Compiling module xil_defaultlib.HiLoRegister
+Compiling module xil_defaultlib.Execution
+Compiling module xil_defaultlib.EXMEMRegister
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.MEMWBRegister
+Compiling module xil_defaultlib.WriteBack
+Compiling module xil_defaultlib.TopLevel
+Compiling module xil_defaultlib.TopLevel_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TopLevel_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/LABS8-17 -notrace
+couldn't read file "E:/LABS8-17": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 19 15:58:08 2017...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav'
 INFO: [USF-XSim-98] *** Running xsim
@@ -799,13 +603,10 @@ source TopLevel_tb.tcl
 # run 1000ns
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'TopLevel_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 1220.027 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1101.914 ; gain = 0.000
 restart
 INFO: [Simtcl 6-17] Simulation restarted
-run 80 us
+run 12 us
 restart
 INFO: [Simtcl 6-17] Simulation restarted
-run 80 us
-restart
-INFO: [Simtcl 6-17] Simulation restarted
-run 80 us
+run 15 us

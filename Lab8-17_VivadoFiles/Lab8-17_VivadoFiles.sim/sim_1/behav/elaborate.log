@@ -20,6 +20,7 @@ Compiling module xil_defaultlib.IDEXRegister
 Compiling module xil_defaultlib.ShiftLeft2
 Compiling module xil_defaultlib.EXAdder
 Compiling module xil_defaultlib.Mux32Bit2To1
+Compiling module xil_defaultlib.Mux32Bit3To1
 Compiling module xil_defaultlib.Mux5Bit2To1
 Compiling module xil_defaultlib.ALU32Bit
 Compiling module xil_defaultlib.HiLoRegister
