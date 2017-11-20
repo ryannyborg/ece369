@@ -186,7 +186,7 @@ module ALU32Bit(ALUOp, A, B, Lo_IN, Hi_IN, Zero, LoResult, HiResult, ALUResult);
             6'b100010 : begin
                 ALUResult <= {32'd0, {(A >> B) | (A << (32 - B))}};
             end
-            // sra/srav (35)
+            // sra (35)
             6'b100011 : begin 
                 ALUResult[31:0] <= A >>> B; ALUResult[63:32] <= 32'd0; 
             end
@@ -205,7 +205,11 @@ module ALU32Bit(ALUOp, A, B, Lo_IN, Hi_IN, Zero, LoResult, HiResult, ALUResult);
             // srlv (39)
             6'b100111 : begin
                 ALUResult <= B >> A; ALUResult[63:32] <= 32'd0;
-            end          
+            end       
+            // srav (40)
+            6'b101000 : begin 
+                ALUResult[31:0] <= B >>> A; ALUResult[63:32] <= 32'd0; 
+            end
             default: begin
                 ALUResult <= 64'h0000000000000000;
             end

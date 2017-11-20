@@ -133,7 +133,12 @@ module Control(Instruction, RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSr
                         ALUOp <= 6'b100010; //rotr and rotrv
                     end
                     6'b000011: begin
-                        ALUOp <= 6'b100011; //sra and srav
+                        ALUOp <= 6'b100011; //sra
+                        ALUSrc <= 2;
+                        ReadDataSelect <= 1;
+                    end
+                    6'b000111: begin
+                        ALUOp <= 6'b101000; //srav
                     end
                     6'b101011: begin
                         ALUOp <= 6'b100101; //sltu
