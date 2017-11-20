@@ -9,7 +9,7 @@ module Execution(
         ReadData1,
         ReadData2,
         Immediate_Extended,
-        ALUOp,
+        ALUOp, mthi, mtlo,
         // control signals IN
         RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, ReadDataSelect, Branch, WrEn, RdEn, ZeroExtend, /////////RdEn
         // outputs
@@ -31,6 +31,7 @@ module Execution(
    input RegWrite, MemWrite, MemRead, MemtoReg, RegDst, Branch, WrEn, RdEn, ZeroExtend, ReadDataSelect;//////////RdEn
    input [1:0] ALUSrc;
    input [31:0] PCAdder_IN;
+   input mthi, mtlo;
    
    output [31:0] Hi_Out_EX, Lo_Out_EX;
    output [31:0] ReadData2_Out, ALULoResult;
@@ -104,6 +105,8 @@ module Execution(
         .Clk(Clk), /////////////////NEW
         .WrEn(WrEn), /////////////////NEW
         .RdEn(RdEn), /////////////////NEW
+        .mthi(mthi),
+        .mtlo(mtlo),
         .HiOut(Hi_Wire), 
         .LoOut(Lo_Wire) 
         );

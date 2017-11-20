@@ -69,6 +69,8 @@ module ALU32Bit(ALUOp, A, B, Lo_IN, Hi_IN, Zero, LoResult, HiResult, ALUResult);
             // mult (5) ////////////////// May be wrong
             6'b000101 : begin 
                 ALUResult <= $signed(A) * $signed(B);
+                HiResult <= ALUResult[63:32];
+                LoResult <= ALUResult[31:0];
             end
             // multu (6) ////////////////// May be wrong
             6'b000110 : begin 
@@ -76,11 +78,11 @@ module ALU32Bit(ALUOp, A, B, Lo_IN, Hi_IN, Zero, LoResult, HiResult, ALUResult);
             end
             // madd (7)
             6'b000111 : begin 
-                ALUResult <= {Hi_IN, Lo_IN} + (A * B); 
+                ALUResult <= $signed({Hi_IN, Lo_IN}) + ($signed(A) * $signed(B)); 
             end
             // msub (8)
             6'b001000 : begin 
-                ALUResult <= {Hi_IN, Lo_IN} - (A * B); 
+                ALUResult <= $signed({Hi_IN, Lo_IN}) - ($signed(A) * $signed(B)); 
             end
             // lw/sw/sb/lh/lb/sh (9)
             6'b001001 : begin 
@@ -96,11 +98,11 @@ module ALU32Bit(ALUOp, A, B, Lo_IN, Hi_IN, Zero, LoResult, HiResult, ALUResult);
             end
             // mfhi (12)
             6'b001100 : begin
-                ALUResult <= 64'h0000000000000000;
+                ALUResult <= Hi_IN;
             end
             // mflo (13)
             6'b001101 : begin
-                ALUResult <= 64'h0000000000000000;
+                ALUResult <= Lo_IN;
             end
             // lui (14)
             6'b001110 : begin 
@@ -160,7 +162,7 @@ module ALU32Bit(ALUOp, A, B, Lo_IN, Hi_IN, Zero, LoResult, HiResult, ALUResult);
             end
             // seh (28)
             6'b011100 : begin
-                ALUResult <= {{32'd0},{17{A[15]}},A[14:0]};
+                ALUResult <= {{17{B[15]}},B[14:0]};
             end
             // sll (29)
             6'b011101 : begin 
@@ -176,13 +178,13 @@ module ALU32Bit(ALUOp, A, B, Lo_IN, Hi_IN, Zero, LoResult, HiResult, ALUResult);
             end
             // movn (32)
             6'b100000 : begin
-                ALUResult <= (B == 32'h00000000) ? 64'h0000000000000000 : 64'h0000000000000001;
+                ALUResult <= (B == 32'h00000000) ? 64'h0000000000000000 : A;
             end
             // movz (33)
             6'b100001 : begin
-                ALUResult <= (B == 32'h00000000) ? 64'h0000000000000001 : 64'h0000000000000000;
+                ALUResult <= (B == 32'h00000000) ? A : 64'h0000000000000000;
             end
-            // rotr/rotrv (34)
+            // rotr (34)
             6'b100010 : begin
                 ALUResult <= {32'd0, {(A >> B) | (A << (32 - B))}};
             end
@@ -192,7 +194,7 @@ module ALU32Bit(ALUOp, A, B, Lo_IN, Hi_IN, Zero, LoResult, HiResult, ALUResult);
             end
             // seb (36)
             6'b100100 : begin
-                ALUResult <= {{32'd0},{25{A[7]}},A[6:0]};
+                ALUResult <= {{25{B[7]}},B[6:0]};
             end
             // sltu/sltiu (37)
             6'b100101 : begin
@@ -210,6 +212,10 @@ module ALU32Bit(ALUOp, A, B, Lo_IN, Hi_IN, Zero, LoResult, HiResult, ALUResult);
             6'b101000 : begin 
                 ALUResult[31:0] <= B >>> A; ALUResult[63:32] <= 32'd0; 
             end
+            // rotrv (41)
+            6'b101001 : begin
+                ALUResult <= {32'd0, {(B >> A) | (B << (32 - A))}};
+            end
             default: begin
                 ALUResult <= 64'h0000000000000000;
             end
@@ -218,10 +224,10 @@ module ALU32Bit(ALUOp, A, B, Lo_IN, Hi_IN, Zero, LoResult, HiResult, ALUResult);
         
     end
     
-    always @ (ALUResult) begin
+    always @ (ALUResult, HiResult, LoResult) begin
             HiResult <= ALUResult[63:32];
             LoResult <= ALUResult[31:0];
-            end
+    end
     
 endmodule
 

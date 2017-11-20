@@ -6,7 +6,7 @@ module InstructionDecode(
         // outputs
         ReadData1, ReadData2, Immediate_Extended, Instruction_20_16, Instruction_15_11, Instruction_10_6,
         // control signals
-        RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, WrEn, RdEn, ZeroExtend, ALUOp, ReadDataSelect, /////////Added RdEn
+        RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, WrEn, RdEn, ZeroExtend, ALUOp, ReadDataSelect, mthi, mtlo, /////////Added RdEn
         //REGWRITE SIGNAL FROM WB STAGE
         RegWrite_WB
 );
@@ -26,7 +26,7 @@ module InstructionDecode(
    // Control Signals
    output RegWrite, MemWrite, MemRead, MemtoReg, RegDst, Branch, WrEn, RdEn, ZeroExtend; /////////ADDED RdEn
    output [1:0] ALUSrc;
-   output ReadDataSelect;
+   output ReadDataSelect, mthi, mtlo;
    
    always @ (*) begin
     Instruction_20_16 <= Instruction[20:16];
@@ -58,7 +58,9 @@ module InstructionDecode(
         .WrEn(WrEn),
         .RdEn(RdEn), ////////////////////////////// 
         .ZeroExtend(ZeroExtend),
-        .ReadDataSelect(ReadDataSelect)
+        .ReadDataSelect(ReadDataSelect),
+        .mthi(mthi),
+        .mtlo(mtlo)
        );
        
        SignExtension signExtend(

@@ -8,7 +8,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14
 INFO: [VRFC 10-311] analyzing module EXMEMRegister
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Execution
-WARNING: [VRFC 10-756] identifier Hi_Wire_ToOutput is used before its declaration [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v:46]
+WARNING: [VRFC 10-756] identifier Hi_Wire_ToOutput is used before its declaration [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v:47]
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module HiLoRegister
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v" into library xil_defaultlib

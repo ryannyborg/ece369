@@ -36,6 +36,7 @@ module TopLevel(Clk, Rst, WriteData, PCValue, Hi_Out, Lo_Out);
     wire [4:0] Instruction_15_11_ID, Instruction_20_16_ID, Instruction_10_6_ID;
     wire RegWrite_ID, MemWrite_ID, MemRead_ID, MemtoReg_ID, RegDst_ID, 
     Branch_ID, WrEn_ID, RdEn_ID, ZeroExtend_ID; ///////////ADDED RDEN_ID WIRE
+    wire mthi_ID, mtlo_ID; 
     wire ReadDataSelect_ID;
     wire [1:0] ALUSrc_ID;
     wire [5:0] ALUOp_ID; // changed
@@ -43,6 +44,7 @@ module TopLevel(Clk, Rst, WriteData, PCValue, Hi_Out, Lo_Out);
     // ID_EX Outputs
     wire RegWrite_EX, MemWrite_EX, MemRead_EX, MemtoReg_EX, RegDst_EX,
         Branch_EX, WrEn_EX, RdEn_EX, ZeroExtend_EX; //////////////ADDED RDEN_EX WIRE
+    wire mthi_EX, mtlo_EX;
     wire ReadDataSelect_EX;
     wire [1:0] ALUSrc_EX;
     wire [5:0] ALUOp_EX; // changed
@@ -110,7 +112,7 @@ module TopLevel(Clk, Rst, WriteData, PCValue, Hi_Out, Lo_Out);
         .Instruction_10_6(Instruction_10_6_ID),
         .RegWrite(RegWrite_In_ID), .MemWrite(MemWrite_ID), .MemRead(MemRead_ID), .MemtoReg(MemtoReg_ID), .RegDst(RegDst_ID), 
         .ALUSrc(ALUSrc_ID), .Branch(Branch_ID), .WrEn(WrEn_ID), .ReadDataSelect(ReadDataSelect_ID), 
-        .RdEn(RdEn_ID),
+        .RdEn(RdEn_ID), .mthi(mthi_ID), .mtlo(mtlo_ID),
         .ZeroExtend(ZeroExtend_ID), .ALUOp(ALUOp_ID),
         .RegWrite_WB(RegWrite_WB)///////////////////////////////////////////////////////////
         );
@@ -134,6 +136,8 @@ module TopLevel(Clk, Rst, WriteData, PCValue, Hi_Out, Lo_Out);
         .RegDst_In(RegDst_ID), .RegDst_reg(RegDst_EX), 
         .ALUSrc_In(ALUSrc_ID), .ALUSrc_reg(ALUSrc_EX), 
         .ALUOp_In(ALUOp_ID), .ALUOp_reg(ALUOp_EX), 
+        .mthi_In(mthi_ID), .mthi_reg(mthi_EX),
+        .mtlo_In(mtlo_ID), .mtlo_reg(mtlo_EX),
         .WrEn_In(WrEn_ID), .WrEn_reg(WrEn_EX),
         .RdEn_In(RdEn_ID), .RdEn_reg(RdEn_EX), 
         .MemRead_In(MemRead_ID), .MemRead_reg(MemRead_EX), 
@@ -161,7 +165,7 @@ module TopLevel(Clk, Rst, WriteData, PCValue, Hi_Out, Lo_Out);
         .RegDst(RegDst_EX), .ALUSrc(ALUSrc_EX), .Branch(Branch_EX), 
         .WrEn(WrEn_EX), 
         .RdEn(RdEn_EX),
-        .ZeroExtend(ZeroExtend_EX),
+        .ZeroExtend(ZeroExtend_EX), .mthi(mthi_EX), .mtlo(mtlo_EX),
         // outputs
         .ALULoResult(ALULoResult_EX), .ReadData2_Out(ReadData2_EXOut), .RegDestAddress(RegDestAddress_EX), .Zero(Zero_EX), ////////////////////////NEW
         // control signals OUT
