@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "TopLevel_tb_func_synth.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/TopLevel_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/WriteBack_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/Memory_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/Execution_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/InstructionDecode_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/ALU32Bit_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/Mux32Bit2To1_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/MEMWBRegister_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/ShiftLeft2_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/IFIDRegister_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/DataMemory_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/ALUControl_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/Control_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/RegisterFile_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/IDEXRegister_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/EXAdder_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/PCAdder_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/InstructionMemory_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/EXMEMRegister_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/ProgramCounter_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/SignExtension_tb.v"
+verilog xil_defaultlib  "../../../../../Lab8-14_Files/SimulationSources/InstructionFetch_tb.v"
+
+# Do not sort compile order
+nosort

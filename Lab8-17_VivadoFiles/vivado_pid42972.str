@@ -1,0 +1,1441 @@
+/*
+
+Vivado v2017.2 (64-bit)
+SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+
+Process ID: 42972
+License: Customer
+
+Current time: 	11/1/17 4:50:25 PM MST
+Time zone: 	Mountain Standard Time (America/Phoenix)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 387 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/java.exe
+Java library paths: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o;C:/WINDOWS/Sun/Java/bin;C:/WINDOWS/system32;C:/WINDOWS;C:/Xilinx/Vivado/2017.2/bin;C:/Xilinx/Vivado/2017.2/lib/win64.o;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/server;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado_HLS/2017.2/bin;C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler;C:/ProgramData/Oracle/Java/javapath;C:/Program Files (x86)/HP SimplePass/x64;C:/Program Files (x86)/HP SimplePass/;C:/Program Files (x86)/Intel/iCLS Client/;C:/Program Files/Intel/iCLS Client/;C:/WINDOWS/system32;C:/WINDOWS;C:/WINDOWS/System32/Wbem;C:/WINDOWS/System32/WindowsPowerShell/v1.0/;C:/Program Files/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files/Intel/Intel(R) Management Engine Components/IPT;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT;C:/Program Files (x86)/Intel/OpenCL SDK/2.0/bin/x86;C:/Program Files (x86)/Intel/OpenCL SDK/2.0/bin/x64;C:/Program Files (x86)/QuickTime/QTSystem/;C:/WINDOWS/system32/config/systemprofile/.dnx/bin;C:/Program Files/Microsoft DNX/Dnvm/;C:/Program Files/Microsoft SQL Server/120/Tools/Binn/;C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/;C:/Program Files (x86)/nodejs/;C:/Program Files/MATLAB/R2016b/runtime/win64;C:/Program Files/MATLAB/R2016b/bin;C:/Program Files/LLVM/bin;C:/Program Files/Git/cmd;C:/Program Files (x86)/Windows Live/Shared;C:/Users/Jesus/AppData/Roaming/npm;C:/Users/Jesus/AppData/Local/Microsoft/WindowsApps;C:/Users/Jesus/AppData/Local/atom/bin;C:/Users/Jesus/AppData/Local/GitHubDesktop/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	Jesus
+User home directory: C:/Users/Jesus
+User working directory: C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.2
+RDI_DATADIR: C:/Xilinx/Vivado/2017.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.2/bin
+
+User preferences location: C:/Users/Jesus/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/Jesus/AppData/Roaming/Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: C:/Users/Jesus/AppData/Roaming/Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	C:/Xilinx/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/.Xil/Vivado-42972-Jesus
+
+GUI allocated memory:	184 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 482 MB
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 49 MB (+48652kb) [00:00:15]
+// [Engine Memory]: 449 MB (+319351kb) [00:00:15]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Jesus\Documents\ECE 369\LABS8-17\LABS8-17 UPDATED 11-1-17\Lab8-17_VivadoFiles\Lab8-17_VivadoFiles.xpr. Version: Vivado v2017.2 
+// bs:g (cg:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles' INFO: [Project 1-313] Project file moved from 'E:/Fall 2017/ECE 369/LABS8-17/Lab8-17_VivadoFiles' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [Engine Memory]: 492 MB (+21205kb) [00:00:19]
+// HMemoryUtils.trashcanNow. Engine heap size: 509 MB. GUI used memory: 32 MB. Current time: 11/1/17 4:50:27 PM MST
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 60 MB (+8721kb) [00:00:22]
+// [Engine Memory]: 589 MB (+76081kb) [00:00:22]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:10 . Memory (MB): peak = 865.504 ; gain = 148.031 
+// Project name: Lab8-17_VivadoFiles; location: C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles; part: xc7k70tfbv676-1
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // z:k (L:JPanel, cg:JFrame)
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v)]", 1); // B:i (D:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), execution : Execution (Execution.v)]", 6); // B:i (D:JPanel, cg:JFrame)
+// [GUI Memory]: 63 MB (+48kb) [00:00:40]
+// PAPropertyPanels.initPanels (HiLoRegister.v) elapsed time: 0.5s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), execution : Execution (Execution.v), hi_low_reg : HiLoRegister (HiLoRegister.v)]", 10, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), execution : Execution (Execution.v), hi_low_reg : HiLoRegister (HiLoRegister.v)]", 10, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+// [GUI Memory]: 66 MB (+478kb) [00:00:43]
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // y:aJ
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// [GUI Memory]: 70 MB (+112kb) [00:20:33]
+// Elapsed time: 1701 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 13, true); // u:M (JViewport:JComponent, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 14, true); // u:M (JViewport:JComponent, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 13, true); // u:M (JViewport:JComponent, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f:p (cg:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+// bs:g (cg:JFrame):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 74 MB (+1099kb) [00:29:10]
+// Tcl Message: [Wed Nov  1 17:19:17 2017] Launched synth_1... Run output will be captured here: C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bs:g (cg:JFrame)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h:k (JPanel:JComponent, cg:JFrame)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bs:g (cg:JFrame)
+// Elapsed time: 38 seconds
+selectCodeEditor("HiLoRegister.v", 6, 10); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B:JideButton (f:CommandBar, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 0, 15); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "HiLoRegister.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 38 MB. Current time: 11/1/17 5:20:24 PM MST
+// [Engine Memory]: 624 MB (+5926kb) [00:30:17]
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f:p (cg:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+// bs:g (cg:JFrame):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Nov  1 17:20:32 2017] Launched synth_1... Run output will be captured here: C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs:g (cg:JFrame)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:x (cg:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 161 seconds
+dismissDialog("Synthesis Completed"); // ah:x (cg:JFrame)
+// [GUI Memory]: 78 MB (+176kb) [00:37:16]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// [GUI Memory]: 82 MB (+422kb) [00:55:37]
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 38 MB. Current time: 11/1/17 5:50:25 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 37 MB. Current time: 11/1/17 6:20:25 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 38 MB. Current time: 11/1/17 6:50:25 PM MST
+// [GUI Memory]: 87 MB (+834kb) [02:15:55]
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 38 MB. Current time: 11/1/17 7:20:29 PM MST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (WrapperUtils Delayed Delete Timer) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 38 MB. Current time: 11/1/17 7:50:30 PM MST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// [GUI Memory]: 92 MB (+733kb) [03:19:16]
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 38 MB. Current time: 11/1/17 8:20:33 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 38 MB. Current time: 11/1/17 9:41:01 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 34 MB. Current time: 11/1/17 10:11:01 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 34 MB. Current time: 11/1/17 10:41:01 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 35 MB. Current time: 11/1/17 11:11:01 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 34 MB. Current time: 11/1/17 11:41:02 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 34 MB. Current time: 11/2/17 12:11:02 AM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 34 MB. Current time: 11/2/17 3:11:15 AM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 34 MB. Current time: 11/2/17 10:43:42 AM MST
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 34 MB. Current time: 11/2/17 11:13:45 AM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 33 MB. Current time: 11/2/17 11:43:45 AM MST
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 33 MB. Current time: 11/2/17 12:13:45 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 37 MB. Current time: 11/2/17 1:58:03 PM MST
+// [GUI Memory]: 98 MB (+1236kb) [21:16:26]
+// [GUI Memory]: 104 MB (+866kb) [21:17:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 38 MB. Current time: 11/2/17 2:28:04 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 37 MB. Current time: 11/2/17 2:58:04 PM MST
+// Elapsed time: 78482 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u:M (JViewport:JComponent, cg:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e:bs (cg:JFrame):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-54] Inspecting design source files for 'TopLevel_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav' 
+// Tcl Message: "xvlog -m64 --relax -prj TopLevel_tb_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 865.504 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '6' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot TopLevel_tb_behav 
+// TclEventType: LAUNCH_SIM
+// Tcl Message:  ****** Webtalk v2017.2 (64-bit)   **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017   **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source C:/Users/Jesus/Documents/ECE -notrace couldn't read file "C:/Users/Jesus/Documents/ECE": permission denied INFO: [Common 17-206] Exiting Webtalk at Thu Nov  2 15:11:45 2017... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 865.504 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '18' seconds 
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "TopLevel_tb_behav -key {Behavioral:sim_1:Functional:TopLevel_tb} -tclbatch {TopLevel_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.2 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// PAPropertyPanels.initPanels (HiLoRegister.v) elapsed time: 0.4s
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source TopLevel_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 46 MB. Current time: 11/2/17 3:11:55 PM MST
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: xsim: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 908.066 ; gain = 42.563 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'TopLevel_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 908.066 ; gain = 42.563 
+// 'd' command handler elapsed time: 36 seconds
+// Elapsed time: 36 seconds
+dismissDialog("Run Simulation"); // e:bs (cg:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 624 MB. GUI used memory: 43 MB. Current time: 11/2/17 3:12:49 PM MST
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 56 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u:M (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 15, false); // u:M (JViewport:JComponent, cg:JFrame)
+// x:aN (cg:JFrame): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Open Elaborated Design : addNotify
+// TclEventType: ELABORATE_START
+dismissDialog("Elaborate Design"); // x:aN (cg:JFrame)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7k70tfbv676-1 Top: TopLevel 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 669 MB. GUI used memory: 43 MB. Current time: 11/2/17 3:13:40 PM MST
+// [Engine Memory]: 669 MB (+14251kb) [22:23:33]
+// [Engine Memory]: 711 MB (+9288kb) [22:23:34]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: C:/Xilinx/Vivado/2017.2/data/parts/xilinx/kintex7/devint/kintex7/xc7k70t/xc7k70t.xgd; ZipEntry: xc7k70t_detail.xgd elapsed time: 1.6s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 2.1s
+// [Engine Memory]: 813 MB (+69947kb) [22:23:36]
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 908.066 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'InstructionDecode' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/InstructionDecode.v:3] INFO: [Synth 8-638] synthesizing module 'RegisterFile' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51] INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (6#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51] INFO: [Synth 8-638] synthesizing module 'Control' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/Controllers/Control.v:23] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'Execution' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/Execution.v:3] INFO: [Synth 8-638] synthesizing module 'Mux32Bit2To1' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'Mux32Bit2To1' (11#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10] INFO: [Synth 8-638] synthesizing module 'Mux5Bit2To1' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:10] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'Execution' (15#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/Execution.v:3] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'EXMEMRegister' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3] INFO: [Synth 8-256] done synthesizing module 'EXMEMRegister' (16#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'Memory' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/Memory.v:3] INFO: [Synth 8-638] synthesizing module 'DataMemory' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/DataMemory.v:38] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'DataMemory' (17#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/DataMemory.v:38] INFO: [Synth 8-256] done synthesizing module 'Memory' (18#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/Memory.v:3] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'MEMWBRegister' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3] INFO: [Synth 8-256] done synthesizing module 'MEMWBRegister' (19#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'WriteBack' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/WriteBack.v:3] INFO: [Synth 8-256] done synthesizing module 'WriteBack' (20#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/WriteBack.v:3] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'TopLevel' (21#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/TopLevel.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 932.109 ; gain = 24.043 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 932.109 ; gain = 24.043 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7k70tfbv676-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:01:04 ; elapsed = 00:00:45 . Memory (MB): peak = 1259.172 ; gain = 351.105 
+// Tcl Message: 50 Infos, 58 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:00:46 . Memory (MB): peak = 1259.172 ; gain = 351.105 
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Elapsed time: 46 seconds
+dismissDialog("Open Elaborated Design"); // bs:g (cg:JFrame)
+// Elapsed time: 324 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 94, 358); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B:JideButton (f:CommandBar, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 3, 203); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B:JideButton (f:CommandBar, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 262, 151); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 235, 24); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 495, 25); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "HiLoRegister.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 498, 45); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "HiLoRegister.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 2, 40); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 117, 130); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "HiLoRegister.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 97, 154); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 91, 142); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "HiLoRegister.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 239, 64); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "HiLoRegister.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 425, 64); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 235, 61); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "HiLoRegister.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 245, 64); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("HiLoRegister.v", 329, 64); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("HiLoRegister.v", 361, 234); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 112 MB (+3004kb) [22:30:31]
+// Elapsed time: 18 seconds
+selectCodeEditor("HiLoRegister.v", 203, 407); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 203, 407, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("HiLoRegister.v", 527, 42); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 323, 184); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 242, 248); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 242, 248, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 22 seconds
+selectCodeEditor("HiLoRegister.v", 96, 369); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 96, 369, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("HiLoRegister.v", 156, 367); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 151, 386); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 202, 368); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 204, 386); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 202, 329); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("HiLoRegister.v", 97, 403); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 97, 403, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("HiLoRegister.v", 82, 400); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 128, 373); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 54 seconds
+selectCodeEditor("HiLoRegister.v", 210, 196); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 120 MB (+2551kb) [22:32:41]
+// Elapsed time: 11 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // y:aJ
+selectCodeEditor("HiLoRegister.v", 264, 264); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 83, 90); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 83, 90, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("HiLoRegister.v", 84, 119); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 84, 119, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("HiLoRegister.v", 85, 112); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 85, 112, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("HiLoRegister.v", 171, 127); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 171, 127, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("HiLoRegister.v", 170, 149); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 170, 149, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aF:FrameContainer (ContainerContainer:JideSplitPane, cg:JFrame)
+// PAPropertyPanels.initPanels (Mux5Bit2To1.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), execution : Execution (Execution.v), RegDstMux : Mux5Bit2To1 (Mux5Bit2To1.v)]", 8, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v)]", 1, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// [GUI Memory]: 128 MB (+1624kb) [22:33:20]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v)]", 1); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), execution : Execution (Execution.v)]", 6, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), execution : Execution (Execution.v)]", 6, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 633, 62); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "HiLoRegister.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Execution.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("Execution.v", 19, 254); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Execution.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 232, 297); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 46 seconds
+selectCodeEditor("Execution.v", 21, 244); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 120, 232); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 107, 254); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 50 seconds
+selectCodeEditor("Execution.v", 62, 57); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 62, 57, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TopLevel.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TopLevel.v", 3, false, true); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Execution.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Execution.v", 4, false, true); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // G:M (Workspace:JPanel, cg:JFrame)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // G:M (Workspace:JPanel, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Execution.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("Execution.v", 432, 165); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 380, 175); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 521, 125); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 393, 197); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 169, 261); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("Execution.v", 305, 260); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 289, 264); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 149, 264); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 311, 260); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 500, 301); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 139, 262); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Execution.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 140, 281); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Execution.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 131, 306); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 130, 299); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Execution.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 147, 248); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Execution.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 275, 170); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 138, 132); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "HiLoRegister.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 137, 132); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "HiLoRegister.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "HiLoRegister.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "HiLoRegister.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 233, 269); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "HiLoRegister.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 223, 280); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "HiLoRegister.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Execution.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 39 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 285, 181); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Execution.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("Execution.v", 178, 348); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 122, 247); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Execution.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 146, 347); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 97, 365); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("Execution.v", 122, 320); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 121, 320, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 859 MB. GUI used memory: 72 MB. Current time: 11/2/17 3:29:37 PM MST
+// [Engine Memory]: 859 MB (+4962kb) [22:39:30]
+// PAPropertyPanels.initPanels (Clk) elapsed time: 0.9s
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), instruction_fetch : InstructionFetchUnit (InstructionFetch.v)]", 2); // B:i (D:JPanel, cg:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), instruction_fetch : InstructionFetchUnit (InstructionFetch.v)]", 2); // B:i (D:JPanel, cg:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), instruction_decode : InstructionDecode (InstructionDecode.v)]", 4); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), instruction_decode : InstructionDecode (InstructionDecode.v)]", 4, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), instruction_decode : InstructionDecode (InstructionDecode.v)]", 4, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+selectCodeEditor("InstructionDecode.v", 71, 81); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("InstructionDecode.v", 70, 81, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Execution.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("Execution.v", 92, 264); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 53 seconds
+selectCodeEditor("Execution.v", 222, 174); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 233 seconds
+selectCodeEditor("Execution.v", 213, 282); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Execution.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Execution.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("Execution.v", 538, 183); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("Execution.v", 56, 352); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 170, 331); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 502, 115); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 38, 253); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 31, 251); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Execution.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("Execution.v", 20, 177); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 20, 201); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("Execution.v", 159, 197); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 78, 199); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 85, 200); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("Execution.v", 85, 93); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 85, 93, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "Execution.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 100, 287); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Execution.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 143, 147); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 142, 147, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "Execution.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 93, 300); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 98, 301); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Execution.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("Execution.v", 279, 230); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 56 seconds
+selectCodeEditor("Execution.v", 227, 191); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 234, 182); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 210, 213); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 114, 282); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 114, 282, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("Execution.v", 135, 262); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("Execution.v", 119, 279); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 109, 279); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 145, 282); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("Execution.v", 270, 285); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 114, 295); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 114, 282); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 114, 282, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "Execution.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 420, 204); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 15 seconds
+typeControlKey((HResource) null, "Execution.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 193, 314); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 193, 314, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("Execution.v", 120, 314); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 118, 242); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 192, 318); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 192, 318, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "Execution.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 150, 241); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 141 MB (+6730kb) [22:49:50]
+typeControlKey((HResource) null, "Execution.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 198, 275); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 113, 317); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 113, 317, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("Execution.v", 170, 257); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 171, 254, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("Execution.v", 171, 254); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 208, 319); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 208, 319, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("Execution.v", 198, 211); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 281, 253); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 406, 211); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 273, 252); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Execution.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("Execution.v", 20, 130); // bI:J (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 148 MB (+522kb) [22:51:06]
+// [GUI Memory]: 156 MB (+478kb) [22:51:06]
+// Elapsed time: 32 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), instruction_decode : InstructionDecode (InstructionDecode.v)]", 4); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), instruction_decode : InstructionDecode (InstructionDecode.v), ctl : Control (Control.v)]", 6, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), instruction_decode : InstructionDecode (InstructionDecode.v), ctl : Control (Control.v)]", 6, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+// [GUI Memory]: 171 MB (+7583kb) [22:51:10]
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // A:b
+// HMemoryUtils.trashcanNow. Engine heap size: 880 MB. GUI used memory: 74 MB. Current time: 11/2/17 3:41:21 PM MST
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Execution.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("Execution.v", 100, 216); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 100, 216, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "Execution.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 95, 266); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 95, 266, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "Execution.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 123, 276); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 123, 276, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "Execution.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 125, 351); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 125, 350, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+typeControlKey((HResource) null, "Execution.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 154, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 160, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 26 seconds
+selectCodeEditor("Execution.v", 19, 315); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("HiLoRegister.v", 162, 177); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Control.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TopLevel.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Execution.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f:R
+// Elapsed time: 62 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Control.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("Control.v", 308, 129); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 321, 158); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 902 MB. GUI used memory: 75 MB. Current time: 11/2/17 3:45:06 PM MST
+selectCodeEditor("HiLoRegister.v", 228, 323); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 27 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bs:g)
+// [Engine Memory]: 902 MB (+635kb) [22:55:38]
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1368.086 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'InstructionDecode' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/InstructionDecode.v:3] INFO: [Synth 8-638] synthesizing module 'RegisterFile' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51] INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (6#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51] INFO: [Synth 8-638] synthesizing module 'Control' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/Controllers/Control.v:23] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'Execution' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/Execution.v:3] INFO: [Synth 8-638] synthesizing module 'Mux32Bit2To1' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'Mux32Bit2To1' (11#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10] INFO: [Synth 8-638] synthesizing module 'Mux5Bit2To1' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:10] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'EXMEMRegister' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3] INFO: [Synth 8-256] done synthesizing module 'EXMEMRegister' (16#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'Memory' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/Memory.v:3] INFO: [Synth 8-638] synthesizing module 'DataMemory' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/DataMemory.v:38] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'DataMemory' (17#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/DataMemory.v:38] INFO: [Synth 8-256] done synthesizing module 'Memory' (18#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/Memory.v:3] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'MEMWBRegister' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3] INFO: [Synth 8-256] done synthesizing module 'MEMWBRegister' (19#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'WriteBack' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/WriteBack.v:3] INFO: [Synth 8-256] done synthesizing module 'WriteBack' (20#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/WriteBack.v:3] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'TopLevel' (21#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/TopLevel.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1392.840 ; gain = 24.754 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1392.840 ; gain = 24.754 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 75 MB. Current time: 11/2/17 3:45:51 PM MST
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 68 MB. Current time: 11/2/17 3:45:55 PM MST
+// Engine heap size: 936 MB. GUI used memory: 69 MB. Current time: 11/2/17 3:45:55 PM MST
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 48 MB. Current time: 11/2/17 3:45:59 PM MST
+// Xgd.load filename: C:/Xilinx/Vivado/2017.2/data/parts/xilinx/kintex7/devint/kintex7/xc7k70t/xc7k70t.xgd; ZipEntry: xc7k70t_detail.xgd elapsed time: 0.8s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.3s
+// Schematic: addNotify
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:30 . Memory (MB): peak = 1417.367 ; gain = 49.281 
+// Elapsed time: 37 seconds
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false, false, false, false, false, true); // u:M (JViewport:JComponent, cg:JFrame) - Double Click
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// PAPropertyPanels.initPanels (Clk) elapsed time: 0.5s
+// Elapsed time: 13 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+/*
+#-------------------------------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Current time: 11/2/17 3:46:46 PM MST
+# Process ID: 42972
+# OS: Windows 10
+# User: Jesus
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+de.concept.nlview.NlviewException: pick: no current page (See C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/vivado_pid42972.debug)
+*/
+// Elapsed time: 36 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 371, 286); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f:R
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Execution.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("Execution.v", 134, 282); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Execution.v", 134, 282, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 11 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Elapsed time: 60 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 77 MB. Current time: 11/2/17 6:58:51 PM MST
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 75 MB. Current time: 11/2/17 8:07:05 PM MST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 75 MB. Current time: 11/2/17 8:37:05 PM MST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 75 MB. Current time: 11/2/17 9:07:05 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 76 MB. Current time: 11/2/17 9:37:05 PM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 76 MB. Current time: 11/3/17 12:43:43 AM MST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 76 MB. Current time: 11/3/17 8:30:34 AM MST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 6000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 75 MB. Current time: 11/3/17 9:00:38 AM MST
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 75 MB. Current time: 11/3/17 9:30:39 AM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 75 MB. Current time: 11/3/17 10:00:50 AM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 75 MB. Current time: 11/3/17 10:30:54 AM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 75 MB. Current time: 11/3/17 12:06:51 PM MST
+// Elapsed time: 73849 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TopLevel.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 58 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 446, 238); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 82 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 77 MB. Current time: 11/3/17 12:36:56 PM MST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// Elapsed time: 1846 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Elapsed time: 32 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), execution : Execution (Execution.v)]", 9); // B:i (D:JPanel, cg:JFrame)
+// PAPropertyPanels.initPanels (Mux32Bit2To1.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), execution : Execution (Execution.v), ALUSrcMux : Mux32Bit2To1 (Mux32Bit2To1.v)]", 10, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), execution : Execution (Execution.v), aluCalculation : ALU32Bit (ALU32Bit.v)]", 12, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), execution : Execution (Execution.v), aluCalculation : ALU32Bit (ALU32Bit.v)]", 12, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+// Elapsed time: 135 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Elapsed time: 134 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 183 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 67 seconds
+selectCodeEditor("ALU32Bit.v", 503, 183); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("ALU32Bit.v", 128, 317); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("ALU32Bit.v", 128, 317, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 82 MB. Current time: 11/3/17 1:06:57 PM MST
+// Elapsed time: 41 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 45 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 49 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 111 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (3)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // A:b
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f:R
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+// bs:g (cg:JFrame):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a:JButton (JPanel:JComponent, bs:g)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1417.367 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'InstructionDecode' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/InstructionDecode.v:3] INFO: [Synth 8-638] synthesizing module 'RegisterFile' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51] INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (6#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/RegisterFile.v:51] INFO: [Synth 8-638] synthesizing module 'Control' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/Controllers/Control.v:23] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'Execution' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/Execution.v:3] INFO: [Synth 8-638] synthesizing module 'Mux32Bit2To1' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'Mux32Bit2To1' (11#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10] INFO: [Synth 8-638] synthesizing module 'Mux5Bit2To1' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:10] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'EXMEMRegister' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3] INFO: [Synth 8-256] done synthesizing module 'EXMEMRegister' (16#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'Memory' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/Memory.v:3] INFO: [Synth 8-638] synthesizing module 'DataMemory' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/DataMemory.v:38] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'DataMemory' (17#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/DataMemory.v:38] INFO: [Synth 8-256] done synthesizing module 'Memory' (18#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/Memory.v:3] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'MEMWBRegister' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3] INFO: [Synth 8-256] done synthesizing module 'MEMWBRegister' (19#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3] 
+// Tcl Message: INFO: [Synth 8-638] synthesizing module 'WriteBack' [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/WriteBack.v:3] INFO: [Synth 8-256] done synthesizing module 'WriteBack' (20#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/WriteBack.v:3] 
+// Tcl Message: INFO: [Synth 8-256] done synthesizing module 'TopLevel' (21#1) [C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-14_Files/TopModules/TopLevel.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1417.367 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1417.367 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 66 MB. Current time: 11/3/17 1:14:36 PM MST
+// Engine heap size: 936 MB. GUI used memory: 67 MB. Current time: 11/3/17 1:14:36 PM MST
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 50 MB. Current time: 11/3/17 1:14:39 PM MST
+// Xgd.load filename: C:/Xilinx/Vivado/2017.2/data/parts/xilinx/kintex7/devint/kintex7/xc7k70t/xc7k70t.xgd; ZipEntry: xc7k70t_detail.xgd elapsed time: 0.7s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.2s
+// Schematic: addNotify
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:32 . Memory (MB): peak = 1436.840 ; gain = 19.473 
+// Elapsed time: 29 seconds
+dismissDialog("Reloading"); // bs:g (cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design, Schematic]", 16, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// PAPropertyPanels.initPanels (execution (Execution)) elapsed time: 0.6s
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 87, 38); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 87, 38, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("HiLoRegister.v", 298, 146); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 38 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// PAPropertyPanels.initPanels (HiLoCtl) elapsed time: 0.3s
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 91, 27); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 91, 27, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 38 seconds
+selectCodeEditor("HiLoRegister.v", 51, 244); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("HiLoRegister.v", 44, 251); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 45 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 85, 265); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // B:JideButton (f:CommandBar, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 463, 112); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("ALU32Bit.v", 284, 153); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 67 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TopLevel.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("TopLevel.v", 213, 284); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+/*
+#-------------------------------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Current time: 11/3/17 1:22:28 PM MST
+# Process ID: 42972
+# OS: Windows 10
+# User: Jesus
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+de.concept.nlview.NlviewException: pick: no current page (See C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/vivado_pid42972.debug)
+*/
+/*
+#-------------------------------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Current time: 11/3/17 1:22:38 PM MST
+# Process ID: 42972
+# OS: Windows 10
+# User: Jesus
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+de.concept.nlview.NlviewException: pick: no current page (See C:/Users/Jesus/Documents/ECE 369/LABS8-17/LABS8-17 UPDATED 11-1-17/Lab8-17_VivadoFiles/vivado_pid42972.debug)
+*/
+// Elapsed time: 85 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Schematic_zoom_out"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Schematic_zoom_in"); // B:JideButton (f:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 286, 106); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 100, 80); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 100, 80, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("HiLoRegister.v", 190, 193); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "HiLoRegister.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 51, 200); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "HiLoRegister.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 52, 217); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 107, 249); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 262, 175); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 324, 189); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("HiLoRegister.v", 314, 201); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 412, 183); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 16 seconds
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f:R
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 60 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// PAPropertyPanels.initPanels (Control.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), instruction_decode : InstructionDecode (InstructionDecode.v), ctl : Control (Control.v)]", 6, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), instruction_decode : InstructionDecode (InstructionDecode.v), ctl : Control (Control.v)]", 6, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+selectCodeEditor("Control.v", 571, 237); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 571, 237, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 35 seconds
+selectCodeEditor("Control.v", 393, 163); // bI:J (JPanel:JComponent, cg:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mfhi", true); // l:X (ax:e, cg:JFrame)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 170 seconds
+selectCodeEditor("Control.v", 235, 403); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 242, 364); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("Control.v", 622, 127); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 617, 147); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 39 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), instruction_decode : InstructionDecode (InstructionDecode.v)]", 4, true); // B:i (D:JPanel, cg:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), instruction_fetch : InstructionFetchUnit (InstructionFetch.v)]", 2); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), instruction_fetch : InstructionFetchUnit (InstructionFetch.v), u2 : InstructionMemory (InstructionMemory.v)]", 5, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopLevel (TopLevel.v), instruction_fetch : InstructionFetchUnit (InstructionFetch.v), u2 : InstructionMemory (InstructionMemory.v)]", 5, false, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Control.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "InstructionMemory.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("InstructionMemory.v", 506, 198); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("InstructionMemory.v", 466, 217); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("InstructionMemory.v", 414, 195); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "InstructionMemory.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("InstructionMemory.v", 410, 23); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Control.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "InstructionMemory.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Control.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "InstructionMemory.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Control.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Control.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 57 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Control.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("Control.v", 217, 232); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 186, 226); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Control.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 173, 240); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Control.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Control.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 141, 349); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Control.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 143, 398); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Control.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 310, 176); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 279, 202); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 446, 230); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 421, 248); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 587, 283); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 558, 294); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 728, 336); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 701, 350); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 355, 181); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 351, 228); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 349, 277); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("Control.v", 353, 233); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 354, 285); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 358, 332); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 39 seconds
+selectCodeEditor("Control.v", 202, 164); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Control.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "010001", true); // l:X (ax:e, cg:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "010001"); // l:X (ax:e, cg:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "010001"); // l:X (ax:e, cg:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "010001"); // l:X (ax:e, cg:JFrame)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "010001"); // l:X (ax:e, cg:JFrame)
+selectCodeEditor("Control.v", 549, 63); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 33 seconds
+selectCodeEditor("Control.v", 201, 216); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Control.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "InstructionMemory.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Control.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("Control.v", 203, 268); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Control.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("Control.v", 203, 319); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Control.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("Control.v", 402, 160); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 157 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Control.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Control.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 96 seconds
+selectCodeEditor("Control.v", 123, 58); // bI:J (JPanel:JComponent, cg:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "add", true); // l:X (ax:e, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 86 MB. Current time: 11/3/17 1:44:42 PM MST
+// Elapsed time: 255 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sltu"); // l:X (ax:e, cg:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sltu"); // l:X (ax:e, cg:JFrame)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 368, 184); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 400, 208); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 286, 79); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 193, 268); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("Control.v", 195, 367); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 230, 385); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 241, 228); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("Control.v", 370, 172); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 226, 379); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("Control.v", 267, 263); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 297, 246); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Control.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 308, 397); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 231, 167); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 122, 280); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 352, 144); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Control.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 401, 290); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("Control.v", 259, 163); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Control.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 356, 205); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Control.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 355, 283); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Control.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 355, 351); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Control.v", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 56 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 212, 212); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "InstructionMemory.v", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Control.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("Control.v", 453, 211); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 82 seconds
+selectCodeEditor("Control.v", 239, 266); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 234, 217); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("Control.v", 266, 148); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 72 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Execution.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic (2)", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 44 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 228, 263); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 101, 264); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("HiLoRegister.v", 101, 264, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Control.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("Control.v", 212, 245); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+setText("RDIResource.SearchCommandComponent_QUICK_ACCESS", "replace", true); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REPLACE_IN_FILES
+// Replace in Files: addNotify
+selectComboBox("pa.FindAndReplaceAllDialog_FIND_COMBO_BOX", "HiLoCtl", -1); // JComboBox:JComponent (JPanel:JComponent, a:FindAndReplaceDialog)
+selectComboBox("pa.FindAndReplaceAllDialog_REPLACE_COMBO_BOX", "WrEn", -1); // JComboBox:JComponent (JPanel:JComponent, a:FindAndReplaceDialog)
+selectButton(PAResourceEtoH.FindAndReplaceAllDialog_FIND, "Find"); // f:a (ButtonPanel:JPanel, a:FindAndReplaceDialog)
+// bs:g (cg:JFrame):  Find in Files : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 87 MB. Current time: 11/3/17 1:56:28 PM MST
+// 'e' command handler elapsed time: 8 seconds
+// HMemoryUtils.trashcanNow. Engine heap size: 936 MB. GUI used memory: 87 MB. Current time: 11/3/17 1:56:30 PM MST
+dismissDialog("Find in Files"); // bs:g (cg:JFrame)
+// Elapsed time: 12 seconds
+maximizeFrame(PAResourceOtoP.PAViews_FIND_IN_FILES, "Find in Files - Occurrences of 'HiLoCtl'"); // ax:DockableFrame (aF:FrameContainer, cg:JFrame)
+// Elapsed time: 23 seconds
+selectButton(PAResourceEtoH.FindInFilesView_REPLACE_ALL_OCCURRENCES_IN_ALL_FILES, "Replace All"); // a:JButton (ButtonPanel:JPanel, cg:JFrame)
+// bs:g (cg:JFrame):  Replace in Files : addNotify
+dismissDialog("Replace in Files"); // bs:g (cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TopLevel.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 40 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "wren"); // l:X (ax:e, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Control.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String) null); // l:X (ax:e, cg:JFrame)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 768, 103); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HiLoRegister.v", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("HiLoRegister.v", 238, 111); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_STALE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Execution.v", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Execution.v", 324, 148); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TopLevel.v", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("TopLevel.v", 225, 99); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k:JideButton (JPanel:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Control.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("Control.v", 208, 180); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("Control.v", 180, 107); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("Control.v", 700, 79); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 700, 79, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ALU32Bit.v", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+// Elapsed time: 26 seconds
+selectCodeEditor("ALU32Bit.v", 150, 94); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 12 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "000000"); // l:X (ax:e, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Control.v", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cg:JFrame)
+selectCodeEditor("Control.v", 283, 208); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 184, 202); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("Control.v", 240, 192); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 27 seconds
+selectCodeEditor("Control.v", 82, 328); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 110, 333); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "Control.v", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("Control.v", 81, 335); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DESIGN_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
