@@ -1,0 +1,95 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/ALU32Bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/Controllers/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXMEMRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEMRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Execution
+WARNING: [VRFC 10-756] identifier Hi_Wire_ToOutput is used before its declaration [E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Execution.v:47]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/HiLoRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HiLoRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IDEXRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEXRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/IFIDRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFIDRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/InstructionDecode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionDecode
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/InstructionFetch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionFetchUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/MEMWBRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWBRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux5Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/PCAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/WriteBack.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBack
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/TopModules/TopLevel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/EXAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Old_Vivado/Old_vivado.srcs/sources_1/new/ShiftLeft2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftLeft2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/DatapathComponents/Mux32Bit3To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32Bit3To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/TopLevel_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/WriteBack_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WriteBack_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/Memory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Memory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/Execution_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Execution_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/InstructionDecode_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionDecode_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/ALU32Bit_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/Mux32Bit2To1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32Bit2To1_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/MEMWBRegister_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWBRegister_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/ShiftLeft2_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftLeft2_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/IFIDRegister_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFIDRegister_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/DataMemory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/ALUControl_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/Control_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/RegisterFile_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/IDEXRegister_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEXRegister_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/EXAdder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXAdder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/PCAdder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/InstructionMemory_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/EXMEMRegister_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEMRegister_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/ProgramCounter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/SignExtension_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Lab8-14_Files/SimulationSources/InstructionFetch_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionFetch_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/LABS8-17 UPDATED 11-8-17/Old_Vivado/Old_vivado.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

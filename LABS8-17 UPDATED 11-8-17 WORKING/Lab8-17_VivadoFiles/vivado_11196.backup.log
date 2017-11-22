@@ -1,0 +1,144 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Nov 22 12:26:35 2017
+# Process ID: 11196
+# Current directory: C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-17_VivadoFiles
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14236 C:\Users\Jesus\Documents\ECE 369\Modifications\LABS8-17 UPDATED 11-8-17 ORIGINAL\Lab8-17_VivadoFiles\Lab8-17_VivadoFiles.xpr
+# Log file: C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-17_VivadoFiles/vivado.log
+# Journal file: C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-17_VivadoFiles\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-17_VivadoFiles'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:37 ; elapsed = 00:00:14 . Memory (MB): peak = 811.418 ; gain = 36.691
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7k70tfbv676-1
+Top: TopLevel
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 847.051 ; gain = 34.078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopLevel' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/TopModules/TopLevel.v:16]
+INFO: [Synth 8-638] synthesizing module 'InstructionFetchUnit' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/TopModules/InstructionFetch.v:42]
+INFO: [Synth 8-638] synthesizing module 'ProgramCounter' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/ProgramCounter.v:28]
+INFO: [Synth 8-256] done synthesizing module 'ProgramCounter' (1#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/ProgramCounter.v:28]
+INFO: [Synth 8-638] synthesizing module 'PCAdder' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/PCAdder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PCAdder' (2#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/PCAdder.v:23]
+INFO: [Synth 8-638] synthesizing module 'InstructionMemory' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/InstructionMemory.v:40]
+INFO: [Synth 8-256] done synthesizing module 'InstructionMemory' (3#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/InstructionMemory.v:40]
+INFO: [Synth 8-256] done synthesizing module 'InstructionFetchUnit' (4#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/TopModules/InstructionFetch.v:42]
+INFO: [Synth 8-638] synthesizing module 'IFIDRegister' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/IFIDRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'IFIDRegister' (5#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/IFIDRegister.v:3]
+INFO: [Synth 8-638] synthesizing module 'InstructionDecode' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/TopModules/InstructionDecode.v:3]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
+WARNING: [Synth 8-567] referenced signal 'regfile' should be on the sensitivity list [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/RegisterFile.v:80]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (6#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/RegisterFile.v:51]
+INFO: [Synth 8-638] synthesizing module 'Control' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/Controllers/Control.v:23]
+WARNING: [Synth 8-151] case item 6'b000110 is unreachable [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/Controllers/Control.v:85]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/Controllers/Control.v:85]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/Controllers/Control.v:239]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/Controllers/Control.v:307]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/Controllers/Control.v:68]
+INFO: [Synth 8-256] done synthesizing module 'Control' (7#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/Controllers/Control.v:23]
+INFO: [Synth 8-638] synthesizing module 'SignExtension' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/SignExtension.v:8]
+INFO: [Synth 8-256] done synthesizing module 'SignExtension' (8#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/SignExtension.v:8]
+INFO: [Synth 8-256] done synthesizing module 'InstructionDecode' (9#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/TopModules/InstructionDecode.v:3]
+INFO: [Synth 8-638] synthesizing module 'IDEXRegister' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/IDEXRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'IDEXRegister' (10#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/IDEXRegister.v:3]
+INFO: [Synth 8-638] synthesizing module 'Execution' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/TopModules/Execution.v:3]
+INFO: [Synth 8-638] synthesizing module 'ShiftLeft2' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new/ShiftLeft2.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ShiftLeft2' (11#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.srcs/sources_1/new/ShiftLeft2.v:3]
+INFO: [Synth 8-638] synthesizing module 'EXAdder' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/EXAdder.v:3]
+INFO: [Synth 8-256] done synthesizing module 'EXAdder' (12#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/EXAdder.v:3]
+INFO: [Synth 8-638] synthesizing module 'Mux32Bit2To1' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10]
+INFO: [Synth 8-256] done synthesizing module 'Mux32Bit2To1' (13#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/Mux32Bit2To1.v:10]
+INFO: [Synth 8-638] synthesizing module 'Mux32Bit3To1' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/Mux32Bit3To1.v:10]
+INFO: [Synth 8-256] done synthesizing module 'Mux32Bit3To1' (14#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/Mux32Bit3To1.v:10]
+INFO: [Synth 8-638] synthesizing module 'Mux5Bit2To1' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:10]
+INFO: [Synth 8-256] done synthesizing module 'Mux5Bit2To1' (15#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/Mux5Bit2To1.v:10]
+INFO: [Synth 8-638] synthesizing module 'ALU32Bit' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/ALU32Bit.v:37]
+WARNING: [Synth 8-567] referenced signal 'ALUResult' should be on the sensitivity list [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/ALU32Bit.v:50]
+INFO: [Synth 8-256] done synthesizing module 'ALU32Bit' (16#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/ALU32Bit.v:37]
+INFO: [Synth 8-638] synthesizing module 'HiLoRegister' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/HiLoRegister.v:26]
+WARNING: [Synth 8-567] referenced signal 'HiOut_stored' should be on the sensitivity list [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/HiLoRegister.v:58]
+WARNING: [Synth 8-567] referenced signal 'LoOut_stored' should be on the sensitivity list [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/HiLoRegister.v:58]
+INFO: [Synth 8-256] done synthesizing module 'HiLoRegister' (17#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/HiLoRegister.v:26]
+INFO: [Synth 8-256] done synthesizing module 'Execution' (18#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/TopModules/Execution.v:3]
+INFO: [Synth 8-638] synthesizing module 'EXMEMRegister' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'EXMEMRegister' (19#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/EXMEMRegister.v:3]
+INFO: [Synth 8-638] synthesizing module 'Memory' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/TopModules/Memory.v:3]
+INFO: [Synth 8-638] synthesizing module 'DataMemory' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/DataMemory.v:38]
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (20#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/DataMemory.v:38]
+INFO: [Synth 8-256] done synthesizing module 'Memory' (21#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/TopModules/Memory.v:3]
+INFO: [Synth 8-638] synthesizing module 'MEMWBRegister' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'MEMWBRegister' (22#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/DatapathComponents/MEMWBRegister.v:3]
+INFO: [Synth 8-638] synthesizing module 'WriteBack' [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/TopModules/WriteBack.v:3]
+INFO: [Synth 8-256] done synthesizing module 'WriteBack' (23#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/TopModules/WriteBack.v:3]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel' (24#1) [C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-14_Files/TopModules/TopLevel.v:16]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[31]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[30]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[29]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[28]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[27]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[26]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[25]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[24]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[23]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[22]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[21]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[20]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[19]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[18]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[17]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[16]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[15]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[14]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[13]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[12]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[1]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[0]
+WARNING: [Synth 8-3331] design Memory has unconnected port Rst
+WARNING: [Synth 8-3331] design Execution has unconnected port Rst
+WARNING: [Synth 8-3331] design Execution has unconnected port Branch
+WARNING: [Synth 8-3331] design Execution has unconnected port ZeroExtend
+WARNING: [Synth 8-3331] design InstructionDecode has unconnected port Rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 884.125 ; gain = 71.152
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 884.125 ; gain = 71.152
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:01:13 ; elapsed = 00:00:43 . Memory (MB): peak = 1195.188 ; gain = 382.215
+56 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:13 ; elapsed = 00:00:43 . Memory (MB): peak = 1195.188 ; gain = 382.215
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 22 15:14:47 2017...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Nov 19 23:56:56 2017
+# Process ID: 1384
+# Current directory: E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/synth/func
+# Command line: wbtcv.exe -mode batch -source E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/synth/func/xsim.dir/TopLevel_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/synth/func/webtalk.log
+# Journal file: E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.sim/sim_1/synth/func\webtalk.jou
+#-----------------------------------------------------------
+source E:/LABS8-17 -notrace

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Nov 22 12:26:35 2017
+# Process ID: 11196
+# Current directory: C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-17_VivadoFiles
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14236 C:\Users\Jesus\Documents\ECE 369\Modifications\LABS8-17 UPDATED 11-8-17 ORIGINAL\Lab8-17_VivadoFiles\Lab8-17_VivadoFiles.xpr
+# Log file: C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-17_VivadoFiles/vivado.log
+# Journal file: C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-17_VivadoFiles\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Jesus/Documents/ECE 369/Modifications/LABS8-17 UPDATED 11-8-17 ORIGINAL/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.xpr}
+synth_design -rtl -name rtl_1
