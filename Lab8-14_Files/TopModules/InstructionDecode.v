@@ -4,9 +4,9 @@ module InstructionDecode(
         // inputs
         Clk, Rst, Instruction, WriteData, WriteRegister_IN,
         // outputs
-        ReadData1, ReadData2, Immediate_Extended, Instruction_20_16, Instruction_15_11,
+        ReadData1, ReadData2, Immediate_Extended, Instruction_20_16, Instruction_15_11, Instruction_10_6,
         // control signals
-        RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, WrEn, RdEn, ZeroExtend, ALUOp, /////////Added RdEn
+        RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, WrEn, RdEn, ZeroExtend, ALUOp, ReadDataSelect, mthi, mtlo, /////////Added RdEn
         //REGWRITE SIGNAL FROM WB STAGE
         RegWrite_WB
 );
@@ -21,15 +21,20 @@ module InstructionDecode(
    // Outputs
    output [31:0] ReadData1, ReadData2, Immediate_Extended;
    output [5:0] ALUOp;
-   output reg  [4:0] Instruction_20_16, Instruction_15_11;
+   output reg  [4:0] Instruction_20_16, Instruction_15_11, Instruction_10_6;
    
    // Control Signals
-   output RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, WrEn, RdEn, ZeroExtend; /////////ADDED RdEn
+   output RegWrite, MemWrite, MemRead, MemtoReg, RegDst, Branch, WrEn, RdEn, ZeroExtend; /////////ADDED RdEn
+   output [1:0] ALUSrc;
+   output ReadDataSelect, mthi, mtlo;
    
+   ////////////////////////////////////////??????????????????????
    always @ (*) begin
     Instruction_20_16 <= Instruction[20:16];
     Instruction_15_11 <= Instruction[15:11];
+    Instruction_10_6 <= Instruction[10:6];
    end
+   ////////////////////////////////////////??????????????????????
    
    RegisterFile regFile(
        .ReadRegister1(Instruction[25:21]), 
@@ -54,7 +59,10 @@ module InstructionDecode(
         .ALUOp(ALUOp), 
         .WrEn(WrEn),
         .RdEn(RdEn), ////////////////////////////// 
-        .ZeroExtend(ZeroExtend)
+        .ZeroExtend(ZeroExtend),
+        .ReadDataSelect(ReadDataSelect),
+        .mthi(mthi),
+        .mtlo(mtlo)
        );
        
        SignExtension signExtend(

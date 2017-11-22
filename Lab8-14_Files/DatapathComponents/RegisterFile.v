@@ -70,16 +70,16 @@ module RegisterFile(ReadRegister1, ReadRegister2, WriteRegister, WriteData, RegW
         end
      end
     
-    always @(negedge Clk) begin
-             ReadData1 <= regfile[ReadRegister1];
-             ReadData2 <= regfile[ReadRegister2]; 
-             //ReadData1 <= regfile[ReadRegister1];
-             //ReadData2 <= regfile[ReadRegister2];   
-    end
-    
     always @(posedge Clk) begin
-        if (RegWrite == 1) ///// Set it == 1
-            regfile[WriteRegister] <= WriteData;
+        if (RegWrite) ///// Set it == 1
+            begin
+            regfile[WriteRegister] <= WriteData; // write to register
+        end
     end 
+    
+    always @(negedge Clk) begin
+            ReadData1 <= regfile[ReadRegister1]; // read values from registers
+            ReadData2 <= regfile[ReadRegister2];
+    end
 
 endmodule

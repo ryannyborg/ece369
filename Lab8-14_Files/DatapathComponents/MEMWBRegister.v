@@ -1,7 +1,11 @@
 `timescale 1ns / 1ps
 
-module MEMWBRegister(Clk, ReadData_In, ReadData_Out, ALUResult_In, ALUResult_Out, RegDstMUX_In, RegDstMUX_Out,
-RegWrite_In, RegWrite_Out, MemToReg_In, MemToReg_Out);
+module MEMWBRegister(
+// inputs
+Clk, RegWrite_In, MemToReg_In, ReadData_In, ALUResult_In, RegDstMUX_In,
+// outputs
+RegWrite_reg, MemToReg_reg, ReadData_reg, ALUResult_reg, RegDstMUX_reg
+);
     
 //    // EX_MEM Outputs
 //    wire [31:0] ALUResult_MEM, Zero_MEM, ReadData2_MEM;
@@ -22,33 +26,36 @@ RegWrite_In, RegWrite_Out, MemToReg_In, MemToReg_Out);
     //input [] ControlWB_In; // FIXME!!!!!!!!!!!!!!!!!
     input [31:0] ReadData_In, ALUResult_In;
     input [4:0] RegDstMUX_In; // changed
-    output reg RegWrite_Out; // control signal
-    output reg MemToReg_Out;
+    output RegWrite_reg; // control signal
+    output MemToReg_reg;
     //output reg [] ControlWB_Out; // FIXME!!!!!!!!!!!!!!!!!
-    output reg [31:0] ReadData_Out, ALUResult_Out;
-    output reg [4:0] RegDstMUX_Out; // Writes value to register // changed
+    output [31:0] ReadData_reg, ALUResult_reg;
+    output [4:0] RegDstMUX_reg; // Writes value to register // changed
+
+    // registers
+    reg RegWrite_reg; // control signal
+    reg MemToReg_reg;
+    reg [31:0] ReadData_reg, ALUResult_reg;
+    reg [4:0] RegDstMUX_reg; // Writes value to register // changed
     
-    reg RegWriteStore; 
-    reg MemToRegStore;
-    reg [31:0] ReadDataStore, ALUResultStore;
-    reg [4:0] RegDstMUXStore;
+    initial begin
+        RegWrite_reg <= 0;
+        MemToReg_reg <= 0;
+        //ControlWBStore <= ControlWB_In;
+        ReadData_reg <= 0;
+        ALUResult_reg <= 0;
+        RegDstMUX_reg <= 0;
+    end
     
     always @(posedge Clk) begin
-        RegWriteStore <= RegWrite_In;
-        MemToRegStore <= MemToReg_In;
+        RegWrite_reg <= RegWrite_In;
+        MemToReg_reg <= MemToReg_In;
         //ControlWBStore <= ControlWB_In;
-        ReadDataStore <= ReadData_In;
-        ALUResultStore <= ALUResult_In;
-        RegDstMUXStore <= RegDstMUX_In;
+        ReadData_reg <= ReadData_In;
+        ALUResult_reg <= ALUResult_In;
+        RegDstMUX_reg <= RegDstMUX_In;
     end
     
-    always @(negedge Clk) begin
-        RegWrite_Out <= RegWriteStore;
-        MemToReg_Out <= MemToRegStore;
-        //ControlWB_Out <= ControlWBStore;
-        ReadData_Out <= ReadDataStore;
-        ALUResult_Out <= ALUResultStore;
-        RegDstMUX_Out <= RegDstMUXStore;
-    end
+    // removed negedge code
     
 endmodule

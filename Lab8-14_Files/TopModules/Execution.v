@@ -5,12 +5,13 @@ module Execution(
         // inputs
         Instruction_20_16,
         Instruction_15_11,
+        Instruction_10_6,
         ReadData1,
         ReadData2,
         Immediate_Extended,
-        ALUOp,
+        ALUOp, mthi, mtlo,
         // control signals IN
-        RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, WrEn, RdEn, ZeroExtend, /////////RdEn
+        RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, ReadDataSelect, Branch, WrEn, RdEn, ZeroExtend, /////////RdEn
         // outputs
         ReadData2_Out, ALULoResult, RegDestAddress, Zero,
         // control signals OUT
@@ -24,11 +25,13 @@ module Execution(
    
    input Clk, Rst;
    //input WrEnWire_In, RdEnWire_In; ////////////////////////NEW
-   input [4:0] Instruction_20_16, Instruction_15_11;
+   input [4:0] Instruction_20_16, Instruction_15_11, Instruction_10_6;
    input [31:0] ReadData1, ReadData2, Immediate_Extended;
    input [5:0] ALUOp;
-   input RegWrite, MemWrite, MemRead, MemtoReg, RegDst, ALUSrc, Branch, WrEn, RdEn, ZeroExtend;//////////RdEn
+   input RegWrite, MemWrite, MemRead, MemtoReg, RegDst, Branch, WrEn, RdEn, ZeroExtend, ReadDataSelect;//////////RdEn
+   input [1:0] ALUSrc;
    input [31:0] PCAdder_IN;
+   input mthi, mtlo;
    
    output [31:0] Hi_Out_EX, Lo_Out_EX;
    output [31:0] ReadData2_Out, ALULoResult;
@@ -49,6 +52,7 @@ module Execution(
    wire [31:0] ALUInputFromMux;
    wire [63:0] ALUResult; 
    wire [31:0] ShiftResult; ////////////////////////
+   wire [31:0] Data_Selection;
    
    ShiftLeft2 ShiftingLeft2(
         .in(Immediate_Extended), ///////////////////////////
@@ -61,10 +65,18 @@ module Execution(
         .EXAdder_Out(BranchAdderOut)
    );
    
-   Mux32Bit2To1 ALUSrcMux(
+   Mux32Bit2To1 ReadDataInALU_A_Mux(
+        .out(Data_Selection),
+        .inA(ReadData1),
+        .inB(ReadData2),
+        .sel(ReadDataSelect)
+   );
+   
+   Mux32Bit3To1 ALUSrcMux(
         .out(ALUInputFromMux), 
         .inA(ReadData2), 
-        .inB(Immediate_Extended), 
+        .inB(Immediate_Extended),
+        .inC(Instruction_10_6), 
         .sel(ALUSrc)
         );
         
@@ -77,7 +89,7 @@ module Execution(
 
    ALU32Bit aluCalculation(
         .ALUOp(ALUOp),
-        .A(ReadData1), 
+        .A(Data_Selection), 
         .B(ALUInputFromMux), 
         .Lo_IN(Lo_Wire), 
         .Hi_IN(Hi_Wire), 
@@ -93,6 +105,8 @@ module Execution(
         .Clk(Clk), /////////////////NEW
         .WrEn(WrEn), /////////////////NEW
         .RdEn(RdEn), /////////////////NEW
+        .mthi(mthi),
+        .mtlo(mtlo),
         .HiOut(Hi_Wire), 
         .LoOut(Lo_Wire) 
         );

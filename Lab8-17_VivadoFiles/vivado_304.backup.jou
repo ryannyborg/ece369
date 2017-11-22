@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2015.4.2 (64-bit)
+# SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+# IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+# Start of session at: Mon Nov 20 14:48:46 2017
+# Process ID: 304
+# Current directory: E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7920 E:\LABS8-17 UPDATED 11-8-17\Lab8-17_VivadoFiles\Lab8-17_VivadoFiles.xpr
+# Log file: E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/vivado.log
+# Journal file: E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/LABS8-17 UPDATED 11-8-17/Lab8-17_VivadoFiles/Lab8-17_VivadoFiles.xpr}
+save_project_as Old_vivado {E:/LABS8-17 UPDATED 11-8-17/Old_Vivado} -force
+launch_simulation
+source TopLevel_tb.tcl
+restart
+run 80 us
+synth_design -rtl -name rtl_1
+close_sim

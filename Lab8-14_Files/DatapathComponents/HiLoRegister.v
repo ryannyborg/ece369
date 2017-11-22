@@ -23,11 +23,13 @@
 `timescale 1ns / 1ps
  
 //module HiLoRegister(Hi_IN, Lo_IN, HiOut, LoOut, WrEn, WrEn_Out);
-module HiLoRegister(Hi_IN, Lo_IN, WrEn, Clk, RdEn, HiOut, LoOut);//, WrEn_Out);
+module HiLoRegister(Hi_IN, Lo_IN, WrEn, mthi, mtlo, Clk, RdEn, HiOut, LoOut);//, WrEn_Out);
    
     input [31:0] Hi_IN;
     input [31:0] Lo_IN;
     input WrEn; 
+    input mthi;
+    input mtlo;
     input Clk; /////////////////NEW
     input RdEn; /////////////////NEW
     output reg [31:0] HiOut;
@@ -38,15 +40,22 @@ module HiLoRegister(Hi_IN, Lo_IN, WrEn, Clk, RdEn, HiOut, LoOut);//, WrEn_Out);
     reg [31:0] LoOut_stored; /////////////////NEW
    
     always @(posedge Clk) begin
-//       if (WrEn == 1) begin
-       
-//       end
        if (WrEn == 1) begin // WrEn == Write Enable NEED TO CHANGE VARIABLE NAME
        //if (WrEn == 1) begin 
-            HiOut_stored[31:0] <= Hi_IN;
-            LoOut_stored[31:0] <= Lo_IN;
+            if(mthi == 1) begin
+                HiOut_stored[31:0] <= Hi_IN;
+            end
+            if(mtlo == 1) begin
+                LoOut_stored[31:0] <= Lo_IN;
+            end
+            if(mthi == 0 && mtlo == 0) begin
+                HiOut_stored[31:0] <= Hi_IN;
+                LoOut_stored[31:0] <= Lo_IN;
+            end
        end
+   end
    
+   always @(RdEn) begin
        // need a read and write enable 
         if (RdEn == 1) begin
             HiOut <= HiOut_stored;
