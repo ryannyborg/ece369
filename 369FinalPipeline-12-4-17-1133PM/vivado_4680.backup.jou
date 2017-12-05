@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Dec  4 09:36:20 2017
+# Process ID: 4680
+# Current directory: E:/369FinalPipeline-12-4-17
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7052 E:\369FinalPipeline-12-4-17\369FinalPipeline-12-4-17.xpr
+# Log file: E:/369FinalPipeline-12-4-17/vivado.log
+# Journal file: E:/369FinalPipeline-12-4-17\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source TopLevel_tb.tcl
+restart
+run 80 us
+restart
+run 80 us
+run 80 us
+restart
+run 80 us
+restart
+run 80 us

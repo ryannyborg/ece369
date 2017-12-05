@@ -1,0 +1,33 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/ALU32Bit.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/AndGate.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/Control.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/DataMemory.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/EXAdder.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/EXMEMRegister.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/ForwardMux32Bit3to1.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/ForwardingUnit.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/HazardDetect.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/HiLoRegister.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/IDEXRegister.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/IFIDRegister.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/InstructionMemory.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/JumpExtension.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/JumpShiftLeft2.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/MEMWBRegister.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/Mux32Bit2To1.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/Mux32Bit3To1.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/Mux5Bit2To1.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/PCAdder.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/ProgramCounter.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/RegisterFile.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/ShiftLeft2.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/SignExtension.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Design Sources/TopLevel.v"
+verilog xil_defaultlib  "../../../../WORKING PIPELINE FILES/Simulation Sources/TopLevel_tb.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

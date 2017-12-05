@@ -1,0 +1,178 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Dec  4 09:36:20 2017
+# Process ID: 4680
+# Current directory: E:/369FinalPipeline-12-4-17
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7052 E:\369FinalPipeline-12-4-17\369FinalPipeline-12-4-17.xpr
+# Log file: E:/369FinalPipeline-12-4-17/vivado.log
+# Journal file: E:/369FinalPipeline-12-4-17\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Jesus/Documents/ECE 369/369FinalPipeline-12-4-17' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:43 . Memory (MB): peak = 539.125 ; gain = 18.934
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TopLevel_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav/Instruction_memory.txt'
+INFO: [SIM-utils-43] Exported 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav/8-11_tests.txt'
+INFO: [SIM-utils-43] Exported 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav/tester.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav'
+"xvlog -m64 --relax -prj TopLevel_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ALU32Bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/AndGate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AndGate
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/EXAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/EXMEMRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEMRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ForwardMux32Bit3to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardMux32Bit3to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ForwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/HazardDetect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HazardDetect
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/HiLoRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HiLoRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/IDEXRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEXRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/IFIDRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFIDRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/JumpExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module JumpExtension
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/JumpShiftLeft2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module JumpShiftLeft2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/MEMWBRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWBRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Mux32Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Mux32Bit3To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32Bit3To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Mux5Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux5Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/PCAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ShiftLeft2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftLeft2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel
+INFO: [VRFC 10-2458] undeclared symbol StallWire, assumed default net type wire [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:195]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Simulation Sources/TopLevel_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 590.078 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 9906e7e547d1474aaa22b4b9965691f4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevel_tb_behav xil_defaultlib.TopLevel_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port sel [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:121]
+WARNING: [VRFC 10-278] actual bit length 29 differs from formal bit length 28 for port out [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:231]
+WARNING: [VRFC 10-278] actual bit length 29 differs from formal bit length 28 for port JumpShiftResult [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:236]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port PCSrc [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:428]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Mux32Bit2To1
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.PCAdder
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.IFIDRegister
+Compiling module xil_defaultlib.HazardDetect
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.JumpShiftLeft2
+Compiling module xil_defaultlib.JumpExtension
+Compiling module xil_defaultlib.SignExtension
+Compiling module xil_defaultlib.IDEXRegister
+Compiling module xil_defaultlib.ShiftLeft2
+Compiling module xil_defaultlib.EXAdder
+Compiling module xil_defaultlib.Mux32Bit3To1
+Compiling module xil_defaultlib.Mux5Bit2To1
+Compiling module xil_defaultlib.ForwardUnit
+Compiling module xil_defaultlib.ForwardMux32Bit3to1
+Compiling module xil_defaultlib.ALU32Bit
+Compiling module xil_defaultlib.HiLoRegister
+Compiling module xil_defaultlib.EXMEMRegister
+Compiling module xil_defaultlib.AndGate
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEMWBRegister
+Compiling module xil_defaultlib.TopLevel
+Compiling module xil_defaultlib.TopLevel_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TopLevel_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav/xsim.dir/TopLevel_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav/xsim.dir/TopLevel_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Dec  4 18:34:56 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec  4 18:34:56 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 590.078 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TopLevel_tb_behav -key {Behavioral:sim_1:Functional:TopLevel_tb} -tclbatch {TopLevel_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source TopLevel_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 592.184 ; gain = 2.105
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TopLevel_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:32 . Memory (MB): peak = 592.184 ; gain = 2.105
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 80 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 80 us
+run 80 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 80 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 80 us

@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Dec  4 21:07:24 2017
+# Process ID: 7032
+# Current directory: E:/369FinalPipeline-12-4-17
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent564 E:\369FinalPipeline-12-4-17\369FinalPipeline-12-4-17.xpr
+# Log file: E:/369FinalPipeline-12-4-17/vivado.log
+# Journal file: E:/369FinalPipeline-12-4-17\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source TopLevel_tb.tcl
+restart
+run 80 us
+synth_design -rtl -name rtl_1
+add_wave {{/TopLevel_tb/test1/regDestination/out}} {{/TopLevel_tb/test1/regDestination/inA}} {{/TopLevel_tb/test1/regDestination/inB}} {{/TopLevel_tb/test1/regDestination/sel}} 
+restart
+run 80 us
+add_wave {{/TopLevel_tb/test1/regFile/WriteData}} 
+add_wave {{/TopLevel_tb/test1/regFile/RegWrite}} 
+restart
+run 80 us
+add_wave {{/TopLevel_tb/test1/MEMWB/ReadData_reg}} 
+restart
+run 80 us
+close_sim
+launch_simulation
+source TopLevel_tb.tcl
+restart
+run 80 us
+close_sim
+launch_simulation
+source TopLevel_tb.tcl
+restart
+run 80 us
+add_wave {{/TopLevel_tb/test1/dataMemory/memory}} 
+restart
+run 80 us
+add_wave {{/TopLevel_tb/test1/regFile/regfile}} 
+restart
+run 80 us
+add_wave {{/TopLevel_tb/test1/u2/Instruction}} 
+restart
+run 80 us
+add_wave {{/TopLevel_tb/test1/dataMemory/MemWrite}} 
+restart
+run 80 us
+add_wave {{/TopLevel_tb/test1/dataMemory/Address}} 
+restart
+run 80 us
+add_wave {{/TopLevel_tb/test1/EXMEM/ALUResult_reg}} 
+add_wave {{/TopLevel_tb/test1/aluCalculation/ALUOp}} {{/TopLevel_tb/test1/aluCalculation/A}} {{/TopLevel_tb/test1/aluCalculation/B}} {{/TopLevel_tb/test1/aluCalculation/Lo_IN}} {{/TopLevel_tb/test1/aluCalculation/Hi_IN}} {{/TopLevel_tb/test1/aluCalculation/LoResult}} {{/TopLevel_tb/test1/aluCalculation/HiResult}} {{/TopLevel_tb/test1/aluCalculation/Zero}} {{/TopLevel_tb/test1/aluCalculation/ALUResult}} 
+restart
+run 80 us
+close_sim
+launch_simulation
+source TopLevel_tb.tcl
+restart
+run 80 us
+add_wave {{/TopLevel_tb/test1/dataMemory/memory}} 
+add_wave {{/TopLevel_tb/test1/regFile/regfile}} 
+restart
+run 80 us
+close_sim

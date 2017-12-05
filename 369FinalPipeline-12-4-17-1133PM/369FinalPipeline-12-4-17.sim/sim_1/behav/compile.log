@@ -1,0 +1,55 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ALU32Bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/AndGate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AndGate
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/EXAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/EXMEMRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEMRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ForwardMux32Bit3to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardMux32Bit3to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ForwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/HazardDetect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HazardDetect
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/HiLoRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HiLoRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/IDEXRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEXRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/IFIDRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFIDRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/JumpExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module JumpExtension
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/JumpShiftLeft2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module JumpShiftLeft2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/MEMWBRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWBRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Mux32Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Mux32Bit3To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32Bit3To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Mux5Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux5Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/PCAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ShiftLeft2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftLeft2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel
+INFO: [VRFC 10-2458] undeclared symbol StallWire, assumed default net type wire [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:195]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Simulation Sources/TopLevel_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,469 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Dec  4 19:38:56 2017
+# Process ID: 5420
+# Current directory: E:/369FinalPipeline-12-4-17
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4676 E:\369FinalPipeline-12-4-17\369FinalPipeline-12-4-17.xpr
+# Log file: E:/369FinalPipeline-12-4-17/vivado.log
+# Journal file: E:/369FinalPipeline-12-4-17\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 543.355 ; gain = 13.273
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TopLevel_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav/Instruction_memory.txt'
+INFO: [SIM-utils-43] Exported 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav/8-11_tests.txt'
+INFO: [SIM-utils-43] Exported 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav/tester.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav'
+"xvlog -m64 --relax -prj TopLevel_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ALU32Bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/AndGate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AndGate
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/EXAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/EXMEMRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEMRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ForwardMux32Bit3to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardMux32Bit3to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ForwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/HazardDetect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HazardDetect
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/HiLoRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HiLoRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/IDEXRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEXRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/IFIDRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFIDRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/JumpExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module JumpExtension
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/JumpShiftLeft2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module JumpShiftLeft2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/MEMWBRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWBRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Mux32Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Mux32Bit3To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32Bit3To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Mux5Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux5Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/PCAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ShiftLeft2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftLeft2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel
+INFO: [VRFC 10-2458] undeclared symbol StallWire, assumed default net type wire [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:195]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Simulation Sources/TopLevel_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 545.168 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 9906e7e547d1474aaa22b4b9965691f4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevel_tb_behav xil_defaultlib.TopLevel_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port sel [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:121]
+WARNING: [VRFC 10-278] actual bit length 29 differs from formal bit length 28 for port out [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:231]
+WARNING: [VRFC 10-278] actual bit length 29 differs from formal bit length 28 for port JumpShiftResult [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:236]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port PCSrc [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:428]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Mux32Bit2To1
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.PCAdder
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.IFIDRegister
+Compiling module xil_defaultlib.HazardDetect
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.JumpShiftLeft2
+Compiling module xil_defaultlib.JumpExtension
+Compiling module xil_defaultlib.SignExtension
+Compiling module xil_defaultlib.IDEXRegister
+Compiling module xil_defaultlib.ShiftLeft2
+Compiling module xil_defaultlib.EXAdder
+Compiling module xil_defaultlib.Mux32Bit3To1
+Compiling module xil_defaultlib.Mux5Bit2To1
+Compiling module xil_defaultlib.ForwardUnit
+Compiling module xil_defaultlib.ForwardMux32Bit3to1
+Compiling module xil_defaultlib.ALU32Bit
+Compiling module xil_defaultlib.HiLoRegister
+Compiling module xil_defaultlib.EXMEMRegister
+Compiling module xil_defaultlib.AndGate
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEMWBRegister
+Compiling module xil_defaultlib.TopLevel
+Compiling module xil_defaultlib.TopLevel_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TopLevel_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav/xsim.dir/TopLevel_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav/xsim.dir/TopLevel_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Dec  4 19:47:17 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec  4 19:47:17 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 545.168 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TopLevel_tb_behav -key {Behavioral:sim_1:Functional:TopLevel_tb} -tclbatch {TopLevel_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source TopLevel_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 597.273 ; gain = 52.105
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TopLevel_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:25 . Memory (MB): peak = 597.273 ; gain = 52.105
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 80 us
+add_wave {{/TopLevel_tb/test1/IDEX/SignExtend_In}} 
+add_wave {{/TopLevel_tb/test1/aluCalculation/ALUOp}} {{/TopLevel_tb/test1/aluCalculation/A}} {{/TopLevel_tb/test1/aluCalculation/B}} {{/TopLevel_tb/test1/aluCalculation/Lo_IN}} {{/TopLevel_tb/test1/aluCalculation/Hi_IN}} {{/TopLevel_tb/test1/aluCalculation/LoResult}} {{/TopLevel_tb/test1/aluCalculation/HiResult}} {{/TopLevel_tb/test1/aluCalculation/Zero}} {{/TopLevel_tb/test1/aluCalculation/ALUResult}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 80 us
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: TopLevel
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 663.848 ; gain = 37.063
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopLevel' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:16]
+INFO: [Synth 8-638] synthesizing module 'Mux32Bit2To1' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Mux32Bit2To1.v:10]
+INFO: [Synth 8-256] done synthesizing module 'Mux32Bit2To1' (1#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Mux32Bit2To1.v:10]
+WARNING: [Synth 8-689] width (32) of port connection 'sel' does not match port width (1) of module 'Mux32Bit2To1' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:121]
+INFO: [Synth 8-638] synthesizing module 'ProgramCounter' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ProgramCounter.v:33]
+INFO: [Synth 8-256] done synthesizing module 'ProgramCounter' (2#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ProgramCounter.v:33]
+INFO: [Synth 8-638] synthesizing module 'PCAdder' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/PCAdder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PCAdder' (3#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/PCAdder.v:23]
+INFO: [Synth 8-638] synthesizing module 'InstructionMemory' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/InstructionMemory.v:40]
+INFO: [Synth 8-256] done synthesizing module 'InstructionMemory' (4#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/InstructionMemory.v:40]
+INFO: [Synth 8-638] synthesizing module 'IFIDRegister' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/IFIDRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'IFIDRegister' (5#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/IFIDRegister.v:3]
+INFO: [Synth 8-638] synthesizing module 'HazardDetect' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/HazardDetect.v:3]
+INFO: [Synth 8-256] done synthesizing module 'HazardDetect' (6#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/HazardDetect.v:3]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/RegisterFile.v:51]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (7#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/RegisterFile.v:51]
+INFO: [Synth 8-638] synthesizing module 'Control' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Control.v:23]
+WARNING: [Synth 8-151] case item 6'b000001 is unreachable [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Control.v:72]
+WARNING: [Synth 8-151] case item 6'b000110 is unreachable [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Control.v:91]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Control.v:91]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Control.v:251]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Control.v:490]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Control.v:72]
+INFO: [Synth 8-256] done synthesizing module 'Control' (8#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Control.v:23]
+INFO: [Synth 8-638] synthesizing module 'JumpShiftLeft2' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/JumpShiftLeft2.v:3]
+INFO: [Synth 8-256] done synthesizing module 'JumpShiftLeft2' (9#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/JumpShiftLeft2.v:3]
+WARNING: [Synth 8-689] width (29) of port connection 'out' does not match port width (28) of module 'JumpShiftLeft2' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:231]
+INFO: [Synth 8-638] synthesizing module 'JumpExtension' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/JumpExtension.v:16]
+INFO: [Synth 8-256] done synthesizing module 'JumpExtension' (10#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/JumpExtension.v:16]
+WARNING: [Synth 8-689] width (29) of port connection 'JumpShiftResult' does not match port width (28) of module 'JumpExtension' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:236]
+INFO: [Synth 8-638] synthesizing module 'SignExtension' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/SignExtension.v:8]
+INFO: [Synth 8-256] done synthesizing module 'SignExtension' (11#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/SignExtension.v:8]
+INFO: [Synth 8-638] synthesizing module 'IDEXRegister' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/IDEXRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'IDEXRegister' (12#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/IDEXRegister.v:3]
+INFO: [Synth 8-638] synthesizing module 'ShiftLeft2' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ShiftLeft2.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ShiftLeft2' (13#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ShiftLeft2.v:3]
+INFO: [Synth 8-638] synthesizing module 'EXAdder' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/EXAdder.v:3]
+INFO: [Synth 8-256] done synthesizing module 'EXAdder' (14#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/EXAdder.v:3]
+INFO: [Synth 8-638] synthesizing module 'Mux32Bit3To1' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Mux32Bit3To1.v:10]
+INFO: [Synth 8-256] done synthesizing module 'Mux32Bit3To1' (15#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Mux32Bit3To1.v:10]
+INFO: [Synth 8-638] synthesizing module 'Mux5Bit2To1' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Mux5Bit2To1.v:10]
+INFO: [Synth 8-256] done synthesizing module 'Mux5Bit2To1' (16#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Mux5Bit2To1.v:10]
+INFO: [Synth 8-638] synthesizing module 'ForwardUnit' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ForwardingUnit.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ForwardUnit' (17#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ForwardingUnit.v:3]
+INFO: [Synth 8-638] synthesizing module 'ForwardMux32Bit3to1' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ForwardMux32Bit3to1.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ForwardMux32Bit3to1' (18#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ForwardMux32Bit3to1.v:3]
+INFO: [Synth 8-638] synthesizing module 'ALU32Bit' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ALU32Bit.v:37]
+INFO: [Synth 8-256] done synthesizing module 'ALU32Bit' (19#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ALU32Bit.v:37]
+INFO: [Synth 8-638] synthesizing module 'HiLoRegister' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/HiLoRegister.v:26]
+WARNING: [Synth 8-567] referenced signal 'HiOut_stored' should be on the sensitivity list [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/HiLoRegister.v:58]
+WARNING: [Synth 8-567] referenced signal 'LoOut_stored' should be on the sensitivity list [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/HiLoRegister.v:58]
+INFO: [Synth 8-256] done synthesizing module 'HiLoRegister' (20#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/HiLoRegister.v:26]
+INFO: [Synth 8-638] synthesizing module 'EXMEMRegister' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/EXMEMRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'EXMEMRegister' (21#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/EXMEMRegister.v:3]
+INFO: [Synth 8-638] synthesizing module 'AndGate' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/AndGate.v:3]
+INFO: [Synth 8-256] done synthesizing module 'AndGate' (22#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/AndGate.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'PCSrc' does not match port width (1) of module 'AndGate' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:428]
+INFO: [Synth 8-638] synthesizing module 'DataMemory' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/DataMemory.v:38]
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (23#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/DataMemory.v:38]
+INFO: [Synth 8-638] synthesizing module 'MEMWBRegister' [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/MEMWBRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'MEMWBRegister' (24#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/MEMWBRegister.v:3]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel' (25#1) [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:16]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[31]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[30]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[29]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[28]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[27]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[26]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[25]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[24]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[23]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[22]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[21]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[20]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[19]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[18]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[17]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[16]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[15]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[14]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[13]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[12]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[1]
+WARNING: [Synth 8-3331] design DataMemory has unconnected port Address[0]
+WARNING: [Synth 8-3331] design ForwardUnit has unconnected port Clk
+WARNING: [Synth 8-3331] design HazardDetect has unconnected port Instruction[15]
+WARNING: [Synth 8-3331] design HazardDetect has unconnected port Instruction[14]
+WARNING: [Synth 8-3331] design HazardDetect has unconnected port Instruction[13]
+WARNING: [Synth 8-3331] design HazardDetect has unconnected port Instruction[12]
+WARNING: [Synth 8-3331] design HazardDetect has unconnected port Instruction[11]
+WARNING: [Synth 8-3331] design HazardDetect has unconnected port Instruction[10]
+WARNING: [Synth 8-3331] design HazardDetect has unconnected port Instruction[9]
+WARNING: [Synth 8-3331] design HazardDetect has unconnected port Instruction[8]
+WARNING: [Synth 8-3331] design HazardDetect has unconnected port Instruction[7]
+WARNING: [Synth 8-3331] design HazardDetect has unconnected port Instruction[6]
+WARNING: [Synth 8-3331] design HazardDetect has unconnected port Instruction[5]
+WARNING: [Synth 8-3331] design HazardDetect has unconnected port Instruction[4]
+WARNING: [Synth 8-3331] design HazardDetect has unconnected port Instruction[3]
+WARNING: [Synth 8-3331] design HazardDetect has unconnected port Instruction[2]
+WARNING: [Synth 8-3331] design HazardDetect has unconnected port Instruction[1]
+WARNING: [Synth 8-3331] design HazardDetect has unconnected port Instruction[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 697.836 ; gain = 71.051
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 697.836 ; gain = 71.051
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 1010.262 ; gain = 383.477
+58 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:39 . Memory (MB): peak = 1010.262 ; gain = 383.477
+add_wave {{/TopLevel_tb/test1/regDestination/out}} {{/TopLevel_tb/test1/regDestination/inA}} {{/TopLevel_tb/test1/regDestination/inB}} {{/TopLevel_tb/test1/regDestination/sel}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 80 us
+add_wave {{/TopLevel_tb/test1/ctl/RegDst}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 80 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1064.988 ; gain = 0.000
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TopLevel_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav/Instruction_memory.txt'
+INFO: [SIM-utils-43] Exported 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav/8-11_tests.txt'
+INFO: [SIM-utils-43] Exported 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav/tester.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav'
+"xvlog -m64 --relax -prj TopLevel_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ALU32Bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/AndGate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AndGate
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/EXAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/EXMEMRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXMEMRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ForwardMux32Bit3to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardMux32Bit3to1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ForwardingUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ForwardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/HazardDetect.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HazardDetect
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/HiLoRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HiLoRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/IDEXRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDEXRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/IFIDRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFIDRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/JumpExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module JumpExtension
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/JumpShiftLeft2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module JumpShiftLeft2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/MEMWBRegister.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMWBRegister
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Mux32Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Mux32Bit3To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux32Bit3To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/Mux5Bit2To1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux5Bit2To1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/PCAdder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PCAdder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/ShiftLeft2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftLeft2
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/SignExtension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtension
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel
+INFO: [VRFC 10-2458] undeclared symbol StallWire, assumed default net type wire [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:195]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Simulation Sources/TopLevel_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopLevel_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 9906e7e547d1474aaa22b4b9965691f4 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TopLevel_tb_behav xil_defaultlib.TopLevel_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port sel [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:121]
+WARNING: [VRFC 10-278] actual bit length 29 differs from formal bit length 28 for port out [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:231]
+WARNING: [VRFC 10-278] actual bit length 29 differs from formal bit length 28 for port JumpShiftResult [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:236]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port PCSrc [E:/369FinalPipeline-12-4-17/WORKING PIPELINE FILES/Design Sources/TopLevel.v:428]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Mux32Bit2To1
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.PCAdder
+Compiling module xil_defaultlib.InstructionMemory
+Compiling module xil_defaultlib.IFIDRegister
+Compiling module xil_defaultlib.HazardDetect
+Compiling module xil_defaultlib.RegisterFile
+Compiling module xil_defaultlib.Control
+Compiling module xil_defaultlib.JumpShiftLeft2
+Compiling module xil_defaultlib.JumpExtension
+Compiling module xil_defaultlib.SignExtension
+Compiling module xil_defaultlib.IDEXRegister
+Compiling module xil_defaultlib.ShiftLeft2
+Compiling module xil_defaultlib.EXAdder
+Compiling module xil_defaultlib.Mux32Bit3To1
+Compiling module xil_defaultlib.Mux5Bit2To1
+Compiling module xil_defaultlib.ForwardUnit
+Compiling module xil_defaultlib.ForwardMux32Bit3to1
+Compiling module xil_defaultlib.ALU32Bit
+Compiling module xil_defaultlib.HiLoRegister
+Compiling module xil_defaultlib.EXMEMRegister
+Compiling module xil_defaultlib.AndGate
+Compiling module xil_defaultlib.DataMemory
+Compiling module xil_defaultlib.MEMWBRegister
+Compiling module xil_defaultlib.TopLevel
+Compiling module xil_defaultlib.TopLevel_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TopLevel_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav/xsim.dir/TopLevel_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav/xsim.dir/TopLevel_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Dec  4 20:00:59 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Dec  4 20:00:59 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1064.988 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/369FinalPipeline-12-4-17/369FinalPipeline-12-4-17.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TopLevel_tb_behav -key {Behavioral:sim_1:Functional:TopLevel_tb} -tclbatch {TopLevel_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source TopLevel_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TopLevel_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1064.988 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 80 us
+add_wave {{/TopLevel_tb/test1/regFile/regfile}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 80 us

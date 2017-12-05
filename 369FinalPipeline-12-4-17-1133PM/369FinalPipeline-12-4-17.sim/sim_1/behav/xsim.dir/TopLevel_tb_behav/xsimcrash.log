@@ -1,0 +1,28 @@
+Unable to capture context for thread 1004 in process 2328, can not generate back trace
+Unable to capture context for thread 5828 in process 2328, can not generate back trace
+Unable to capture context for thread 476 in process 2328, can not generate back trace
+Exception at PC 0x00007FFF7D511A52
+Attemped to write at address 0x00007FFFBB6EABA4
+Printing stacktrace...
+
+[0]  [0x00007FFF7D511A52]
+[1]  [0x00007FFF7D511A52]
+[2]  [0x00007FFF7D511AD4]
+[3]  [0x00007FFF7D653FF7]
+[4]  [0x00007FFF7D539128]
+[5]  [0x00007FFF7D7EDFB9]
+[6]  [0x00007FFF7D9BEF23]
+[7]  [0x00007FFF7D8CB06B]
+[8]  [0x00007FFF7D8C08AF]
+[9]  [0x00007FFF7D8C0A32]
+[10] (RtlDeactivateActivationContextUnsafeFast+0x1af) [0x00007FFFDE9B485F]
+[11] (LdrShutdownProcess+0x12c) [0x00007FFFDE9DD43C]
+[12] (RtlExitUserProcess+0xb4) [0x00007FFFDE9DD2F4]
+[13] (FatalExit+0xa) [0x00007FFFDE0CC0DA]
+[14] (exit+0x75) [0x00007FFFDE8FA045]
+[15] (initterm_e+0x21d) [0x00007FFFDE8FA68D]
+[16]  [0x00000000004014CD]
+[17]  [0x000000000040151B]
+[18] (BaseThreadInitThunk+0x14) [0x00007FFFDE0C2774]
+[19] (RtlUserThreadStart+0x21) [0x00007FFFDEA00D51]
+Done
